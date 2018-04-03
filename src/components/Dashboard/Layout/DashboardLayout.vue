@@ -4,7 +4,6 @@
       <!-- <mobile-menu slot="content"></mobile-menu> -->
     </side-bar>
     <div class="main-panel">
-
       <top-navbar></top-navbar>
 
       <div class="content">
@@ -25,8 +24,8 @@ import TopNavbar from './TopNavbar.vue'
 import DashboardContent from './Content.vue'
 export default {
   components: {
-    TopNavbar,
-    DashboardContent
+    'top-navbar': TopNavbar,
+    'dashboard-content': DashboardContent
   }
 }
 </script>

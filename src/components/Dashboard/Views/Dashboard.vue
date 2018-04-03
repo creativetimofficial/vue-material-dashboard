@@ -1,6 +1,14 @@
 <template>
-  <div class="">
-
+  <div class="md-layout">
+    <div class="md-layout-item">
+      ddd
+    </div>
+    <div class="md-layout-item">
+      ddd
+    </div>
+    <div class="md-layout-item">
+      ddd
+    </div>
   </div>
 </template>
 

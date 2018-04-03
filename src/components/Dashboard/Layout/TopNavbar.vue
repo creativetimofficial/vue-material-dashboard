@@ -20,7 +20,6 @@
 
           <md-button class="md-icon-button">
             <md-icon>dashboard</md-icon>
-            <p class="md-">Dashboard</p>
           </md-button>
           <md-button class="md-icon-button">
             <md-icon>notifications</md-icon>

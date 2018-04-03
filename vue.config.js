@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-  lintOnSave: false
+  lintOnSave: true
 }
