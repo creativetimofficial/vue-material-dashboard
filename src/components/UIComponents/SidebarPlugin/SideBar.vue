@@ -1,90 +1,114 @@
 <template>
-  <div class="sidebar"
-       :style="sidebarStyle"
-       :data-color="backgroundColor"
-       :data-image="backgroundImage">
-    <div class="sidebar-wrapper">
-      <div class="logo">
-        <a href="#" class="simple-text">
-            <div class="logo-img">
-                <img src="static/img/vue-logo.png" alt="">
-            </div>
-          {{title}}
-        </a>
-      </div>
+  <div class="sidebar" :data-color="activeColor" :data-image="backgroundImage" :style="sidebarStyle">
+    <div class="logo">
+      <a href="#" class="simple-text logo-mini">
+        <div class="logo-img">
+            <img :src="imgLogo" alt="">
+        </div>
+      </a>
 
-      <slot name="content"></slot>
+      <a href="#" class="simple-text logo-normal">
+        {{title}}
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
       <ul class="nav">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
-        <slot>
-          <sidebar-link v-for="(link,index) in sidebarLinks"
-                        :key="link.name + index"
-                        :to="link.path"
-                        @click="closeNavbar"
-                        :link="link">
-            <i :class="link.icon"></i>
-            <p>{{link.name}}</p>
-          </sidebar-link>
-        </slot>
+        <sidebar-link v-for="(link,index) in sidebarLinks"
+                      :key="link.name + index"
+                      :to="link.path"
+                      :link="link">
+        </sidebar-link>
       </ul>
     </div>
   </div>
 </template>
 <script>
-  import SidebarLink from './SidebarLink.vue'
+import SidebarLink from './SidebarLink.vue'
 
-  export default {
-    components: {
-      SidebarLink
+export default{
+  components: {
+    SidebarLink
+  },
+  props: {
+    title: {
+      type: String,
+      default: 'Vue MD'
     },
-    props: {
-      title: {
-        type: String,
-        default: 'Vue LBD'
-      },
-      backgroundColor: {
-        type: String,
-        default: 'black',
-        validator: (value) => {
-          let acceptedValues = ['', 'blue', 'azure', 'green', 'orange', 'red', 'purple', 'black']
-          return acceptedValues.indexOf(value) !== -1
-        }
-      },
-      backgroundImage: {
-        type: String,
-        default: 'static/img/sidebar-5.jpg'
-      },
-      activeColor: {
-        type: String,
-        default: 'success',
-        validator: (value) => {
-          let acceptedValues = ['primary', 'info', 'success', 'warning', 'danger']
-          return acceptedValues.indexOf(value) !== -1
-        }
-      },
-      sidebarLinks: {
-        type: Array,
-        default: () => []
-      },
-      autoClose: {
-        type: Boolean,
-        default: true
+    backgroundImage: {
+      type: String,
+      default: require('@/assets/img/sidebar-1.jpg')
+    },
+    imgLogo: {
+      type: String,
+      default: require('@/assets/img/vue-logo.png')
+    },
+    activeColor: {
+      type: String,
+      default: 'purple',
+      validator: (value) => {
+        let acceptedValues = ['', 'purple', 'blue', 'green', 'orange', 'red']
+        return acceptedValues.indexOf(value) !== -1
       }
     },
-    provide () {
+    sidebarLinks: {
+      type: Array,
+      default: () => [
+        {
+          name: 'Dashboard',
+          icon: 'dashboard',
+          path: '/admin/dashboard'
+        },
+        {
+          name: 'User Profile',
+          icon: 'person',
+          path: '/admin/user'
+        },
+        {
+          name: 'Table List',
+          icon: 'content_paste',
+          path: '/admin/table'
+        },
+        {
+          name: 'Typography',
+          icon: 'library_books',
+          path: '/admin/typography'
+        },
+        {
+          name: 'Icons',
+          icon: 'bubble_chart',
+          path: '/admin/icons'
+        },
+        {
+          name: 'Maps',
+          icon: 'location_on',
+          path: '/admin/maps'
+        },
+        {
+          name: 'Notifications',
+          icon: 'notifications',
+          path: '/admin/notifications'
+        }
+      ]
+    },
+    autoClose: {
+      type: Boolean,
+      default: true
+    }
+  },
+  provide () {
+    return {
+      autoClose: this.autoClose
+    }
+  },
+  computed: {
+    sidebarStyle () {
       return {
-        autoClose: this.autoClose
-      }
-    },
-    computed: {
-      sidebarStyle () {
-        return {
-          backgroundImage: `url(${this.backgroundImage})`
-        }
+        backgroundImage: `url(${this.backgroundImage})`
       }
     }
   }
-
+}
 </script>
 <style>
 

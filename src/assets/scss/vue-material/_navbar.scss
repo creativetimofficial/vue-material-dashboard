@@ -1,0 +1,57 @@
+.md-toolbar {
+  min-height: 56px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .md-toolbar-row {
+    min-height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &.md-theme-default.md-transparent,
+  &.md-theme-default,
+  &.md-theme-default .md-title,
+  &.md-theme-default.md-transparent .md-title {
+    color: $gray;
+  }
+
+  .md-title {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 15px;
+    font-weight: 300;
+    letter-spacing: normal;
+  }
+
+  .md-toolbar-toggle {
+    margin: 0 15px;
+    width: 40px;
+
+    .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: inherit;
+      border: 1px solid;
+      border-radius: 1px;
+
+      & + .icon-bar{
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .md-autocomplete{
+    width: 200px;
+    max-width: 200px;
+  }
+
+  .md-collapse{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

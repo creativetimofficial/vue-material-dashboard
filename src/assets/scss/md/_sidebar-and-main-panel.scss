@@ -12,6 +12,8 @@
     left: 0;
     z-index: 1;
     @include shadow-big();
+    background-size: cover;
+    background-position: center center;
 
 
     .sidebar-wrapper{
@@ -30,6 +32,7 @@
         }
 
         .nav{
+            padding: 0;
 
             [data-toggle="collapse"] ~ div > ul > li > a{
                 padding-left: 60px;
@@ -65,6 +68,12 @@
         margin-top: 20px;
 
         li{
+
+          a{
+            display: flex;
+            padding: 10px 15px;
+            text-decoration: none;
+          }
             > a{
                 margin: 10px 15px 0;
                 border-radius: $border-radius-base;
@@ -102,6 +111,7 @@
             font-size: 24px;
             float: left;
             margin-right: 15px;
+            margin-left: 0;
             line-height: 30px;
             width: 30px;
             text-align: center;
@@ -134,16 +144,16 @@
 
     .logo{
         position: relative;
-        padding: $padding-base $padding-base;
+        padding: $padding-base 0;
         z-index: 4;
 
         &:after{
             content: '';
             position: absolute;
             bottom: 0;
-            right: 10%;
+            right: 15px;
             height: 1px;
-            width: 80%;
+            width: calc(100% - 30px);
             background-color: rgba(180,180,180, .3);
 
         }
@@ -159,11 +169,12 @@
 
         .logo-mini{
           float: left;
-          width: 30px;
+          width: 40px;
           text-align: center;
-          margin-left: 23px;
-          margin-right: 15px;
+          margin-left: 25px;
+          margin-right: 11px;
           position: relative;
+          top: -5px;
         }
 
         .simple-text{
@@ -183,14 +194,11 @@
               background: $white-color;
               border-radius: 50%;
               text-align: center;
-              position: relative;
-              left: -5px;
-              top: -5px;
               overflow: hidden;
               @include shadow-big();
 
                 img{
-                  width: 60%;
+                  width: 55%;
                   vertical-align: -webkit-baseline-middle;
                 }
             }
@@ -212,32 +220,17 @@
         }
     }
 
-    &:after,
-    &:before{
+    &:after{
         display: block;
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
+        background-color: $white-color;
+        opacity: .93;
         top: 0;
         left: 0;
         z-index: 2;
-    }
-
-    &:before{
-        opacity: .33;
-        // background: #000000;
-    }
-
-    &:after{
-    //    @include set-background-color-button($font-background-light-grey, $background-lighter-grey);
-       z-index: 3;
-       opacity: 1;
-    }
-
-    &[data-image]:after,
-    &.has-image:after{
-        opacity: .77;
     }
 
     &[data-color="blue"]{
