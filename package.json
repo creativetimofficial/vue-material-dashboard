@@ -1,11 +1,12 @@
 {
   "name": "vue-material-dashboard",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "npm run serve"
   },
   "dependencies": {
     "vue": "^2.5.13",
@@ -15,24 +16,21 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.6",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.6",
     "@vue/cli-service": "^3.0.0-beta.6",
+    "@vue/eslint-config-standard": "^3.0.0-beta.6",
+    "babel-plugin-component": "^1.1.0",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "es6-promise": "^4.2.4",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.4.0",
+    "lint-staged": "^6.0.0",
     "node-sass": "^4.8.3",
     "sass-loader": "^6.0.7",
+    "vue-eslint-parser": "^2.0.3",
     "vue-material": "^1.0.0-beta-8",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.13"
-  },
-  "babel": {
-    "presets": [
-      "@vue/app"
-    ]
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ]
   },
   "postcss": {
     "plugins": {
@@ -43,5 +41,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "author": "dragosct <dragosct10@gmail.com>",
+  "description": "Vue Material Dashboard",
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
 }

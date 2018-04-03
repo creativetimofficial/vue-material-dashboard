@@ -4,6 +4,7 @@
       <!-- <mobile-menu slot="content"></mobile-menu> -->
     </side-bar>
     <div class="main-panel">
+
       <top-navbar></top-navbar>
 
       <div class="content">
