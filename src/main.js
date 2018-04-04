@@ -7,11 +7,23 @@ import router from './router'
 // MaterialDashboard plugin
 import MaterialDashboard from './material-dashboard'
 
+import Chartist from 'chartist'
+
 Vue.use(MaterialDashboard)
+
+// global library setup
+Object.defineProperty(Vue.prototype, '$Chartist', {
+  get () {
+    return this.$root.Chartist
+  }
+})
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   render: h => h(App),
-  router
+  router,
+  data: {
+    Chartist: Chartist
+  }
 })

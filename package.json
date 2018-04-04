@@ -9,6 +9,7 @@
     "dev": "npm run serve"
   },
   "dependencies": {
+    "chartist": "^0.11.0",
     "vue": "^2.5.13",
     "vue-material": "^1.0.0-beta-8",
     "vue-router": "^3.0.1"
