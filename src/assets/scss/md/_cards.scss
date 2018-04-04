@@ -1,8 +1,9 @@
-.card{
+.md-card{
     display: inline-block;
     position: relative;
     width: 100%;
     margin: 25px 0;
+    overflow: unset;
 
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
     border-radius: $border-radius-base;
@@ -52,15 +53,15 @@
     .category:not([class*="text-"]){
         color: $gray-color;
     }
-    .card-content{
+    .md-card-content{
         padding: 15px 20px;
 
         .category{
-            margin-bottom: 0;
+            margin: 0;
         }
     }
 
-    .card-header{
+    .md-card-header{
         @include shadow-big();
         margin: -20px $margin-base 0;
         border-radius: $border-radius-base;
@@ -123,9 +124,9 @@
 
     }
 
-    .card-footer{
+    .md-card-actions{
         margin: 0 20px 10px;
-        padding-top: 10px;
+        padding: 10px 0 0 0;
         border-top: 1px solid #eeeeee;
 
         .content{
@@ -143,10 +144,10 @@
             color: $gray-color;
             font-size: $font-size-small;
 
-            .material-icons{
+            .md-icon{
                 position: relative;
-                top: 4px;
-                font-size: $font-paragraph;
+                top: -1px;
+                font-size: $font-paragraph !important;
             }
         }
 
@@ -162,7 +163,7 @@
     }
 
     .category{
-        .material-icons{
+        .md-icon{
             position: relative;
             top: 6px;
             line-height: 0;
@@ -240,22 +241,30 @@
     }
 }
 
-.card-stats{
+.md-card-stats{
     .title{
         margin: 0;
+
+        small{
+          color: $gray-color;
+          font-size: 65%;
+          line-height: 1;
+          font-weight: 400;
+        }
     }
-    .card-header{
+    .md-card-header{
         float: left;
         text-align: center;
 
         i{
-            font-size: 36px;
+            font-size: 36px !important;
             line-height: 56px;
             width: 56px;
             height: 56px;
+            color: $white-color !important;
         }
     }
-    .card-content{
+    .md-card-content{
         text-align: right;
         padding-top: 10px;
     }
@@ -281,7 +290,7 @@
     background: transparent;
     box-shadow: none;
 
-    .card-header{
+    .md-card-header{
         margin-left: 0;
         margin-right: 0;
     }

@@ -64,8 +64,8 @@ a{
   color: $link-color;
   &:hover,
   &:focus{
-      color: darken($link-color, 5%);
-      text-decoration: none;
+      color: darken($link-color, 5%) !important;
+      text-decoration: none !important;
   }
 
   &.text-info{
