@@ -12,7 +12,7 @@
         </dashboard-content>
       </div>
 
-      <!-- <content-footer></content-footer> -->
+      <content-footer></content-footer>
     </div>
   </div>
 </template>
@@ -22,10 +22,12 @@
 <script>
 import TopNavbar from './TopNavbar.vue'
 import DashboardContent from './Content.vue'
+import ContentFooter from './ContentFooter.vue'
 export default {
   components: {
     'top-navbar': TopNavbar,
-    'dashboard-content': DashboardContent
+    'dashboard-content': DashboardContent,
+    'content-footer': ContentFooter
   }
 }
 </script>

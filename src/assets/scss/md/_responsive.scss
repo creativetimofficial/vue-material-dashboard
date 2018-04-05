@@ -447,13 +447,22 @@
     }
 }
 
-//overwrite table responsive for 768px screens
+@media (max-width: 768px){
+  .footer .container{
+    justify-content: unset;
+    display: block;
 
-@media (min-width: 768px){
-    .navbar> .container-fluid .navbar-brand{
-        margin-left: 0;
+    nav{
+      display: block;
     }
+
+    .copyright{
+      float: right;
+    }
+  }
 }
+
+
 
 @media (max-width: 480px), (max-width: 767px){
     .form-group{

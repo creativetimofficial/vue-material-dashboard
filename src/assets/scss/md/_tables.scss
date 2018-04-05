@@ -1,45 +1,30 @@
-.table{
-   > thead > tr > th{
-       border-bottom-width: 1px;
-       font-size: $font-size-h6;
-       font-weight: $font-weight-light;
-   }
+.md-table-cell-container{
+  padding: 12px 8px;
 
-   .radio,
-   .checkbox{
-       margin-top: 0;
-       margin-bottom: 0;
-       margin-left: 10px;
-       padding: 0;
-       width: 15px;
+  .md-table-cell:last-child &{
+    padding-right: 0;
+    text-align: right;
+    display: flex;
+  }
+}
+.md-table-head-container{
+  height: auto;
+  padding: 0;
+}
+.md-tabs-content table thead{
+  display: none;
+}
 
-       .icons{
-           position: relative;
-       }
-   }
-   > thead > tr > th,
-   > tbody > tr > th,
-   > tfoot > tr > th,
-   > thead > tr > td,
-   > tbody > tr > td,
-   > tfoot > tr > td{
-       padding: 12px 8px;
-       vertical-align: middle;
-   }
+.md-tabs-container tbody .md-table-row:first-child td{
+  border: 0;
+}
 
-   > thead > tr > th{
-       padding-bottom: 4px;
-   }
+.md-table-cell{
+  font-size: $font-size-base;
+}
 
-   .td-actions{
-        display: flex;
-
-        .btn{
-           margin: 0px;
-           padding: 5px;
-        }
-    }
-    > tbody > tr{
-        position: relative;
-    }
+.md-table-head-label{
+  font-size: $font-size-base;
+  padding-left: 8px;
+  font-weight: 500;
 }

@@ -72,7 +72,7 @@
             color: $white-color;
         }
         .category{
-            margin-bottom: 0;
+            margin: 0;
             color: rgba($white-color, .62);
         }
 
@@ -207,27 +207,32 @@
         }
     }
 
-    [data-background-color="purple"]{
+    [data-background-color="purple"],
+    .md-tabs.md-primary .md-tabs-navigation{
         background: linear-gradient(60deg, $purple-400, $purple-600);
         @include shadow-big-color($brand-primary);
     }
 
-    [data-background-color="blue"]{
+    [data-background-color="blue"],
+    .md-tabs.md-info .md-tabs-navigation{
         background: linear-gradient(60deg, $cyan-400, $cyan-600);
         @include shadow-big-color($brand-info);
     }
 
-    [data-background-color="green"]{
+    [data-background-color="green"],
+    .md-tabs.md-success .md-tabs-navigation{
         background: linear-gradient(60deg, $green-400, $green-600);
         @include shadow-big-color($brand-success);
     }
 
-    [data-background-color="orange"]{
+    [data-background-color="orange"],
+    .md-tabs.md-orange .md-tabs-navigation{
         background: linear-gradient(60deg, $orange-400, $orange-600);
         @include shadow-big-color($brand-warning);
     }
 
-    [data-background-color="red"]{
+    [data-background-color="red"],
+    .md-tabs.md-danger .md-tabs-navigation{
         background: linear-gradient(60deg, $red-400, $red-600);
         @include shadow-big-color($brand-danger);
     }

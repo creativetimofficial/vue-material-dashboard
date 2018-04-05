@@ -104,6 +104,14 @@ legend {
   border-bottom: 0;
 }
 
+.pull-left{
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}
+
 // Prevent highlight on mobile
 * {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
