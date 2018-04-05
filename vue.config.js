@@ -1,4 +1,5 @@
 // vue.config.js
 module.exports = {
-  lintOnSave: true
+  lintOnSave: true,
+  baseUrl: '/vue-material-dashboard/'
 }

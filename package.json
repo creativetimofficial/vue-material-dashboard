@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "npm run serve"
+    "dev": "npm run serve",
+    "deploy": "npm run build && sudo gh-pages -d dist"
   },
   "dependencies": {
     "chartist": "^0.11.0",
