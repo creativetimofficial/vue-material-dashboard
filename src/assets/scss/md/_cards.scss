@@ -291,9 +291,9 @@
     }
 }
 
-.card-plain{
-    background: transparent;
-    box-shadow: none;
+.md-card-plain{
+    background: transparent !important;
+    box-shadow: none !important;
 
     .md-card-header{
         margin-left: 0;
@@ -325,7 +325,7 @@
     }
 }
 
-.card-profile,
+.md-card-profile,
 .card-testimonial{
     margin-top: 30px;
     text-align: center;
@@ -335,7 +335,7 @@
         margin-right: 6px;
     }
 
-    .card-avatar{
+    .md-card-avatar{
         max-width: 130px;
         max-height: 130px;
         margin: -50px auto 0;
@@ -349,7 +349,7 @@
         }
     }
 
-    &.card-plain{
+    &.md-card-plain{
         .card-avatar{
             margin-top: 0;
         }

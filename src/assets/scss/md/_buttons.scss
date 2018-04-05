@@ -1,5 +1,4 @@
-.btn,
-.navbar .navbar-nav > li > a.btn{
+.md-button{
     border: none;
     border-radius: $border-radius-base;
     position: relative;
@@ -20,29 +19,29 @@
     }
 
     &,
-    &.btn-default{
+    &.md-default{
         @include btn-styles($gray-light);
     }
 
-    &.btn-primary{
+    &.md-primary{
       @include btn-styles($brand-primary);
     }
-    &.btn-info{
+    &.md-info{
       @include btn-styles($brand-info);
     }
-    &.btn-success{
+    &.md-success{
       @include btn-styles($brand-success);
     }
-    &.btn-warning{
+    &.md-warning{
       @include btn-styles($brand-warning);
     }
-    &.btn-danger{
+    &.md-danger{
       @include btn-styles($brand-danger);
     }
-    &.btn-rose{
+    &.md-rose{
       @include btn-styles($brand-rose);
     }
-    &.btn-white{
+    &.md-white{
         &,
         &:focus,
         &:hover{
