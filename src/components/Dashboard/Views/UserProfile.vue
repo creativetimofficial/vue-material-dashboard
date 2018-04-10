@@ -1,14 +1,16 @@
 <template>
-  <div class="md-layout">
-    <div class="md-layout-item md-size-66">
-      <edit-profile-form :data-background-color="'purple'">
+  <div class="content">
+    <div class="md-layout">
+      <div class="md-layout-item md-size-66">
+        <edit-profile-form :data-background-color="'purple'">
 
-      </edit-profile-form>
-    </div>
-    <div class="md-layout-item md-size-33">
-      <user-card>
+        </edit-profile-form>
+      </div>
+      <div class="md-layout-item md-size-33">
+        <user-card>
 
-      </user-card>
+        </user-card>
+      </div>
     </div>
   </div>
 </template>

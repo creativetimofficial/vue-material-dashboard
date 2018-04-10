@@ -6,11 +6,9 @@
     <div class="main-panel">
       <top-navbar></top-navbar>
 
-      <div class="content">
-        <dashboard-content>
+      <dashboard-content>
 
-        </dashboard-content>
-      </div>
+      </dashboard-content>
 
       <content-footer></content-footer>
     </div>

@@ -460,6 +460,16 @@
       float: right;
     }
   }
+
+  .hidden-sm{
+    display: none !important;
+  }
+}
+@media (min-width: 768px){
+  .hidden-md,
+  .hidden-lg{
+    display: none !important;
+  }
 }
 
 
