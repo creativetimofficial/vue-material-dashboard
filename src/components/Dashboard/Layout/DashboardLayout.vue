@@ -10,7 +10,8 @@
 
       </dashboard-content>
 
-      <content-footer></content-footer>
+      <content-footer v-if="!$route.meta.hideFooter"></content-footer>
+
     </div>
   </div>
 </template>
