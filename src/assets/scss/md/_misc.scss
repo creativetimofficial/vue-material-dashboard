@@ -84,7 +84,8 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret{
 }
 
 .sidebar .nav a,
-.caret{
+.caret,
+.sidebar .dropdown .dropdown-menu li a{
     @include transition($fast-transition-time, $transition-ease-in);
 }
 
@@ -129,4 +130,21 @@ input[type="submit"]::-moz-focus-inner,
 select::-moz-focus-inner,
 input[type="file"] > input[type="button"]::-moz-focus-inner {
     outline : 0 !important;
+}
+
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.places-buttons{
+  .md-button{
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

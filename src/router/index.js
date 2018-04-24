@@ -52,7 +52,11 @@ export default new Router({
         {
           path: 'maps',
           name: 'Maps',
+          meta: {
+            hideFooter: true
+          },
           component: Maps
+
         },
         {
           path: 'notifications',

@@ -78,7 +78,7 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
-$black-color:           #3C4858 !default;
+$black-color:           #495057 !default;
 
 
 //== Scaffolding
@@ -112,13 +112,13 @@ $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:                 3.8em !default;
-$font-size-h2:                 2.6em !default;
-$font-size-h3:                 1.825em !default;
-$font-size-h4:                 1.3em !default;
-$font-size-h5:                 1.25em !default;
-$font-size-h6:                 1em !default;
-$font-paragraph:               16px !default;
+$font-size-h1:                 3.3125rem;
+$font-size-h2:                 2.25rem !default;
+$font-size-h3:                 1.5625rem;
+$font-size-h4:                 1.125rem !default;
+$font-size-h5:                 1.0625rem !default;
+$font-size-h6:                 0.75rem !default;
+$font-paragraph:               14px !default;
 $font-size-navbar:             16px !default;
 $font-size-small:              12px !default;
 

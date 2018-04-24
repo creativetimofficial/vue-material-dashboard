@@ -28,3 +28,16 @@
   padding-left: 8px;
   font-weight: 500;
 }
+
+.md-table .md-table-row:hover .md-table-cell{
+  background-color: transparent !important;
+}
+
+.md-table .md-table-row:hover{
+  background: $table-bg-hover !important;
+}
+
+.md-card-plain .md-card-content > div .md-table .md-table-content,
+.md-card-plain .md-card-content > div .md-table {
+  background-color: transparent !important;
+}

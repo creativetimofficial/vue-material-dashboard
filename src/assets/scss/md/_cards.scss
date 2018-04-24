@@ -76,6 +76,10 @@
             color: rgba($white-color, .62);
         }
 
+        a{
+          color: $white-color !important;
+        }
+
         &.card-chart{
             padding: 0;
             min-height: 160px;
@@ -226,7 +230,7 @@
     }
 
     [data-background-color="orange"],
-    .md-tabs.md-orange .md-tabs-navigation{
+    .md-tabs.md-warning .md-tabs-navigation{
         background: linear-gradient(60deg, $orange-400, $orange-600);
         @include shadow-big-color($brand-warning);
     }
@@ -291,9 +295,9 @@
     }
 }
 
-.card-plain{
-    background: transparent;
-    box-shadow: none;
+.md-card-plain{
+    background: transparent !important;
+    box-shadow: none !important;
 
     .md-card-header{
         margin-left: 0;
@@ -325,7 +329,7 @@
     }
 }
 
-.card-profile,
+.md-card-profile,
 .card-testimonial{
     margin-top: 30px;
     text-align: center;
@@ -335,7 +339,7 @@
         margin-right: 6px;
     }
 
-    .card-avatar{
+    .md-card-avatar{
         max-width: 130px;
         max-height: 130px;
         margin: -50px auto 0;
@@ -344,12 +348,12 @@
 
         @include shadow-big();
 
-        & + .content{
+        & + .md-card-content{
             margin-top: 15px;
         }
     }
 
-    &.card-plain{
+    &.md-card-plain{
         .card-avatar{
             margin-top: 0;
         }

@@ -64,6 +64,11 @@
     display: none !important;
   }
 
+  .main-panel > .content{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
     .sidebar{
         display: none;
         box-shadow: none;
@@ -75,22 +80,40 @@
         .nav-mobile-menu{
             margin-top: 0;
 
+            .md-field{
+              width: auto;
+              margin: 10px 36px 0;
+            }
+
             .notification{
                 float: left;
                 line-height: 30px;
                 margin-right: 8px;
             }
+        }
 
-            .open .dropdown-menu {
-                position: static;
-                float: none;
-                width: auto;
-                margin-top: 0;
-                background-color: transparent;
-                border: 0;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
+        .dropdown-menu {
+            position: static;
+            float: none;
+            width: auto;
+            margin-top: 0;
+            background-color: transparent;
+            border: 0;
+            display: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .dropdown.open .dropdown-menu{
+          display: block;
+        }
+
+        .dropdown{
+          li:hover a{
+            background-color: $brand-primary;
+            @include shadow-8dp();
+            color: $white-color !important;
+          }
         }
     }
 
@@ -460,6 +483,22 @@
       float: right;
     }
   }
+
+  .hidden-sm{
+    display: none !important;
+  }
+}
+@media (min-width: 768px){
+  .hidden-lg,
+  .hidden-md{
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .block-md{
+    display: block !important;
+  }
 }
 
 
@@ -487,4 +526,14 @@
         overflow: visible;
     }
 
+}
+
+@media screen and (max-width: 576px) {
+  .tim-typo{
+    padding-left: 11% !important;
+
+    .tim-note{
+      bottom: -25px !important; 
+    }
+  }
 }

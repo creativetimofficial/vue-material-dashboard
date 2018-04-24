@@ -73,19 +73,19 @@
             display: flex;
             padding: 10px 15px;
             text-decoration: none;
+            margin: 10px 15px 0;
+            border-radius: $border-radius-base;
+            color: $black-color !important;
+            white-space: nowrap;
+            cursor: pointer;
           }
-            > a{
-                margin: 10px 15px 0;
-                border-radius: $border-radius-base;
-                color: $black-color !important;
-                @extend .animation-transition-general;
-            }
 
             &:first-child > a{
                 margin: 0 15px;
             }
 
-            &:hover > a{
+            &:hover > a,
+            .dropdown:hover > a{
                 background: rgba(200, 200, 200, 0.2);
                 color: $black-color;
             }
@@ -263,23 +263,13 @@
     }
 }
 
-// windows os settings for perfect scrollbar off
-.sidebar .sidebar-wrapper,
-.main-panel{
-    .perfect-scrollbar-on &,
-    &{
-        overflow: hidden;
-    }
+.perfect-scrollbar-on{
+  .sidebar,
+  .main-panel{
+      height: 100%;
+      max-height: 100%;
+  }
 }
-
-// regular settings for perfect scrollbar off
-.perfect-scrollbar-off{
-    .sidebar .sidebar-wrapper,
-    .main-panel{
-        overflow: auto;
-    }
-}
-
 
 .main-panel{
     position: relative;

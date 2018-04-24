@@ -1,18 +1,15 @@
 <template>
   <div class="wrapper">
-    <side-bar>
-      <!-- <mobile-menu slot="content"></mobile-menu> -->
-    </side-bar>
+    <notifications></notifications>
+    <side-bar></side-bar>
     <div class="main-panel">
       <top-navbar></top-navbar>
 
-      <div class="content">
-        <dashboard-content>
+      <dashboard-content>
 
-        </dashboard-content>
-      </div>
+      </dashboard-content>
 
-      <content-footer></content-footer>
+      <content-footer v-if="!$route.meta.hideFooter"></content-footer>
     </div>
   </div>
 </template>
@@ -23,6 +20,7 @@
 import TopNavbar from './TopNavbar.vue'
 import DashboardContent from './Content.vue'
 import ContentFooter from './ContentFooter.vue'
+
 export default {
   components: {
     'top-navbar': TopNavbar,

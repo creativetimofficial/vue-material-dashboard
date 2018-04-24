@@ -23,8 +23,6 @@
 @import "md/shadows";
 
 //plugin css
-@import "md/plugins/_plugin-nouislider";
-@import "md/plugins/_animate";
 @import "md/plugins/_perfect-scrollbar";
 
 // Core CSS
@@ -36,8 +34,8 @@
 @import "md/forms";
 @import "md/alerts";
 @import "md/tables";
+@import "md/layout";
 @import "md/checkboxes";
-@import "md/radios";
 @import "md/togglebutton";
 @import "md/ripples";
 @import "md/pagination";
@@ -53,8 +51,3 @@
 @import "md/tabs";
 @import "md/chartist";
 @import "md/responsive";
-
-
-@import "vue-material/colors";
-@import "vue-material/navbar";
-@import "vue-material/layout";
