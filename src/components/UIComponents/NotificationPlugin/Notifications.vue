@@ -1,7 +1,7 @@
 <template>
   <div class="notifications">
     <transition-group name="list">
-      <notification v-for="(notification,index) in notifications"
+      <notification v-for="(notification) in notifications"
                     :key="notification.timestamp.getTime()"
                     :message="notification.message"
                     :icon="notification.icon"
