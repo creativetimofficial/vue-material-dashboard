@@ -226,7 +226,7 @@
     }
 
     [data-background-color="orange"],
-    .md-tabs.md-orange .md-tabs-navigation{
+    .md-tabs.md-warning .md-tabs-navigation{
         background: linear-gradient(60deg, $orange-400, $orange-600);
         @include shadow-big-color($brand-warning);
     }

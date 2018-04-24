@@ -4,12 +4,20 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// Plugins
+import GlobalComponents from './globalComponents'
+import GlobalDirectives from './globalDirectives'
+import Notifications from './components/UIComponents/NotificationPlugin'
+
 // MaterialDashboard plugin
 import MaterialDashboard from './material-dashboard'
 
 import Chartist from 'chartist'
 
 Vue.use(MaterialDashboard)
+Vue.use(GlobalComponents)
+Vue.use(GlobalDirectives)
+Vue.use(Notifications)
 
 // global library setup
 Object.defineProperty(Vue.prototype, '$Chartist', {

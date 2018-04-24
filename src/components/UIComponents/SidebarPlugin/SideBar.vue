@@ -12,6 +12,7 @@
       </a>
     </div>
     <div class="sidebar-wrapper">
+      <mobile-menu></mobile-menu>
       <ul class="nav">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
         <sidebar-link v-for="(link,index) in sidebarLinks"
@@ -25,10 +26,12 @@
 </template>
 <script>
 import SidebarLink from './SidebarLink.vue'
+import MobileMenu from '@/components/Dashboard/Layout/MobileMenu.vue'
 
 export default{
   components: {
-    SidebarLink
+    SidebarLink,
+    'mobile-menu': MobileMenu
   },
   props: {
     title: {
@@ -111,5 +114,9 @@ export default{
 }
 </script>
 <style>
-
+  @media screen and (min-width: 991px) {
+    .nav-mobile-menu{
+      display: none;
+    }
+  }
 </style>

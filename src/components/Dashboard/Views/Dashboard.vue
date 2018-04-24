@@ -172,7 +172,7 @@
             <p class="category">New employees on 15th September, 2016</p>
           </md-card-header>
           <md-card-content>
-            <simple-table></simple-table>
+            <ordered-table></ordered-table>
           </md-card-content>
         </md-card>
       </div>
@@ -185,7 +185,7 @@ import StatsCard from '@/components/UIComponents/Cards/StatsCard.vue'
 import ChartCard from '@/components/UIComponents/Cards/ChartCard.vue'
 import NavTabsCard from '@/components/UIComponents/Cards/NavTabsCard.vue'
 import NavTabsTable from '@/components/UIComponents/Tables/NavTabsTable.vue'
-import SimpleTable from '@/components/UIComponents/Tables/SimpleTable.vue'
+import OrderedTable from '@/components/UIComponents/Tables/OrderedTable.vue'
 
 export default{
   components: {
@@ -193,7 +193,7 @@ export default{
     ChartCard,
     NavTabsCard,
     NavTabsTable,
-    SimpleTable
+    OrderedTable
   },
   data () {
     return {

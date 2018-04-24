@@ -63,10 +63,19 @@
     flex-direction: row;
   }
 
+  .md-button,
+  .md-button:hover,
+  .md-button:focus,
+  .md-button:active {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+
   .md-active,
   .md-active:hover,
   .md-active:focus{
-    background: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: none;
   }
 
   .md-icon-label{

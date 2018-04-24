@@ -5,7 +5,7 @@
 // label variations
 .label {
   border-radius: $border-radius-small;
-  @include variations(unquote(".label"), unquote(""), background-color, $grey);
+  // @include variations(unquote(".label"), unquote(""), background-color, $grey);
 }
 
 // must be broken out for reuse - webkit selector breaks firefox
@@ -284,16 +284,16 @@
 }
 
 // default floating size/location without a form-group (will skip form-group styles, and just render default sizing variation)
-@include form-group-size-variant(null, $mdb-input-font-size-base, $mdb-label-top-margin-base, $mdb-input-padding-base-vertical, $mdb-input-line-height-base, $mdb-label-as-placeholder-shim-base);
-
-// default floating size/location with a form-group (need margin etc from a default form-group)
-@include form-group-size-variant(unquote(".form-group"), $mdb-input-font-size-base, $mdb-label-top-margin-base, $mdb-input-padding-base-vertical, $mdb-input-line-height-base, $mdb-label-as-placeholder-shim-base);
-
-// sm floating size/location
-@include form-group-size-variant(unquote(".form-group.form-group-sm"), $mdb-input-font-size-small, $mdb-label-top-margin-small, $mdb-input-padding-small-vertical, $mdb-input-line-height-small, $mdb-label-as-placeholder-shim-small);
-
-// lg floating size/location
-@include form-group-size-variant(unquote(".form-group.form-group-lg"), $mdb-input-font-size-large, $mdb-label-top-margin-large, $mdb-input-padding-large-vertical, $mdb-input-line-height-large, $mdb-label-as-placeholder-shim-large);
+// @include form-group-size-variant(null, $mdb-input-font-size-base, $mdb-label-top-margin-base, $mdb-input-padding-base-vertical, $mdb-input-line-height-base, $mdb-label-as-placeholder-shim-base);
+//
+// // default floating size/location with a form-group (need margin etc from a default form-group)
+// @include form-group-size-variant(unquote(".form-group"), $mdb-input-font-size-base, $mdb-label-top-margin-base, $mdb-input-padding-base-vertical, $mdb-input-line-height-base, $mdb-label-as-placeholder-shim-base);
+//
+// // sm floating size/location
+// @include form-group-size-variant(unquote(".form-group.form-group-sm"), $mdb-input-font-size-small, $mdb-label-top-margin-small, $mdb-input-padding-small-vertical, $mdb-input-line-height-small, $mdb-label-as-placeholder-shim-small);
+//
+// // lg floating size/location
+// @include form-group-size-variant(unquote(".form-group.form-group-lg"), $mdb-input-font-size-large, $mdb-label-top-margin-large, $mdb-input-padding-large-vertical, $mdb-input-line-height-large, $mdb-label-as-placeholder-shim-large);
 
 
 select.form-control {
@@ -383,4 +383,36 @@ select.form-control {
         color: $red;
         opacity: 1;
     }
+}
+
+.md-field{
+  .md-input,
+  .md-textarea{
+    height: 36px;
+    padding: 7px 0;
+    font-size: 14px !important;
+    -webkit-text-fill-color: $black-color !important;
+  }
+
+  label{
+    font-size: 14px;
+    font-weight: 400;
+    color: $mdb-input-placeholder-color !important;
+    line-height: 1.4;
+    top: 26px;
+  }
+
+  &:after{
+    background-color: #d2d2d2 !important;
+  }
+
+  &:before{
+    background-color: $brand-primary !important;
+  }
+
+  &.md-focused label,
+  &.md-has-value label,
+  &.md-focused.md-has-value label{
+    font-size: .6875rem;
+  }
 }

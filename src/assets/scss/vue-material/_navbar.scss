@@ -1,12 +1,33 @@
 .md-toolbar {
   min-height: 56px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 15px;
 
   .md-toolbar-row {
     min-height: auto;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .md-button{
+    margin: 0;
+  }
+
+  .notification{
+    position: absolute;
+    top: 0px;
+    border: 1px solid #FFF;
+    right: 7px;
+    font-size: 9px;
+    background: #f44336;
+    color: #FFFFFF;
+    min-width: 20px;
+    padding: 0px 5px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 19px;
+    vertical-align: middle;
+    display: block;
   }
 
   &.md-theme-default.md-transparent,
@@ -42,6 +63,58 @@
 
       & + .icon-bar{
         margin-top: 4px;
+      }
+    }
+  }
+
+  .md-list{
+    flex-flow: row;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: inherit !important;
+    background-color: transparent !important;
+
+    &:hover .md-list-item > a,
+    &:focus .md-list-item > a {
+      background-color: rgba(200, 200, 200, 0.2) !important;
+    }
+
+  }
+
+  .md-field{
+    padding: 0;
+    margin: 0;
+
+    &:after,
+    &:before{
+      bottom: 5px;
+    }
+
+    .md-input{
+      margin-top: 6px;
+    }
+
+    label{
+      top: 15px;
+    }
+
+    &.md-focused label,
+    &.md-has-value label{
+      top: -4px;
+    }
+
+    .md-input-action{
+      top: 8px;
+      border-radius: 50%;
+      background-color: $white-color !important;
+
+      .md-button-content i{
+        width: 18px;
+        height: 18px;
+
+        svg{
+          fill: $gray-light !important;
+        }
       }
     }
   }
