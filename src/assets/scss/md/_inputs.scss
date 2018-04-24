@@ -415,4 +415,37 @@ select.form-control {
   &.md-focused.md-has-value label{
     font-size: .6875rem;
   }
+
+  &.md-has-textarea:not(.md-autogrow):after,
+  &.md-has-textarea:not(.md-autogrow):before{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+    border-color: #d2d2d2 !important;
+  }
+
+  &.md-has-textarea:not(.md-autogrow):before{
+    border-bottom: 2px solid transparent;
+    border-color: $brand-primary !important;
+    transform: scaleX(.12);
+  }
+
+  &.md-focused.md-has-textarea:not(.md-autogrow):before{
+    transform: scaleX(1);
+  }
+}
+
+.md-field .md-input-action{
+  top: 8px;
+  border-radius: 50%;
+  background-color: $white-color !important;
+
+  .md-button-content i{
+    width: 18px;
+    height: 18px;
+
+    svg{
+      fill: $gray-light !important;
+    }
+  }
 }

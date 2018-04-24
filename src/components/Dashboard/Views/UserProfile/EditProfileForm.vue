@@ -68,8 +68,8 @@
               <md-textarea v-model="aboutme"></md-textarea>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-100">
-            <md-button class="md-raised md-primary">Primary</md-button>
+          <div class="md-layout-item md-size-100 text-right">
+            <md-button class="md-raised md-primary">Update Profile</md-button>
           </div>
         </div>
 

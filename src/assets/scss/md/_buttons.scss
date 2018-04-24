@@ -15,7 +15,7 @@
     transition: box-shadow 0.2s $mdb-animation-curve-fast-out-linear-in,
     background-color 0.2s $mdb-animation-curve-default;
 
-    &:not(.md-just-icon):not(.md-btn-fab):not(.md-icon-button) .md-ripple{
+    &:not(.md-just-icon):not(.md-btn-fab):not(.md-icon-button):not(.md-toolbar-toggle) .md-ripple{
       padding: 12px 30px;
     }
 

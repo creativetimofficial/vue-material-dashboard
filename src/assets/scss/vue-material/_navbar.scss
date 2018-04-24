@@ -4,12 +4,15 @@
 
   .md-toolbar-row {
     min-height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .md-button{
     margin: 0;
+  }
+
+  .md-toolbar-toggle .md-button-content{
+    display: block;
+    align-items: unset;
   }
 
   .notification{
@@ -69,16 +72,22 @@
 
   .md-list{
     flex-flow: row;
+    padding-right: 5px;
+    padding-left: 5px;
     padding-top: 0;
     padding-bottom: 0;
     color: inherit !important;
     background-color: transparent !important;
 
     &:hover .md-list-item > a,
-    &:focus .md-list-item > a {
-      background-color: rgba(200, 200, 200, 0.2) !important;
+    &:focus .md-list-item > a,
+    & > a:hover {
+      background-color: transparent !important;
     }
 
+    .md-list-item > a:not(:last-child){
+      margin-right: 5px;
+    }
   }
 
   .md-field{
@@ -102,31 +111,21 @@
     &.md-has-value label{
       top: -4px;
     }
-
-    .md-input-action{
-      top: 8px;
-      border-radius: 50%;
-      background-color: $white-color !important;
-
-      .md-button-content i{
-        width: 18px;
-        height: 18px;
-
-        svg{
-          fill: $gray-light !important;
-        }
-      }
-    }
-  }
-
-  .md-autocomplete{
-    width: 200px;
-    max-width: 200px;
   }
 
   .md-collapse{
     display: flex;
     width: 100%;
     justify-content: flex-end;
+  }
+}
+
+.md-menu-content{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: $border-radius-base !important;
+  overflow: hidden;
+
+  .md-list .md-list-item a{
+    font-size: 10px;
   }
 }

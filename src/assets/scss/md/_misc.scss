@@ -84,7 +84,8 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret{
 }
 
 .sidebar .nav a,
-.caret{
+.caret,
+.sidebar .dropdown .dropdown-menu li a{
     @include transition($fast-transition-time, $transition-ease-in);
 }
 

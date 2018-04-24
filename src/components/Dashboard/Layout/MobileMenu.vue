@@ -1,15 +1,54 @@
 <template>
   <ul class="nav nav-mobile-menu">
-    <li><a href="#/" class="dropdown-toggle active" data-toggle="dropdown">
+    <li>
+      <md-field>
+        <label>Search</label>
+        <md-input v-model="search" type="text"></md-input>
+      </md-field>
+    </li>
+    <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown">
       <i class="material-icons">dashboard</i>
-      <p class="hidden-lg hidden-md">Dashboard</p></a>
+      <p class="hidden-lg hidden-md block-md">Dashboard</p></a>
+    </li>
+    <li>
+      <drop-down>
+        <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="material-icons">notifications</i>
+          <span class="notification">5</span>
+          <p class="hidden-lg hidden-md block-md">Notifications</p>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="#">Mike John responded to your email</a></li>
+          <li><a href="#">You have 5 new tasks</a></li>
+          <li><a href="#">You're now friend with Andrew</a></li>
+          <li><a href="#">Another Notification</a></li>
+          <li><a href="#">Another One</a></li>
+        </ul>
+      </drop-down>
     </li>
     <li>
       <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="material-icons">person</i>
-      <p class="hidden-lg hidden-md">Profile</p></a>
+      <p class="hidden-lg hidden-md block-md">Profile</p></a>
     </li>
   </ul>
 </template>
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      search: null,
+      selectedEmployee: null,
+      employees: [
+        'Jim Halpert',
+        'Dwight Schrute',
+        'Michael Scott',
+        'Pam Beesly',
+        'Angela Martin',
+        'Kelly Kapoor',
+        'Ryan Howard',
+        'Kevin Malone'
+      ]
+    }
+  }
+}
 </script>
