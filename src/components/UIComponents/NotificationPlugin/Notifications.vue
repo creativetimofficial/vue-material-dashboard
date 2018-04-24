@@ -16,22 +16,22 @@
   </div>
 </template>
 <script>
-  import Notification from './Notification.vue'
-  export default {
-    components: {
-      Notification
-    },
-    data () {
-      return {
-        notifications: this.$notifications.state
-      }
-    },
-    methods: {
-      removeNotification (timestamp) {
-        this.$notifications.removeNotification(timestamp)
-      }
+import Notification from './Notification.vue'
+export default {
+  components: {
+    Notification
+  },
+  data () {
+    return {
+      notifications: this.$notifications.state
+    }
+  },
+  methods: {
+    removeNotification (timestamp) {
+      this.$notifications.removeNotification(timestamp)
     }
   }
+}
 
 </script>
 <style lang="scss">

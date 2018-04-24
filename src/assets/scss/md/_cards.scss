@@ -76,6 +76,10 @@
             color: rgba($white-color, .62);
         }
 
+        a{
+          color: $white-color !important;
+        }
+
         &.card-chart{
             padding: 0;
             min-height: 160px;
@@ -344,7 +348,7 @@
 
         @include shadow-big();
 
-        & + .content{
+        & + .md-card-content{
             margin-top: 15px;
         }
     }

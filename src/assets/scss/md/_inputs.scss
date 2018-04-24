@@ -402,7 +402,19 @@ select.form-control {
     top: 26px;
   }
 
-  &:after{
+  &.md-disabled{
+    .md-input{
+      cursor: not-allowed;
+    }
+
+    &:after{
+      border-bottom: 1px dotted #d2d2d2;
+      background-color: transparent!important;
+      background-image: none !important;
+    }
+  }
+
+  &:not(.md-disabled):after{
     background-color: #d2d2d2 !important;
   }
 
@@ -428,6 +440,11 @@ select.form-control {
     border-bottom: 2px solid transparent;
     border-color: $brand-primary !important;
     transform: scaleX(.12);
+  }
+
+  &.md-has-textarea:not(.md-autogrow).md-focused label,
+  &.md-has-textarea:not(.md-autogrow).md-has-value label{
+    top: 0;
   }
 
   &.md-focused.md-has-textarea:not(.md-autogrow):before{

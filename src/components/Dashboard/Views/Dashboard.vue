@@ -144,7 +144,7 @@
           </template>
         </chart-card>
       </div>
-      <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-50">
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
         <nav-tabs-card>
           <template slot="content">
             <span class="md-nav-tabs-title">Tasks:</span>
@@ -165,7 +165,7 @@
           </template>
         </nav-tabs-card>
       </div>
-      <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-50">
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
         <md-card>
           <md-card-header data-background-color="orange">
             <h4 class="title">Employees Stats</h4>

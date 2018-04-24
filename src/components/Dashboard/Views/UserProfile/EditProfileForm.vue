@@ -10,7 +10,7 @@
         <div class="md-layout">
           <div class="md-layout-item md-size-33">
             <md-field>
-              <label>Disabled</label>
+              <label>Company (disabled)</label>
               <md-input v-model="disabled" disabled></md-input>
             </md-field>
           </div>

@@ -64,6 +64,11 @@
     display: none !important;
   }
 
+  .main-panel > .content{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
     .sidebar{
         display: none;
         box-shadow: none;
@@ -521,4 +526,14 @@
         overflow: visible;
     }
 
+}
+
+@media screen and (max-width: 576px) {
+  .tim-typo{
+    padding-left: 11% !important;
+
+    .tim-note{
+      bottom: -25px !important; 
+    }
+  }
 }
