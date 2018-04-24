@@ -8,6 +8,10 @@
     line-height: 20px;
     margin-bottom: 20px;
 
+    .notifications &{
+      margin-bottom: 0;
+    }
+
     b{
         font-weight: $font-weight-bold;
         text-transform: uppercase;
