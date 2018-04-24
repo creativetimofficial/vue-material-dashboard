@@ -1,3 +1,17 @@
+@import "~vue-material/dist/theme/engine"; // Import the theme engine
+
+@include md-register-theme("default", (
+  primary: md-get-palette-color(purple, 500), // The primary color of your application
+));
+
+@import "~vue-material/dist/theme/all"; // Apply the theme
+
+
+.md-icon.md-theme-default.md-icon-font{
+  color: #a9afbb;
+}
+
+
 $red-50: #ffebee !default;
 $red-100: #ffcdd2 !default;
 $red-200: #ef9a9a !default;
