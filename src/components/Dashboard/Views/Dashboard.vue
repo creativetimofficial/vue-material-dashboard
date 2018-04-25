@@ -2,7 +2,7 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
-        <stats-card :data-background-color="'orange'">
+        <stats-card data-background-color="orange">
           <template slot="header">
             <md-icon >content_copy</md-icon>
           </template>
@@ -23,7 +23,7 @@
         </stats-card>
       </div>
       <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
-        <stats-card :data-background-color="'green'">
+        <stats-card data-background-color="green">
           <template slot="header">
             <md-icon >store</md-icon>
           </template>
@@ -42,7 +42,7 @@
         </stats-card>
       </div>
       <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
-        <stats-card :data-background-color="'red'">
+        <stats-card data-background-color="red">
           <template  slot="header">
             <md-icon >info_outline</md-icon>
           </template>
@@ -61,7 +61,7 @@
         </stats-card>
       </div>
       <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
-        <stats-card :data-background-color="'blue'">
+        <stats-card data-background-color="blue">
           <template  slot="header">
             <i class="fab fa-twitter"></i>
           </template>
@@ -85,7 +85,7 @@
           :chart-data="dailySalesChart.data"
           :chart-options="dailySalesChart.options"
           :chart-type="'Line'"
-          :data-background-color="'green'">
+          data-background-color="green">
           <template slot="content">
             <h4 class="title">Daily Sales</h4>
               <p class="category">
@@ -107,7 +107,7 @@
           :chart-options="emailsSubscriptionChart.options"
           :chart-responsive-options="emailsSubscriptionChart.responsiveOptions"
           :chart-type="'Bar'"
-          :data-background-color="'orange'">
+          data-background-color="orange">
           <template slot="content">
             <h4 class="title">EmailSubscription</h4>
               <p class="category">
@@ -128,7 +128,7 @@
           :chart-data="dataCompletedTasksChart.data"
           :chart-options="dataCompletedTasksChart.options"
           :chart-type="'Line'"
-          :data-background-color="'red'">
+          data-background-color="red">
           <template slot="content">
             <h4 class="title">Completed Tasks</h4>
               <p class="category">
@@ -172,7 +172,7 @@
             <p class="category">New employees on 15th September, 2016</p>
           </md-card-header>
           <md-card-content>
-            <ordered-table></ordered-table>
+            <ordered-table table-header-color="orange"></ordered-table>
           </md-card-content>
         </md-card>
       </div>
