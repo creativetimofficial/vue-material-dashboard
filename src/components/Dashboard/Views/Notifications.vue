@@ -87,8 +87,6 @@ export default {
   methods: {
     notifyVue (verticalAlign, horizontalAlign) {
       var color = Math.floor((Math.random() * 4) + 1)
-      console.log('intra')
-      console.log(this.$notify)
       this.$notify(
         {
           message: 'Welcome to <b>Material Dashboard</b> - a beautiful freebie for every web developer.',
