@@ -1,6 +1,5 @@
 .md-table-cell-container{
-  padding: 12px 8px;
-
+  padding: 0;
   .md-table-cell:last-child &{
     padding-right: 0;
     text-align: right;
@@ -20,6 +19,7 @@
 }
 
 .md-table-cell{
+  padding: 12px 8px;
   font-size: $font-size-base;
 }
 
