@@ -148,3 +148,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     margin-right: 10px;
   }
 }
+
+.md-theme-default :not(input):not(textarea)::selection{
+  background-color: #c8c8c8 !important;
+}
