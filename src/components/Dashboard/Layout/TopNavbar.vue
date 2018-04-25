@@ -23,7 +23,7 @@
               <p class="hidden-lg hidden-md">Dashboard</p>
             </md-list-item>
 
-            <md-list-item to="/admin/notifications" class="dropdown">
+            <md-list-item to="/notifications" class="dropdown">
               <drop-down>
                 <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="material-icons">notifications</i>
@@ -40,7 +40,7 @@
               </drop-down>
             </md-list-item>
 
-            <md-list-item to="/admin/user">
+            <md-list-item to="/user">
               <i class="material-icons">person</i>
               <p class="hidden-lg hidden-md">Profile</p>
             </md-list-item>
