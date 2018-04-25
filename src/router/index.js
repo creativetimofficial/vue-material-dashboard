@@ -17,12 +17,7 @@ export default new Router({
     {
       path: '/',
       component: DashboardLayout,
-      redirect: '/admin/dashboard'
-    },
-    {
-      path: '/admin',
-      component: DashboardLayout,
-      redirect: '/admin/dashboard',
+      redirect: '/dashboard',
       children: [
         {
           path: 'dashboard',

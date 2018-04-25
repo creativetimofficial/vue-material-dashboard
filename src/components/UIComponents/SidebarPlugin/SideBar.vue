@@ -60,37 +60,37 @@ export default{
         {
           name: 'Dashboard',
           icon: 'dashboard',
-          path: '/admin/dashboard'
+          path: '/dashboard'
         },
         {
           name: 'User Profile',
           icon: 'person',
-          path: '/admin/user'
+          path: '/user'
         },
         {
           name: 'Table List',
           icon: 'content_paste',
-          path: '/admin/table'
+          path: '/table'
         },
         {
           name: 'Typography',
           icon: 'library_books',
-          path: '/admin/typography'
+          path: '/typography'
         },
         {
           name: 'Icons',
           icon: 'bubble_chart',
-          path: '/admin/icons'
+          path: '/icons'
         },
         {
           name: 'Maps',
           icon: 'location_on',
-          path: '/admin/maps'
+          path: '/maps'
         },
         {
           name: 'Notifications',
           icon: 'notifications',
-          path: '/admin/notifications'
+          path: '/notifications'
         }
       ]
     },
