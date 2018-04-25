@@ -8,55 +8,55 @@
 
       <md-card-content>
         <div class="md-layout">
-          <div class="md-layout-item md-size-33">
+          <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
               <label>Company (disabled)</label>
               <md-input v-model="disabled" disabled></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-33">
+          <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
               <label>User Name</label>
               <md-input v-model="username" type="text"></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-33">
+          <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
               <label>Email Address</label>
               <md-input v-model="emailadress" type="email"></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-50">
+          <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
               <label>First Name</label>
               <md-input v-model="firstname" type="text"></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-50">
+          <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
               <label>Last Name</label>
               <md-input v-model="lastname" type="text"></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-100">
+          <div class="md-layout-item md-small-size-100 md-size-100">
             <md-field>
               <label>Adress</label>
               <md-input v-model="address" type="text"></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-33">
+          <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
               <label>City</label>
               <md-input v-model="city" type="text"></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-33">
+          <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
               <label>Country</label>
               <md-input v-model="country" type="text"></md-input>
             </md-field>
           </div>
-          <div class="md-layout-item md-size-33">
+          <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
               <label>Postal Code</label>
               <md-input v-model="code" type="number"></md-input>
