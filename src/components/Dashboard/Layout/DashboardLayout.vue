@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <notifications></notifications>
-    
+
     <side-bar></side-bar>
 
     <div class="main-panel">
