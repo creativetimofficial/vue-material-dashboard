@@ -8,7 +8,7 @@
             <p class="category">Here is a subtitle for this table</p>
           </md-card-header>
           <md-card-content>
-            <simple-table></simple-table>
+            <simple-table table-header-color="purple"></simple-table>
           </md-card-content>
         </md-card>
       </div>
