@@ -4,6 +4,19 @@
     height: 100vh;
 }
 
+.md-list-item{
+  .md-list-item-container{
+    .md-ripple{
+      padding: 10px 15px;
+      border-radius: $border-radius-base;
+
+      > span{
+        border-radius: $border-radius-base;
+      }
+    }
+  }
+}
+
 .sidebar,
 .off-canvas-sidebar{
     position: fixed;
@@ -14,6 +27,27 @@
     @include shadow-big();
     background-size: cover;
     background-position: center center;
+
+    .md-list{
+      background-color: transparent !important;
+
+      .md-list-item a{
+        text-transform: capitalize;
+      }
+
+      .md-list-item-content{
+        justify-content: flex-start;
+        min-height: auto;
+      }
+
+      & .md-list-item-container:hover{
+        background-color: rgba(200, 200, 200, 0.2) !important;
+      }
+    }
+
+    .md-ripple span .md-ripple-wave{
+      background-color: rgba(200, 200, 200, 0.4) !important;
+    }
 
 
     .sidebar-wrapper{
@@ -71,13 +105,13 @@
 
           a{
             display: flex;
-            padding: 10px 15px;
             text-decoration: none;
             margin: 10px 15px 0;
             border-radius: $border-radius-base;
             color: $black-color !important;
             white-space: nowrap;
             cursor: pointer;
+            width: auto;
           }
 
             &:first-child > a{
@@ -90,7 +124,7 @@
                 color: $black-color;
             }
 
-            &.active > a{
+            .active {
                 color: #FFFFFF !important;
 
                 i{
@@ -100,17 +134,20 @@
         }
 
         p{
-            margin: 0;
-            line-height: 30px;
-            font-size: 14px;
-            // font-weight: 600;
-            // text-transform: uppercase;
+          margin: 0;
+          line-height: 30px;
+          font-size: 14px;
+          position: relative;
+          display: block;
+          height: auto;
+          font-weight: $font-weight-light;
+          white-space: nowrap;
         }
 
         i{
-            font-size: 24px;
+            font-size: 24px !important;
             float: left;
-            margin-right: 15px;
+            margin-right: 15px !important;
             margin-left: 0;
             line-height: 30px;
             width: 30px;

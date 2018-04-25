@@ -139,16 +139,3 @@
     z-index: -1;
   }
 }
-
-.md-list-item{
-  .md-list-item-container{
-    .md-ripple{
-      padding: 10px 15px;
-      border-radius: $border-radius-base;
-
-      > span{
-        border-radius: $border-radius-base;
-      }
-    }
-  }
-}

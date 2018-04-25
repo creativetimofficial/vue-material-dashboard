@@ -254,23 +254,11 @@
 
 }
 
-// for social buttons
-@mixin social-buttons-color ($color){
-    background-color: $color;
-    color: #fff;
-    @include shadow-2dp-color($color);
-
-    &:focus,
-    &:active,
-    &:hover{
-        background-color: $color;
-        color: #fff;
-        @include button-shadow-color($color);
-    }
-
-    &.btn-simple{
-        color: $color;
-        background-color: transparent;
-        box-shadow: none;
+@mixin set-background-color-button ($color){
+    .nav{
+        .md-list-item-container.active {
+            background-color: $color !important;
+            @include shadow-big-color($color);
+        }
     }
 }

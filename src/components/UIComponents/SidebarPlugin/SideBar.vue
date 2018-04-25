@@ -13,14 +13,14 @@
     </div>
     <div class="sidebar-wrapper">
       <mobile-menu></mobile-menu>
-      <ul class="nav">
+      <md-list class="nav">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
         <sidebar-link v-for="(link,index) in sidebarLinks"
                       :key="link.name + index"
                       :to="link.path"
                       :link="link">
         </sidebar-link>
-      </ul>
+      </md-list>
     </div>
   </div>
 </template>

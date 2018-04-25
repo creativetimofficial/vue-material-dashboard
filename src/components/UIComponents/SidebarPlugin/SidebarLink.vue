@@ -1,13 +1,9 @@
 <template>
-  <component :is="tag"
-             @click.native="hideSidebar"
-             v-bind="$attrs"
-             tag="li">
-    <a class="nav-link">
-        <md-icon>{{link.icon}}</md-icon>
-        <p>{{link.name}}</p>
-    </a>
-  </component>
+  <md-list-item @click.native="hideSidebar"
+                v-bind="$attrs">
+    <md-icon>{{link.icon}}</md-icon>
+    <p>{{link.name}}</p>
+  </md-list-item>
 </template>
 <script>
 export default{

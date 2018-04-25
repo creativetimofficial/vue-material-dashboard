@@ -1,8 +1,13 @@
 @import "~vue-material/dist/theme/engine"; // Import the theme engine
 
+@include md-register-theme("selection-black", (
+    accent: md-get-palette-color(black, 500)
+  ));
+
 @include md-register-theme("default", (
   primary: md-get-palette-color(purple, 500), // The primary color of your application
 ));
+
 
 @import "~vue-material/dist/theme/all"; // Apply the theme
 
