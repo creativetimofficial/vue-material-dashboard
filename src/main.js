@@ -21,7 +21,7 @@ import Chartist from 'chartist'
 const router = new VueRouter({
   routes, // short for routes: routes
   linkExactActiveClass: 'nav-item active'
-});
+})
 
 Vue.use(VueRouter)
 Vue.use(MaterialDashboard)
