@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar" :data-color="activeColor" :data-image="backgroundImage" :style="sidebarStyle">
+  <div class="sidebar" :data-color="sidebarItemColor" :data-image="sidebarBackgroundImage" :style="sidebarStyle">
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
         <div class="logo-img">
@@ -38,7 +38,7 @@ export default{
       type: String,
       default: 'Vue MD'
     },
-    backgroundImage: {
+    sidebarBackgroundImage: {
       type: String,
       default: require('@/assets/img/sidebar-1.jpg')
     },
@@ -46,7 +46,7 @@ export default{
       type: String,
       default: require('@/assets/img/vue-logo.png')
     },
-    activeColor: {
+    sidebarItemColor: {
       type: String,
       default: 'purple',
       validator: (value) => {
@@ -107,7 +107,7 @@ export default{
   computed: {
     sidebarStyle () {
       return {
-        backgroundImage: `url(${this.backgroundImage})`
+        backgroundImage: `url(${this.sidebarBackgroundImage})`
       }
     }
   }

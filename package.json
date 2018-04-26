@@ -14,8 +14,10 @@
     "google-maps": "^3.2.1",
     "vue": "^2.5.13",
     "vue-clickaway": "^2.2.2",
+    "vue-github-buttons": "^2.0.5",
     "vue-material": "^1.0.0-beta-8",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-social-sharing": "^2.3.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.6",

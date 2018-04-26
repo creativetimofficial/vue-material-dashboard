@@ -23,6 +23,10 @@
       display: none;
     }
 
+    &.md-block{
+      width: 100%;
+    }
+
     &,
     &.md-default{
         @include btn-styles($gray-light);
