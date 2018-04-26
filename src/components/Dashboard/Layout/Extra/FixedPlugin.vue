@@ -26,7 +26,7 @@
 
         <li class="button-container">
           <div class="">
-            <md-button class="md-primary md-block" href="https://www.creative-tim.com/product/material-dashboard" target="_blank">Free Download</md-button>
+            <md-button class="md-success md-block" href="https://www.creative-tim.com/product/material-dashboard" target="_blank">Free Download</md-button>
           </div>
         </li>
 
@@ -43,17 +43,17 @@
                           title="Vue Light Bootstrap Dashboard PRO - Premium Bootstrap Admin Template for Vue.js"
                           hashtags="vuejs, dashboard, bootstrap" twitter-user="creativetim">
             <div class="centered-buttons">
-              <network network="facebook" class="btn btn-facebook btn-icon btn-round">
-                <i class="fa fa-fw fa-facebook"></i>
+              <network network="facebook" class="md-button md-round md-just-icon md-facebook">
+                <i class="fab fa-facebook-f"></i>
               </network>
-              <network network="pinterest" class="btn btn-pinterest btn-icon btn-round">
-                <i class="fa fa-fw fa-pinterest"></i>
-              </network>
-              <network network="twitter" class="btn btn-twitter btn-icon btn-round">
-                <i class="fa fa-fw fa-twitter"></i>
+              <network network="twitter" class="md-button md-round md-just-icon md-twitter">
+                <i class="fab fa-twitter"></i>
               </network>
             </div>
           </social-sharing>
+        </li>
+        <li class="github-buttons">
+          <gh-btns-star slug="timcreative/vue-material-dashboard" show-count></gh-btns-star>
         </li>
       </ul>
     </div>

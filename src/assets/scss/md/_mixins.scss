@@ -262,3 +262,33 @@
         }
     }
 }
+
+// for social buttons
+@mixin social-buttons-color ($color){
+    background-color: $color !important;
+    color: #fff;
+    @include shadow-2dp-color($color);
+
+    &:focus,
+    &:active,
+    &:hover{
+        background-color: $color !important;
+        color: #fff;
+        @include button-shadow-color($color);
+    }
+
+    &.btn-simple{
+        color: $color;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+@mixin social-buttons(){
+  &.md-facebook {
+    @include social-buttons-color($social-facebook);
+  }
+  &.md-twitter {
+    @include social-buttons-color($social-twitter);
+  }
+}
