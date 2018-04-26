@@ -1,6 +1,7 @@
 const markdownParser = require('./markdownParser')
 const path = require('path');
 module.exports = {
+  base: '/vue-material-dashboard/documentation/',
   markdown: {
     config: markdownParser
   },
