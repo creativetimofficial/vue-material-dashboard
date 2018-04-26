@@ -12,9 +12,6 @@ module.exports = {
             ]
           },
           options: {
-            lineSmooth: this.$Chartist.Interpolation.cardinal({
-              tension: 0
-            }),
             low: 0,
             high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
             chartPadding: {
