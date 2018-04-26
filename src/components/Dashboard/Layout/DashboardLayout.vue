@@ -40,6 +40,6 @@ export default {
       sidebarBackground: 'green',
       sidebarBackgroundImage: require('@/assets/img/sidebar-1.jpg')
     }
-  },
+  }
 }
 </script>
