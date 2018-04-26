@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'SimpleTable',
+  name: 'ordered-table',
   props: {
     tableHeaderColor: {
       type: String,

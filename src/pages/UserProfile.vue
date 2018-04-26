@@ -2,7 +2,7 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-size-66">
-        <edit-profile-form data-background-color="purple">
+        <edit-profile-form data-background-color="green">
 
         </edit-profile-form>
       </div>
@@ -16,13 +16,15 @@
 </template>
 
 <script>
-import EditProfileForm from './UserProfile/EditProfileForm.vue'
-import UserCard from './UserProfile/UserCard.vue'
+import {
+  EditProfileForm,
+  UserCard
+} from '@/pages'
 
 export default{
   components: {
-    'edit-profile-form': EditProfileForm,
-    'user-card': UserCard
+    EditProfileForm,
+    UserCard
   }
 }
 </script>

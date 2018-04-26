@@ -69,7 +69,7 @@
             </md-field>
           </div>
           <div class="md-layout-item md-size-100 text-right">
-            <md-button class="md-raised md-primary">Update Profile</md-button>
+            <md-button class="md-raised md-success">Update Profile</md-button>
           </div>
         </div>
 
@@ -79,6 +79,7 @@
 </template>
 <script>
 export default {
+  name: 'edit-profile-form',
   props: {
     dataBackgroundColor: {
       type: String,

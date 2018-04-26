@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'SimpleTable',
+  name: 'simple-table',
   props: {
     tableHeaderColor: {
       type: String,

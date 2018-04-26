@@ -20,8 +20,8 @@
 </style>
 <script>
 import TopNavbar from './TopNavbar.vue'
-import DashboardContent from './Content.vue'
 import ContentFooter from './ContentFooter.vue'
+import DashboardContent from './Content.vue'
 
 export default {
   components: {
