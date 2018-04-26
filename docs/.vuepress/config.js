@@ -5,10 +5,7 @@ module.exports = {
     config: markdownParser
   },
   configureWebpack: (config, isServer) => {
-    if (!isServer) {
-      // mutate the config for client
-      config.resolve.alias['@'] = path.resolve(__dirname, '../../src')
-    }
+    config.resolve.alias['@'] = path.resolve(__dirname, '../../src')
   },
   head: [
     ['link', { rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons` }]
