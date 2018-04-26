@@ -1,5 +1,5 @@
 <template>
-  <md-list-item @click.native="hideSidebar"
+  <md-list-item @click="hideSidebar"
                 v-bind="$attrs">
     <md-icon>{{link.icon}}</md-icon>
     <p>{{link.name}}</p>
