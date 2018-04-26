@@ -13,6 +13,7 @@
 </template>
 <script>
 export default{
+  name: 'drop-down',
   props: {
     title: String,
     icon: String

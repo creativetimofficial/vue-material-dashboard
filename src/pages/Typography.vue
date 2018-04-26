@@ -3,7 +3,7 @@
     <div class="md-layout">
       <div class="md-layout-item">
         <md-card>
-          <md-card-header data-background-color="purple">
+          <md-card-header data-background-color="green">
             <h4 class="title">Material Dashboard Heading</h4>
             <p class="category">Created using Roboto Font Family</p>
           </md-card-header>

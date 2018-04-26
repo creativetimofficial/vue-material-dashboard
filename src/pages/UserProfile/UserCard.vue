@@ -10,12 +10,13 @@
       <p class="card-description">
           Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
       </p>
-      <md-button class="md-round md-primary">Follow</md-button>
+      <md-button class="md-round md-success">Follow</md-button>
     </md-card-content>
   </md-card>
 </template>
 <script>
 export default {
+  name: 'user-card',
   props: {
     cardUserImage: {
       type: String,

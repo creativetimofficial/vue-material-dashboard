@@ -26,7 +26,7 @@
 </template>
 <script>
 import SidebarLink from './SidebarLink.vue'
-import MobileMenu from '@/components/Dashboard/Layout/MobileMenu.vue'
+import MobileMenu from '@/pages/Layout/MobileMenu.vue'
 
 export default{
   components: {
@@ -48,7 +48,7 @@ export default{
     },
     sidebarItemColor: {
       type: String,
-      default: 'purple',
+      default: 'green',
       validator: (value) => {
         let acceptedValues = ['', 'purple', 'blue', 'green', 'orange', 'red']
         return acceptedValues.indexOf(value) !== -1

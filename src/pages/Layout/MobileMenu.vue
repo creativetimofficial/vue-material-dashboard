@@ -6,16 +6,16 @@
         <md-input v-model="search" type="text"></md-input>
       </md-field>
     </li>
-    <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown">
+    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
       <i class="material-icons">dashboard</i>
-      <p class="hidden-lg hidden-md block-md">Dashboard</p></a>
+      <p>Dashboard</p></a>
     </li>
     <li>
       <drop-down>
         <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
           <i class="material-icons">notifications</i>
           <span class="notification">5</span>
-          <p class="hidden-lg hidden-md block-md">Notifications</p>
+          <p>Notifications</p>
         </a>
         <ul class="dropdown-menu dropdown-menu-right">
           <li><a href="#">Mike John responded to your email</a></li>
@@ -28,7 +28,7 @@
     </li>
     <li>
       <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="material-icons">person</i>
-      <p class="hidden-lg hidden-md block-md">Profile</p></a>
+      <p>Profile</p></a>
     </li>
   </ul>
 </template>

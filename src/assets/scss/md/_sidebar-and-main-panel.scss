@@ -101,6 +101,12 @@
     .nav{
         margin-top: 20px;
 
+        &.nav-mobile-menu{
+          li a {
+            padding: 10px 15px;
+          }
+        }
+
         li{
 
           a{

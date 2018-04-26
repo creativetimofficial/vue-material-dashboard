@@ -181,11 +181,13 @@
 </template>
 
 <script>
-import StatsCard from '@/components/UIComponents/Cards/StatsCard.vue'
-import ChartCard from '@/components/UIComponents/Cards/ChartCard.vue'
-import NavTabsCard from '@/components/UIComponents/Cards/NavTabsCard.vue'
-import NavTabsTable from '@/components/UIComponents/Tables/NavTabsTable.vue'
-import OrderedTable from '@/components/UIComponents/Tables/OrderedTable.vue'
+import {
+  StatsCard,
+  ChartCard,
+  NavTabsCard,
+  NavTabsTable,
+  OrderedTable
+} from '@/components'
 
 export default{
   components: {

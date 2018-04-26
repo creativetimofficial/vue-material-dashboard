@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'NavTabsTable',
+  name: 'nav-tabs-table',
   data () {
     return {
       selected: [],
