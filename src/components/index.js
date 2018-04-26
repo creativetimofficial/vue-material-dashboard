@@ -19,7 +19,5 @@ export{
   NavTabsTable,
   OrderedTable,
   SimpleTable,
-  Dropdown,
-  UserCard,
-  EditProfileForm
+  Dropdown
 }
