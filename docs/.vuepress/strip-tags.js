@@ -7,7 +7,7 @@
 
 'use strict';
 
-const cheerio = require('../../node_modules/cheerio');
+const cheerio = require('cheerio');
 
 exports.strip = function(str, tags) {
   const $ = cheerio.load(str, {decodeEntities: false, xmlMode: true});

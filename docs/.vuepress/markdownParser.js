@@ -5,7 +5,7 @@ function convert(str) {
   return str;
 }
 const striptags = require('./strip-tags');
-const markdownitContainer = require('../../node_modules/markdown-it-container');
+const markdownitContainer = require('markdown-it-container');
 
 module.exports = md => {
   // use more markdown-it plugins!
