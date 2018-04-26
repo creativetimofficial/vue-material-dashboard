@@ -32,6 +32,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "cheerio": "^1.0.0-rc.2",
     "es6-promise": "^4.2.4",
+    "webpack": "^4.6.0",
     "lint-staged": "^6.0.0",
     "markdown-it-container": "^2.0.0",
     "node-sass": "^4.8.3",
