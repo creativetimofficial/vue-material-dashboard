@@ -29,7 +29,7 @@ Vue.use(GlobalComponents)
 Vue.use(GlobalDirectives)
 Vue.use(Notifications)
 
-Vue.prototype.$Chartist = Chartist;
+Vue.prototype.$Chartist = Chartist
 
 /* eslint-disable no-new */
 new Vue({
