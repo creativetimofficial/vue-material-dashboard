@@ -27,7 +27,7 @@ module.exports = {
 }
 </script>
 
-## Stats cards
+### Stats cards
 
 :::demo
 ```html

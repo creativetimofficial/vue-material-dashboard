@@ -1,4 +1,70 @@
+@import '../../src/assets/scss/md/_variables';
+
 .theme-container .page {
   min-height: 100vh;
   background-color: white;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  background-color: $brand-success;
+  box-shadow: 0 12px 20px -10px rgba(76,175,80,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(76,175,80,.2);
+  border: 0;
+  height: 70px;
+
+  .links{
+    top: unset;
+
+    .search-box{
+      .suggestions li a{
+        color: $black-color;
+
+        &:hover,
+        &:focus{
+          color: $brand-success !important;
+        }
+      }
+    }
+  }
+
+  .sidebar-button{
+    top: 0.9rem;
+    
+    svg path{
+      fill: $white-color;
+    }
+  }
+
+  .site-name{
+    font-size: 1.125rem;
+    color: $white-color;
+    font-weight: 300;
+  }
+}
+
+.sidebar{
+  a.sidebar-link{
+    color: $black-color !important;
+
+    &:hover,
+    &:focus{
+      color: $brand-success !important;
+    }
+
+    &.active{
+      color: $brand-success !important;
+    }
+  }
+}
+
+.page .page-nav{
+  .next a,
+  .next a:hover,
+  .next a:focus,
+  .prev a,
+  .prev a:hover,
+  .prev a:focus{
+    color: $brand-success !important;
+  }
 }
