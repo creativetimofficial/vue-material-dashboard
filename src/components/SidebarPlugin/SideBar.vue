@@ -12,14 +12,16 @@
       </a>
     </div>
     <div class="sidebar-wrapper">
-      <mobile-menu></mobile-menu>
+      <slot name="content"></slot>
       <md-list class="nav">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
-        <sidebar-link v-for="(link,index) in sidebarLinks"
-                      :key="link.name + index"
-                      :to="link.path"
-                      :link="link">
-        </sidebar-link>
+        <slot>
+          <sidebar-link v-for="(link,index) in sidebarLinks"
+                        :key="link.name + index"
+                        :to="link.path"
+                        :link="link">
+          </sidebar-link>
+        </slot>      
       </md-list>
     </div>
   </div>
@@ -31,7 +33,7 @@ import MobileMenu from '@/pages/Layout/MobileMenu.vue'
 export default{
   components: {
     SidebarLink,
-    'mobile-menu': MobileMenu
+    MobileMenu
   },
   props: {
     title: {
@@ -56,43 +58,7 @@ export default{
     },
     sidebarLinks: {
       type: Array,
-      default: () => [
-        {
-          name: 'Dashboard',
-          icon: 'dashboard',
-          path: '/dashboard'
-        },
-        {
-          name: 'User Profile',
-          icon: 'person',
-          path: '/user'
-        },
-        {
-          name: 'Table List',
-          icon: 'content_paste',
-          path: '/table'
-        },
-        {
-          name: 'Typography',
-          icon: 'library_books',
-          path: '/typography'
-        },
-        {
-          name: 'Icons',
-          icon: 'bubble_chart',
-          path: '/icons'
-        },
-        {
-          name: 'Maps',
-          icon: 'location_on',
-          path: '/maps'
-        },
-        {
-          name: 'Notifications',
-          icon: 'notifications',
-          path: '/notifications'
-        }
-      ]
+      default: () => []
     },
     autoClose: {
       type: Boolean,

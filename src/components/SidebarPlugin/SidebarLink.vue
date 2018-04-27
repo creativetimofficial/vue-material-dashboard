@@ -1,13 +1,14 @@
 <template>
   <md-list-item @click="hideSidebar"
                 v-bind="$attrs">
-    <md-icon>{{link.icon}}</md-icon>
-    <p>{{link.name}}</p>
+    <slot>
+      <md-icon>{{link.icon}}</md-icon>
+      <p>{{link.name}}</p>
+    </slot>
   </md-list-item>
 </template>
 <script>
 export default{
-  inheritAttrs: false,
   inject: {
     autoClose: {
       default: true
