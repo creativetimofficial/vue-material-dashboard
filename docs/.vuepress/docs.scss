@@ -5,6 +5,19 @@
   background-color: white;
 }
 
+h1{
+  font-size: 3rem !important;
+}
+
+h2{
+  border: 0;
+}
+
+p{
+  font-size: 15px;
+}
+
+
 .navbar{
   display: flex;
   align-items: center;
@@ -30,7 +43,7 @@
 
   .sidebar-button{
     top: 0.9rem;
-    
+
     svg path{
       fill: $white-color;
     }

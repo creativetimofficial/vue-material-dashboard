@@ -1,4 +1,8 @@
-## Getting Started
+---
+title: Getting started
+---
+
+# Getting Started
 
 The Vue Material Dashboard with Vue.js is built on top of [Vue Material](https://vuematerial.io/),
 so you can safely use it on your existing or new Vue Material project.

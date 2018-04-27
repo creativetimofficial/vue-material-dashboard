@@ -1,4 +1,4 @@
-## Cards
+# Cards
 
 <script>
 module.exports = {
@@ -27,29 +27,31 @@ module.exports = {
 }
 </script>
 
-### Stats cards
+## Stats cards
+
+We think cards are one of the best ways to organise your information. We went all out with possibilities and we recommended finding the right fit for your product. You can easily use
 
 :::demo
 ```html
 <template>
   <div>
   <stats-card data-background-color="green">
-        <template slot="header">
-          <md-icon >store</md-icon>
-        </template>
+    <template slot="header">
+      <md-icon >store</md-icon>
+    </template>
 
-        <template slot="content">
-          <p class="category">Revenue</p>
-          <h3 class="title">$34,245</h3>
-        </template>
+    <template slot="content">
+      <p class="category">Revenue</p>
+      <h3 class="title">$34,245</h3>
+    </template>
 
-        <template slot="footer">
-          <div class="stats">
-              <md-icon>date_range</md-icon>
-              Last 24 Hours
-          </div>
-        </template>
-      </stats-card>
+    <template slot="footer">
+      <div class="stats">
+          <md-icon>date_range</md-icon>
+          Last 24 Hours
+      </div>
+    </template>
+  </stats-card>
   </div>
 </template>
 

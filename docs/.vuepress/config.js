@@ -15,8 +15,22 @@ module.exports = {
   ],
   themeConfig: {
     sidebar: [
-      '/component-docs/getting-started',
-      '/component-docs/cards'
+      {
+        title: 'General Information',
+        collapsable: false,
+        children: [
+          '/component-docs/getting-started',
+          '/component-docs/license'
+        ]
+      },
+      {
+        title: 'Components',
+        collapsable: false,
+        children: [
+          '/component-docs/buttons',
+          '/component-docs/cards'
+        ]
+      }
     ]
   }
 };
