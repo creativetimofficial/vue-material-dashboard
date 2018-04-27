@@ -21,7 +21,7 @@
                         :to="link.path"
                         :link="link">
           </sidebar-link>
-        </slot>      
+        </slot>
       </md-list>
     </div>
   </div>
