@@ -66,8 +66,8 @@
         a:hover,
         a:focus,
         a:active {
-            background-color: $brand-primary;
-            color: #FFFFFF;
+            background-color: $brand-primary !important;
+            color: #FFFFFF !important;
         }
     }
 

@@ -19,7 +19,7 @@
       &:hover,
       &:focus {
         color: $white-color !important;
-        background-color: $variation-color;
+        background-color: $variation-color !important;
         @include shadow-big-color($variation-color);
       }
     }
@@ -29,7 +29,7 @@
       &:focus {
         color: $white-color !important;
       }
-      background-color: $variation-color;
+      background-color: $variation-color !important;
       color: $white-color !important;
       @include shadow-big-color($variation-color);
     }
