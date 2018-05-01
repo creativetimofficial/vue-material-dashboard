@@ -8,9 +8,21 @@
     }
   }
 
-  &.md-checked .md-checkbox-container:after{
-    border-color: $brand-primary !important;
-    top: 0;
-    left: 5px;
+  &.md-checked .md-checkbox-container{
+    &:after{
+      border-color: $brand-primary !important;
+      top: 1px;
+      left: 6px;
+    }
+  }
+
+  &.md-disabled .md-checkbox-label{
+    opacity: .26;
+  }
+
+  &.md-checked.md-disabled .md-checkbox-container{
+    background-color: transparent !important;
+    border-color: rgba(0, 0, 0, .54) !important;
+    opacity: .26;
   }
 }
