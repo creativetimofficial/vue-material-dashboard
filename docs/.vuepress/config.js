@@ -29,7 +29,8 @@ module.exports = {
         children: [
           '/component-docs/buttons',
           '/component-docs/cards',
-          '/component-docs/checkboxes'
+          '/component-docs/checkboxes',
+          '/component-docs/dropdown'
         ]
       }
     ]
