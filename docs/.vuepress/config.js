@@ -28,7 +28,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/component-docs/buttons',
-          '/component-docs/cards'
+          '/component-docs/cards',
+          '/component-docs/checkboxes'
         ]
       }
     ]

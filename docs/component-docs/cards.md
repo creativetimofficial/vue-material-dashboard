@@ -1,5 +1,29 @@
 # Cards
 
+We think cards are one of the best ways to organise your information. We went all out with possibilities and we recommended finding the right fit for your product.
+
+
+```js
+import {StatsCard} from 'src/components'
+import {ChartCard} from 'src/components'
+```
+
+### Local Usage
+
+```js
+components: {
+  ChartCard,
+  StatsCard
+}
+```
+
+### Global Usage
+
+```js
+Vue.component(ChartCard)
+Vue.component(StatsCard)
+```
+
 <script>
 module.exports = {
   data() {
@@ -27,9 +51,7 @@ module.exports = {
 }
 </script>
 
-## Stats cards
-
-We think cards are one of the best ways to organise your information. We went all out with possibilities and we recommended finding the right fit for your product. You can easily use
+## Stats card
 
 :::demo
 ```html
@@ -37,7 +59,7 @@ We think cards are one of the best ways to organise your information. We went al
   <div>
   <stats-card data-background-color="green">
     <template slot="header">
-      <md-icon >store</md-icon>
+      <md-icon>store</md-icon>
     </template>
 
     <template slot="content">
@@ -60,6 +82,26 @@ We think cards are one of the best ways to organise your information. We went al
 </script>
 ```
 :::
+
+### StatsCard Attributes
+| Attribute      | Description    | Type      | Accepted values       | Default   |
+|---------- |-------- |---------- |-------------  |-------- |
+| type     | Card type   | string  |   primary/danger/success/info/warning        |     primary     |
+| icon     | Card icon   | string  |   -        |     -     |
+| title     | Card title   | string  |   -        |     —     |
+| subTitle     | Card subtitle (displayed above with smaller font)  | string  |      -        |     -     |
+
+### StatsCard Slots
+| Name | Description |
+|---------- |-------- |
+|  icon  | Content for card icon |
+|  default  | Default card content |
+|  footer  | Content for card footer |
+
+
+## Chart card
+
+For the implementation of graphic charts, we used [Chartist.js](https://gionkunz.github.io/chartist-js/).
 
 :::demo
 ```html
@@ -117,18 +159,17 @@ We think cards are one of the best ways to organise your information. We went al
 ```
 :::
 
-
-### StatsCard Attributes
+### ChartCard Attributes
 | Attribute      | Description    | Type      | Accepted values       | Default   |
 |---------- |-------- |---------- |-------------  |-------- |
-| type     | Card type   | string  |   primary/danger/success/info/warning        |     primary     |
-| icon     | Card icon   | string  |   -        |     -     |
-| title     | Card title   | string  |   -        |     —     |
+| type     | Chart type   | string  |   line/bar/pie        |    -     |
+| options     | Chart options   | string  |   -        |    -     |
+| data     | Chart data   | string  |   -        |    -     |
+| title     | Card title   | string  |   -       |     —     |
 | subTitle     | Card subtitle (displayed above with smaller font)  | string  |      -        |     -     |
 
-### StatsCard Slots
+### ChartCard Slots
 | Name | Description |
 |---------- |-------- |
-|  icon  | Content for card icon |
 |  default  | Default card content |
 |  footer  | Content for card footer |
