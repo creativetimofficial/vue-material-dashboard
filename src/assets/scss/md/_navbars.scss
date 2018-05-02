@@ -1,6 +1,20 @@
 .md-toolbar {
   min-height: 56px;
   padding: 10px 15px;
+  border-radius: 3px;
+
+  &.md-transparent{
+    background-color: transparent !important;
+    box-shadow: none;
+
+    .md-title,
+    .md-list .md-list-item-content,
+    &,
+    &:hover,
+    &:focus{
+      color: $black-color !important;
+    }
+  }
 
   .notification{
     position: absolute;
@@ -58,21 +72,27 @@
 
   // default color for dropdown
   @include dropdown-colors($brand-primary);
+  @include toolbar-colors($gray-light);
 
   &.md-primary{
     @include dropdown-colors($brand-primary);
+    @include toolbar-colors($brand-primary);
   }
   &.md-danger{
     @include dropdown-colors($brand-danger);
+    @include toolbar-colors($brand-danger);
   }
   &.md-warning{
     @include dropdown-colors($brand-warning);
+    @include toolbar-colors($brand-warning);
   }
   &.md-info{
     @include dropdown-colors($brand-info);
+    @include toolbar-colors($brand-info);
   }
   &.md-success{
     @include dropdown-colors($brand-success);
+    @include toolbar-colors($brand-success);
   }
 
   &.navbar-transparent{
