@@ -87,10 +87,12 @@ p{
   width: 11%;
 }
 
-th, td, tr{
-  border: 0;
-}
+.md-card{
+  th, td, tr{
+    border: 0;
+  }
 
-tr:nth-child(2n){
-  background-color: transparent;
+  tr:nth-child(2n){
+    background-color: transparent;
+  }
 }
