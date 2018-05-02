@@ -30,7 +30,7 @@
           :chart-type="'Bar'"
           data-background-color="red">
           <template slot="content">
-            <h4 class="title">EmailSubscription</h4>
+            <h4 class="title">Email Subscription</h4>
               <p class="category">
                 Last Campaign Performance
               </p>
