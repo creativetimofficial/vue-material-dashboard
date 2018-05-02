@@ -283,9 +283,14 @@
     color: #fff;
     @include shadow-2dp-color($color);
 
+    &:hover,
     &:focus,
     &:active,
-    &:hover{
+    &.active,
+    &:active:focus,
+    &:active:hover,
+    &.active:focus,
+    &.active:hover{
         background-color: $color !important;
         color: #fff;
         @include button-shadow-color($color);
