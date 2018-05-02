@@ -30,7 +30,14 @@ module.exports = {
           '/component-docs/buttons',
           '/component-docs/cards',
           '/component-docs/checkboxes',
-          '/component-docs/dropdown'
+          '/component-docs/dropdown',
+          '/component-docs/inputs',
+          '/component-docs/textarea',
+          '/component-docs/maps',
+          '/component-docs/notifications',
+          '/component-docs/tables',
+          '/component-docs/tabs',
+          '/component-docs/tooltips'
         ]
       }
     ]

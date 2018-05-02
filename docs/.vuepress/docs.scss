@@ -86,3 +86,11 @@ p{
 .md-list{
   width: 11%;
 }
+
+th, td, tr{
+  border: 0;
+}
+
+tr:nth-child(2n){
+  background-color: transparent;
+}

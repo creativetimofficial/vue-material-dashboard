@@ -2,6 +2,9 @@
 
 To use the custom dropdown you don't need to import the custom made component because it's global registered, so you can use it like this:
 
+
+### As List Item
+
 :::demo
 ```html
 <div class="md-list">
@@ -25,5 +28,18 @@ To use the custom dropdown you don't need to import the custom made component be
 ```
 :::
 
-
 > Note: Drop-down uses a click outside directive internally. You will get a warning if the directive is not imported. You can find the declaration of this directive in **src/globalDirectives.js**
+
+
+### Dropdown Attributes
+| Attribute      | Description    | Type      | Accepted values       | Default   |
+|---------- |-------- |---------- |-------------  |-------- |
+| position     | drop down menu direction (up or down)   | string  |   dropdown-menu-right/dropdown-menu-left        |     -     |
+| icon     | Dropdown icon   | string  |   -        |     -     |
+| tag     | html tag that you want the dropdown to be rendered as   | string  |   -        |     li    |
+| title     | Dropdown title   | string  |   -        |     —     |
+
+### Dropdown Slots
+| Name | Description |
+|---------- |-------- |
+|  title  | Content for dropdown title |
