@@ -22,9 +22,35 @@
     width: 5px;
     vertical-align: .255em;
     content: "";
+  }
+
+  &[x-placement="top"]:after{
     border-top: 5px solid $white-color;
     border-right: 5px solid transparent;
     border-bottom: 0;
     border-left: 5px solid transparent;
+  }
+  &[x-placement="bottom"]:after{
+    top: -5px;
+    border-top: 0;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $white-color;
+    border-left: 5px solid transparent;
+  }
+  &[x-placement="left"]:after{
+    margin-right: 0;
+    right: -5px;
+    top: 16px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid $white-color;
+  }
+  &[x-placement="right"]:after{
+    margin-left: 0;
+    left: -5px;
+    top: 16px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid $white-color;
   }
 }
