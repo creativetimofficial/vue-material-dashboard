@@ -24,6 +24,14 @@
       height: 17px;
     }
 
+    &.md-wd{
+      min-width: 140px;
+    }
+
+    &.md-block{
+      width: 100%;
+    }
+
     &:before{
       display: none;
     }
