@@ -1,6 +1,89 @@
 <template>
   <div class="content">
     <div class="md-layout">
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
+        <chart-card
+          :chart-data="dailySalesChart.data"
+          :chart-options="dailySalesChart.options"
+          :chart-type="'Line'"
+          data-background-color="blue">
+          <template slot="content">
+            <h4 class="title">Daily Sales</h4>
+              <p class="category">
+                <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.
+              </p>
+          </template>
+
+          <template slot="footer">
+            <div class="stats">
+              <md-icon>access_time</md-icon>
+              updated 4 minutes ago
+            </div>
+          </template>
+        </chart-card>
+      </div>
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
+        <chart-card
+          :chart-data="emailsSubscriptionChart.data"
+          :chart-options="emailsSubscriptionChart.options"
+          :chart-responsive-options="emailsSubscriptionChart.responsiveOptions"
+          :chart-type="'Bar'"
+          data-background-color="red">
+          <template slot="content">
+            <h4 class="title">Email Subscription</h4>
+              <p class="category">
+                Last Campaign Performance
+              </p>
+          </template>
+
+          <template slot="footer">
+            <div class="stats">
+              <md-icon>access_time</md-icon>
+              updated 10 days ago
+            </div>
+          </template>
+        </chart-card>
+      </div>
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
+        <chart-card
+          :chart-data="dataCompletedTasksChart.data"
+          :chart-options="dataCompletedTasksChart.options"
+          :chart-type="'Line'"
+          data-background-color="green">
+          <template slot="content">
+            <h4 class="title">Completed Tasks</h4>
+              <p class="category">
+                Last Campaign Performance
+              </p>
+          </template>
+
+          <template slot="footer">
+            <div class="stats">
+              <md-icon>access_time</md-icon>
+              campaign sent 26 minutes ago
+            </div>
+          </template>
+        </chart-card>
+      </div>
+      <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
+        <stats-card data-background-color="green">
+          <template slot="header">
+            <md-icon >store</md-icon>
+          </template>
+
+          <template slot="content">
+            <p class="category">Revenue</p>
+            <h3 class="title">$34,245</h3>
+          </template>
+
+          <template slot="footer">
+            <div class="stats">
+                <md-icon>date_range</md-icon>
+                Last 24 Hours
+            </div>
+          </template>
+        </stats-card>
+      </div>
       <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
         <stats-card data-background-color="orange">
           <template slot="header">
@@ -18,25 +101,6 @@
             <div class="stats">
               <md-icon class="text-danger">warning</md-icon>
               <a href="#pablo">Get More Space...</a>
-            </div>
-          </template>
-        </stats-card>
-      </div>
-      <div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25">
-        <stats-card data-background-color="green">
-          <template slot="header">
-            <md-icon >store</md-icon>
-          </template>
-
-          <template slot="content">
-            <p class="category">Revenue</p>
-            <h3 class="title">$34,245</h3>
-          </template>
-
-          <template slot="footer">
-            <div class="stats">
-                <md-icon>date_range</md-icon>
-                Last 24 Hours
             </div>
           </template>
         </stats-card>
@@ -79,76 +143,22 @@
           </template>
         </stats-card>
       </div>
-
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
-        <chart-card
-          :chart-data="dailySalesChart.data"
-          :chart-options="dailySalesChart.options"
-          :chart-type="'Line'"
-          data-background-color="green">
-          <template slot="content">
-            <h4 class="title">Daily Sales</h4>
-              <p class="category">
-                <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.
-              </p>
-          </template>
-
-          <template slot="footer">
-            <div class="stats">
-              <md-icon>access_time</md-icon>
-              updated 4 minutes ago
-            </div>
-          </template>
-        </chart-card>
-      </div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
-        <chart-card
-          :chart-data="emailsSubscriptionChart.data"
-          :chart-options="emailsSubscriptionChart.options"
-          :chart-responsive-options="emailsSubscriptionChart.responsiveOptions"
-          :chart-type="'Bar'"
-          data-background-color="orange">
-          <template slot="content">
-            <h4 class="title">EmailSubscription</h4>
-              <p class="category">
-                Last Campaign Performance
-              </p>
-          </template>
-
-          <template slot="footer">
-            <div class="stats">
-              <md-icon>access_time</md-icon>
-              updated 10 days ago
-            </div>
-          </template>
-        </chart-card>
-      </div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33">
-        <chart-card
-          :chart-data="dataCompletedTasksChart.data"
-          :chart-options="dataCompletedTasksChart.options"
-          :chart-type="'Line'"
-          data-background-color="red">
-          <template slot="content">
-            <h4 class="title">Completed Tasks</h4>
-              <p class="category">
-                Last Campaign Performance
-              </p>
-          </template>
-
-          <template slot="footer">
-            <div class="stats">
-              <md-icon>access_time</md-icon>
-              campaign sent 26 minutes ago
-            </div>
-          </template>
-        </chart-card>
+      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
+        <md-card>
+          <md-card-header data-background-color="orange">
+            <h4 class="title">Employees Stats</h4>
+            <p class="category">New employees on 15th September, 2016</p>
+          </md-card-header>
+          <md-card-content>
+            <ordered-table table-header-color="orange"></ordered-table>
+          </md-card-content>
+        </md-card>
       </div>
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
         <nav-tabs-card>
           <template slot="content">
             <span class="md-nav-tabs-title">Tasks:</span>
-            <md-tabs md-sync-route class="md-primary" md-alignment="left">
+            <md-tabs md-sync-route class="md-success" md-alignment="left">
 
               <md-tab id="tab-home" md-label="Bugs" md-icon="bug_report">
                 <nav-tabs-table></nav-tabs-table>
@@ -164,17 +174,6 @@
             </md-tabs>
           </template>
         </nav-tabs-card>
-      </div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50">
-        <md-card>
-          <md-card-header data-background-color="orange">
-            <h4 class="title">Employees Stats</h4>
-            <p class="category">New employees on 15th September, 2016</p>
-          </md-card-header>
-          <md-card-content>
-            <ordered-table table-header-color="orange"></ordered-table>
-          </md-card-content>
-        </md-card>
       </div>
     </div>
   </div>
