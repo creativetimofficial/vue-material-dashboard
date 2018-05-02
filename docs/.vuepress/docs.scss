@@ -18,6 +18,13 @@ p{
   font-size: 15px;
 }
 
+.links .nav-links a{
+
+  .icon.outbound,
+  &{
+    color: $white-color !important;
+  }
+}
 
 .navbar{
   display: flex;
@@ -109,4 +116,15 @@ p{
 
 .demo-block .source .md-toolbar{
   margin-bottom: 10px;
+}
+
+.theme-container{
+  height: 100vh;
+  position: relative;
+  .page{
+    overflow: auto;
+    height: 100%;
+    max-height: 100%;
+  }
+
 }

@@ -14,12 +14,13 @@ module.exports = {
     ['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon.png' }]
   ],
   themeConfig: {
+    repo: 'cristijora/vue-paper-dashboard',
     sidebar: [
       {
         title: 'General Information',
         collapsable: false,
         children: [
-          '/component-docs/getting-started',
+          '/',
           '/component-docs/license'
         ]
       },

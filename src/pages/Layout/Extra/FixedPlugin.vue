@@ -32,7 +32,7 @@
 
         <li class="button-container">
           <div class="">
-            <md-button class="md-block" href="https://www.creative-tim.com/product/material-dashboard" target="_blank">Documentation</md-button>
+            <md-button class="md-block md-primary" href="https://www.creative-tim.com/product/material-dashboard" target="_blank">Documentation</md-button>
           </div>
         </li>
 

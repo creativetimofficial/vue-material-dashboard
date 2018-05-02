@@ -46,34 +46,33 @@ Vue.use(Notifications)
 ::: demo
 ```html
 <template>
-  <div class="content">
-    <notifications></notifications>
-    <div class="md-layout">
-      <div class="md-layout-item">
-        <md-card>
-          <md-card-header data-background-color="green">
-            <h4 class="title">Notifications</h4>
-            <p class="category">Handcrafted by us with <i class="fa fa-heart heart"></i></p>
-          </md-card-header>
-          <md-card-content>
-            <div class="md-layout">
-              <div class="md-layout-item md-size-100">
-                <div class="places-buttons text-center">
-                  <h5 class="text-center">Notifications Places
-                    <p class="category">Click to view notifications</p>
-                  </h5>
-                  <md-button class="md-primary" @click="notifyVue('top','left')">Top Left</md-button>
-                  <md-button class="md-primary" @click="notifyVue('top','center')">Top Center</md-button>
-                  <md-button class="md-primary" @click="notifyVue('top','right')">Top Right</md-button>
-                  <md-button class="md-primary" @click="notifyVue('bottom','left')">Bottom Left</md-button>
-                  <md-button class="md-primary" @click="notifyVue('bottom','center')">Bottom Center</md-button>
-                  <md-button class="md-primary" @click="notifyVue('bottom','right')">Bottom Right</md-button>
-                </div>
+
+  <div class="md-layout">
+    <div class="md-layout-item">
+      <notifications></notifications>
+      <md-card>
+        <md-card-header data-background-color="green">
+          <h4 class="title">Notifications</h4>
+          <p class="category">Handcrafted by us with <i class="fa fa-heart heart"></i></p>
+        </md-card-header>
+        <md-card-content>
+          <div class="md-layout">
+            <div class="md-layout-item md-size-100">
+              <div class="places-buttons text-center">
+                <h5 class="text-center">Notifications Places
+                  <p class="category">Click to view notifications</p>
+                </h5>
+                <md-button class="md-primary" @click="notifyVue('top','left')">Top Left</md-button>
+                <md-button class="md-primary" @click="notifyVue('top','center')">Top Center</md-button>
+                <md-button class="md-primary" @click="notifyVue('top','right')">Top Right</md-button>
+                <md-button class="md-primary" @click="notifyVue('bottom','left')">Bottom Left</md-button>
+                <md-button class="md-primary" @click="notifyVue('bottom','center')">Bottom Center</md-button>
+                <md-button class="md-primary" @click="notifyVue('bottom','right')">Bottom Right</md-button>
               </div>
             </div>
-          </md-card-content>
-        </md-card>
-      </div>
+          </div>
+        </md-card-content>
+      </md-card>
     </div>
   </div>
 </template>

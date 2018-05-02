@@ -216,3 +216,5 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
 </md-toolbar>
 ```
 :::
+
+> Note: for more details about toolbar please see the **Toolbar** section from [vuematerial.io](https://vuematerial.io/components/toolbar)
