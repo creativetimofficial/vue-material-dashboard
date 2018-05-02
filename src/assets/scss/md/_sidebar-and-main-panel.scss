@@ -114,7 +114,7 @@
             text-decoration: none;
             margin: 10px 15px 0;
             border-radius: $border-radius-base;
-            color: $black-color !important;
+            color: $white-color !important;
             white-space: nowrap;
             cursor: pointer;
             width: auto;
@@ -135,6 +135,7 @@
 
                 i{
                     color: #FFFFFF;
+                    opacity: 1;
                 }
             }
         }
@@ -159,29 +160,6 @@
             width: 30px;
             text-align: center;
             color: #a9afbb;
-        }
-    }
-
-    .sidebar-background{
-        position: absolute;
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-        display: block;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center center;
-
-        &:after{
-            position: absolute;
-            z-index: 3;
-            width: 100%;
-            height: 100%;
-            content: "";
-            display: block;
-            background: #FFFFFF;
-            opacity: .93;
         }
     }
 
@@ -225,10 +203,15 @@
             padding: $padding-small-vertical $padding-zero;
             display: block;
             font-size: $font-size-large;
-            color: $black-color;
             font-weight: $font-weight-default;
             line-height: 30px;
             text-decoration: none;
+
+            &,
+            &:hover,
+            &:focus{
+              color: $white-color !important;
+            }
 
             .logo-img{
               width: 40px;
@@ -269,8 +252,8 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: $white-color;
-        opacity: .93;
+        background-color: rgba(27, 27, 27, 0.87);
+        opacity: .85;
         top: 0;
         left: 0;
         z-index: 2;
