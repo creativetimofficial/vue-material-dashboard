@@ -37,7 +37,9 @@ module.exports = {
           '/component-docs/notifications',
           '/component-docs/tables',
           '/component-docs/tabs',
-          '/component-docs/tooltips'
+          '/component-docs/tooltips',
+          '/component-docs/material-icons',
+          '/component-docs/toolbar'
         ]
       }
     ]

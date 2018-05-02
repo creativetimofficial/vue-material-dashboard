@@ -101,3 +101,8 @@ p{
   display: flex;
   align-items: center;
 }
+
+.md-toolbar .md-list{
+  width: 100%;
+  justify-content: flex-end;
+}

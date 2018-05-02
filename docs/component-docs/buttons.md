@@ -54,7 +54,9 @@ We added extra classes that can help you better customise the look. Please see t
 
 ::: demo
 ```html
-<md-button class="md-primary md-block">Block</md-button>
-<md-button class="md-primary md-wd">Min-width</md-button>
+<md-button class="md-primary md-block">md-block</md-button>
+<md-button class="md-primary md-wd">md-wd</md-button>
 ```
 :::
+
+> Note: for more details about the buttons props and attributes please see the **Button** section from [vuematerial.io](https://vuematerial.io/components/button)
