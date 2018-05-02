@@ -11,6 +11,19 @@
   &::-webkit-input-placeholder  {@content; } // Safari and Chrome
 }
 
+@mixin toolbar-colors($variation-color){
+  background-color: $variation-color !important;
+  @include shadow-big-color($variation-color);
+
+  .md-title,
+  .md-list .md-list-item-content,
+  &,
+  &:hover,
+  &:focus{
+    color: $white-color !important;
+  }
+}
+
 
 @mixin dropdown-colors($variation-color) {
   .dropdown-menu {
