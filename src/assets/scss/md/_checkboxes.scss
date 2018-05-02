@@ -4,7 +4,7 @@
     border-radius: 3px;
 
     .md-ripple{
-      -webkit-mask-image: radial-gradient(circle,#fff 100%,#000 0);
+      overflow: hidden;
     }
   }
 
