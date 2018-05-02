@@ -96,3 +96,8 @@ p{
     background-color: transparent;
   }
 }
+
+#sizes + p + .demo-block .source{
+  display: flex;
+  align-items: center;
+}

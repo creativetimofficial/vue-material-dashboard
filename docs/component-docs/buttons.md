@@ -35,3 +35,26 @@ We has changed the predefined button styles from vuematerial.io, each serving it
 <md-button class="md-primary md-simple">Simple</md-button>
 ```
 :::
+
+## Sizes
+
+Fancy larger or smaller buttons? Add the classes `md-lg` or `md-sm` for additional sizes.
+
+::: demo
+```html
+<md-button class="md-primary md-lg">Large</md-button>
+<md-button class="md-primary">Normal</md-button>
+<md-button class="md-primary md-sm">Small</md-button>
+```
+:::
+
+## Extra Mile
+
+We added extra classes that can help you better customise the look. Please see the examples:
+
+::: demo
+```html
+<md-button class="md-primary md-block">Block</md-button>
+<md-button class="md-primary md-wd">Min-width</md-button>
+```
+:::
