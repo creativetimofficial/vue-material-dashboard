@@ -315,6 +315,39 @@
       outline: 1px solid transparent;
     }
 
+    @include topbar-x-rotation();
+    @include topbar-back-rotation();
+    @include bottombar-x-rotation();
+    @include bottombar-back-rotation();
+
+    .md-toolbar-toggle{
+        .icon-bar:nth-child(2){
+          top: 0px;
+          @include bar-animation($topbar-back);
+        }
+        .icon-bar:nth-child(3){
+          opacity: 1;
+        }
+        .icon-bar:nth-child(4){
+          bottom: 0px;
+          @include bar-animation($bottombar-back);
+        }
+
+        &.toggled{
+            .icon-bar:nth-child(1){
+              top: 6px;
+              @include bar-animation($topbar-x);
+            }
+            .icon-bar:nth-child(2){
+              opacity: 0;
+            }
+            .icon-bar:nth-child(3){
+              bottom: 6px;
+              @include bar-animation($bottombar-x);
+            }
+        }
+    }
+
     @-webkit-keyframes fadeIn {
       0% {opacity: 0;}
       100% {opacity: 1;}
@@ -533,7 +566,7 @@
     padding-left: 11% !important;
 
     .tim-note{
-      bottom: -25px !important; 
+      bottom: -25px !important;
     }
   }
 }
