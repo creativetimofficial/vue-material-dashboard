@@ -14,7 +14,7 @@ module.exports = {
     ['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon.png' }]
   ],
   themeConfig: {
-    repo: 'cristijora/vue-paper-dashboard',
+    repo: 'creativetimofficial/vue-material-dashboard',
     sidebar: [
       {
         title: 'General Information',
