@@ -72,7 +72,7 @@ export default {
     return {
       documentationLink: 'https://creativetimofficial.github.io/vue-material-dashboard/documentation',
       shareUrl: 'https://www.creative-tim.com/product/vue-material-dashboard',
-      buyUrl: 'https://www.creative-tim.com/product/vue-now-ui-dashboard-pro',
+      buyUrl: '',
       freeUrl: 'https://www.creative-tim.com/product/vue-material-dashboard',
       isOpen: false,
       sidebarColors: [
