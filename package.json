@@ -10,29 +10,29 @@
     "deploy": "npm run build && cd docs && npm run build && cd .. && sudo gh-pages -d dist"
   },
   "dependencies": {
-    "chartist": "^0.11.0",
-    "google-maps": "^3.2.1",
-    "vue": "^2.5.13",
-    "vue-analytics": "^5.10.3",
-    "vue-clickaway": "^2.2.2",
-    "vue-github-buttons": "^2.0.5",
-    "vue-material": "^1.0.0-beta-8",
-    "vue-router": "^3.0.1",
-    "vue-social-sharing": "^2.3.3"
+    "chartist": "0.11.0",
+    "google-maps": "3.2.1",
+    "vue": "2.5.13",
+    "vue-analytics": "5.10.3",
+    "vue-clickaway": "2.2.2",
+    "vue-github-buttons": "2.0.5",
+    "vue-material": "1.0.0-beta-8",
+    "vue-router": "3.0.1",
+    "vue-social-sharing": "2.3.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.6",
-    "@vue/cli-service": "^3.0.0-beta.6",
-    "@vue/eslint-config-standard": "^3.0.0-beta.6",
-    "babel-plugin-component": "^1.1.0",
-    "babel-plugin-module-resolver": "^3.0.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "es6-promise": "^4.2.4",
-    "lint-staged": "^6.0.0",
-    "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
-    "vue-template-compiler": "^2.5.13"
+    "@vue/cli-plugin-babel": "3.0.0-beta.6",
+    "@vue/cli-plugin-eslint": "3.0.0-beta.6",
+    "@vue/cli-service": "3.0.0-beta.6",
+    "@vue/eslint-config-standard": "3.0.0-beta.6",
+    "babel-plugin-component": "1.1.0",
+    "babel-plugin-module-resolver": "3.0.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "es6-promise": "4.2.4",
+    "lint-staged": "6.0.0",
+    "node-sass": "4.8.3",
+    "sass-loader": "6.0.7",
+    "vue-template-compiler": "2.5.13"
   },
   "postcss": {
     "plugins": {

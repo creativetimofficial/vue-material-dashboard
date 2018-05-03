@@ -10,7 +10,7 @@
           <template slot="content">
             <h4 class="title">Daily Sales</h4>
               <p class="category">
-                <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.
+                <span class="text-success"><i class="fas fa-long-arrow-alt-up"></i> 55% </span> increase in today sales.
               </p>
           </template>
 

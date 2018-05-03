@@ -148,10 +148,11 @@
             color: $gray-color;
             font-size: $font-size-small;
 
-            .md-icon{
+            .md-icon.md-theme-default.md-icon-font{
                 position: relative;
                 top: -1px;
-                font-size: $font-paragraph !important;
+                font-size: $font-paragraph + 2 !important;
+                color: $gray-light;
             }
         }
 
