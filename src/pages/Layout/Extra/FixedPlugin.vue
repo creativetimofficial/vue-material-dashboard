@@ -26,13 +26,13 @@
 
         <li class="button-container">
           <div class="">
-            <md-button class="md-success md-block" href="https://www.creative-tim.com/product/material-dashboard" target="_blank">Free Download</md-button>
+            <md-button class="md-success md-block" :href="freeUrl" target="_blank">Free Download</md-button>
           </div>
         </li>
 
         <li class="button-container">
           <div class="">
-            <md-button class="md-block md-primary" href="https://www.creative-tim.com/product/material-dashboard" target="_blank">Documentation</md-button>
+            <md-button class="md-block md-primary" :href="documentationLink" target="_blank">Documentation</md-button>
           </div>
         </li>
 
@@ -40,8 +40,8 @@
 
         <li class="button-container">
           <social-sharing :url="shareUrl" inline-template
-                          title="Vue Light Bootstrap Dashboard PRO - Premium Bootstrap Admin Template for Vue.js"
-                          hashtags="vuejs, dashboard, bootstrap" twitter-user="creativetim">
+                          title="Vue Material Dashboard - Admin Template for Vue.js"
+                          hashtags="vuejs, dashboard, vuematerial" twitter-user="creativetim">
             <div class="centered-buttons">
               <network network="facebook" class="md-button md-round md-just-icon md-facebook">
                 <i class="fab fa-facebook-f"></i>
@@ -70,10 +70,10 @@ Vue.use(VueGitHubButtons, {useCache: true})
 export default {
   data () {
     return {
-      documentationLink: 'http://vuejs.creative-tim.com/vue-now-ui-dashboard-pro/documentation/#/getting-started',
-      shareUrl: 'https://www.creative-tim.com/product/vue-now-ui-dashboard-pro',
+      documentationLink: 'https://creativetimofficial.github.io/vue-material-dashboard/documentation',
+      shareUrl: 'https://www.creative-tim.com/product/vue-material-dashboard',
       buyUrl: 'https://www.creative-tim.com/product/vue-now-ui-dashboard-pro',
-      freeUrl: 'https://www.creative-tim.com/product/vue-now-ui-dashboard',
+      freeUrl: 'https://www.creative-tim.com/product/vue-material-dashboard',
       isOpen: false,
       sidebarColors: [
         {color: 'purple', active: false},

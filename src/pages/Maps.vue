@@ -64,7 +64,7 @@ export default {
     }
   },
   mounted () {
-    GoogleMapsLoader.KEY = 'AIzaSyAFPQibxeDaLIUHsC6_KqDdFaUdhrbhZ3M'
+    GoogleMapsLoader.KEY = 'AIzaSyDxRCErL0rrgOYJx3jVUPSWZQT7JQysQ64'
     GoogleMapsLoader.load((google) => {
       this.initMap(google)
     })
