@@ -27,6 +27,7 @@
     @include shadow-big();
     background-size: cover;
     background-position: center center;
+    @extend .animation-transition-general;
 
     .md-icon.md-theme-default.md-icon-font{
       color: #fff !important;
