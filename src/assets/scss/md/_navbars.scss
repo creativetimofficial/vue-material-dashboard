@@ -73,6 +73,9 @@
   // default color for dropdown
   @include dropdown-colors($brand-primary);
   @include toolbar-colors($gray-light);
+  .md-toolbar-toggle .icon-bar{
+    color: inherit !important;
+  }
 
   &.md-primary{
     @include dropdown-colors($brand-primary);
@@ -161,6 +164,7 @@
     width: 40px;
 
     .icon-bar {
+      position: relative;
       display: block;
       width: 22px;
       height: 2px;

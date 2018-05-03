@@ -29,7 +29,8 @@
     background-position: center center;
     @extend .animation-transition-general;
 
-    .md-icon.md-theme-default.md-icon-font{
+    .md-icon.md-theme-default.md-icon-font,
+    .material-icons{
       color: #fff !important;
       opacity: .8
     }

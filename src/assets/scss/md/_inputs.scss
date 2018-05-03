@@ -394,6 +394,16 @@ select.form-control {
     -webkit-text-fill-color: $black-color !important;
   }
 
+  &.md-has-textarea:not(.md-autogrow) label{
+    left: 0;
+  }
+
+  .sidebar &.md-theme-default.md-focused .md-input{
+    color: $white-color !important;
+    -webkit-text-fill-color: $white-color !important;
+  }
+
+
   label{
     font-size: 14px;
     font-weight: 400;
