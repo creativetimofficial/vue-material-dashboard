@@ -53,7 +53,7 @@
           </social-sharing>
         </li>
         <li class="github-buttons">
-          <gh-btns-star slug="timcreative/vue-material-dashboard" show-count></gh-btns-star>
+          <gh-btns-star slug="creativetimofficial/vue-material-dashboard" show-count></gh-btns-star>
         </li>
       </ul>
     </div>
