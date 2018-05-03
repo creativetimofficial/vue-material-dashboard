@@ -28,6 +28,11 @@
     background-size: cover;
     background-position: center center;
 
+    .md-icon.md-theme-default.md-icon-font{
+      color: #fff !important;
+      opacity: .8
+    }
+
     .md-list{
       background-color: transparent !important;
 
@@ -133,8 +138,7 @@
             .active {
                 color: #FFFFFF !important;
 
-                i{
-                    color: #FFFFFF;
+                .md-ripple i{
                     opacity: 1;
                 }
             }
