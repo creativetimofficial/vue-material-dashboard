@@ -1,4 +1,4 @@
-# [Vue Material Dashboard](https://www.creative-tim.com/live/vue-material-dashboard) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Vue Material Dashboard](https://www.creative-tim.com/live/vue-material-dashboard) [![version][version-badge]][CHANGELOG] ![license][license-badge]
 
 ![alt text](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg?1525355237 "Vue Material Dashboard")
 
