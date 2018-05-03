@@ -83,8 +83,8 @@ export default {
         {color: 'red', active: false}
       ],
       sidebarImages: [
-        {image: require('@/assets/img/sidebar-1.jpg'), active: true},
-        {image: require('@/assets/img/sidebar-2.jpg'), active: false},
+        {image: require('@/assets/img/sidebar-1.jpg'), active: false},
+        {image: require('@/assets/img/sidebar-2.jpg'), active: true},
         {image: require('@/assets/img/sidebar-3.jpg'), active: false},
         {image: require('@/assets/img/sidebar-4.jpg'), active: false}
       ]
