@@ -15,8 +15,5 @@
     "webpack": "^4.6.0"
   },
   "author": "dragosct <dragosct10@gmail.com>",
-  "description": "Vue Material Dashboard",
-  "dependencies": {
-    "markdown-include": "^0.4.3"
-  }
+  "description": "Vue Material Dashboard"
 }
