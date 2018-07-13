@@ -40,7 +40,7 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "author": "dragosct <dragosct10@gmail.com>",
+  "author": "dragosct <dragosc@creative-tim.com>",
   "description": "Vue Material Dashboard",
   "lint-staged": {
     "*.js": [
