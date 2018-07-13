@@ -242,7 +242,8 @@
     &.focus,
     &:active,
     &.active {
-        box-shadow: none;
+      opacity: .65;
+      pointer-events: none;
     }
   }
 

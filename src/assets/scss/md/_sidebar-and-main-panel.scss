@@ -18,7 +18,7 @@
 }
 
 .sidebar,
-.off-canvas-sidebar{
+.off-canvas-sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -35,7 +35,11 @@
       opacity: .8
     }
 
-    .md-list{
+    .md-list {
+      &.nav {
+        position: initial;
+      }
+
       background-color: transparent !important;
 
       .md-list-item a{
