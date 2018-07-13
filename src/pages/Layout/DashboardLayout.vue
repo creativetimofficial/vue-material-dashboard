@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" :class="{'nav-open': $sidebar.showSidebar}">
     <notifications></notifications>
 
     <side-bar :sidebar-item-color="sidebarBackground" :sidebar-background-image="sidebarBackgroundImage">
@@ -31,6 +31,10 @@
       <sidebar-link to="/notifications">
         <md-icon>notifications</md-icon>
         <p>Notifications</p>
+      </sidebar-link>
+      <sidebar-link to="/upgrade" class="active-pro">
+        <md-icon>unarchive</md-icon>
+        <p>Upgrade to PRO</p>
       </sidebar-link>
     </side-bar>
 
