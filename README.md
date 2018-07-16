@@ -185,7 +185,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 - Copyright 2018 Creative Tim (https://www.creative-tim.com/)
 
-- Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/vue-material-dashboard/blob/master/LICENSE.md)
 
 
 
