@@ -65,7 +65,7 @@ Let us know what you think and what we can improve below. And good luck with dev
 
 - [Download from Github](https://github.com/creativetimofficial/vue-material-dashboard/archive/master.zip).
 - [Download from Creative Tim](https://www.creative-tim.com/product/vue-material-dashboard).
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-kit.git`.
+- Clone the repo: `git clone https://github.com/creativetimofficial/vue-material-dashboard.git`.
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
