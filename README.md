@@ -4,7 +4,7 @@
  ![version](https://img.shields.io/badge/version-1.0.1-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 
-![Product Gif](src/assets/github/product.gif)
+![Product Gif](https://s3.amazonaws.com/creativetim_bucket/github/gif/vue-material-dashboard.gif)
 
 Vue Material Dashboard is a beautiful resource built over [Vue Material](https://vuematerial.io/) and [Vuejs](https://vuejs.org/v2/guide/). It will help you get started developing dashboards in no time. Vue Material Dashboard is the official Vuejs version of the Original Material Dashboard. Using the Dashboard is pretty simple but requires basic knowledge of Javascript, [Vuejs](https://vuejs.org/v2/guide/) and [Vue Router](https://router.vuejs.org/en/).
 
