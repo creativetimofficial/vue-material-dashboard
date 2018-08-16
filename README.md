@@ -55,7 +55,7 @@ Let us know what you think and what we can improve below. And good luck with dev
 [View More](https://demos.creative-tim.com/vue-material-dashboard).
 
 
-## Quick start
+## Quick start 
 
 ## :cloud: Build Setup
 
