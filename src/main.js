@@ -17,6 +17,8 @@ import MaterialDashboard from './material-dashboard'
 
 import Chartist from 'chartist'
 
+import 'vue2-dropzone/dist/vue2Dropzone.css'
+
 // configure router
 const router = new VueRouter({
   routes, // short for routes: routes
