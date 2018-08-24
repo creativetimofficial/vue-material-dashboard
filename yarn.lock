@@ -2087,6 +2087,10 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
+cryptojslib@^3.1.2:
+  version "3.1.2"
+  resolved "http://registry.npm.taobao.org/cryptojslib/download/cryptojslib-3.1.2.tgz#6846dc725ea508a86ac0c9c441cd2ec944def366"
+
 css-color-names@0.0.4:
   version "0.0.4"
   resolved "http://registry.npm.taobao.org/css-color-names/download/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"

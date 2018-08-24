@@ -36,12 +36,19 @@ import {
 } from '@/components'
 
 import vueDropzone from "vue2-dropzone";
+import ethcount from '../ethcount.js'
 
 export default{
   components: {
     OrderedTable,
     SimpleTable,
     vueDropzone
+  },
+  mounted(){
+    var count = ethcount();
+    console.log(count);
+
+
   },
   methods: {
     afterComplete(file) {
