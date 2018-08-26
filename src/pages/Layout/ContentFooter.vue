@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
         <nav>
-            <ul>
+            <!-- <ul>
               <li>
                 <router-link :to="{path:'/dashboard'}">Home</router-link>
               </li>
@@ -21,10 +21,10 @@
                         Blog
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="copyright text-center">
-          &copy; {{ new Date().getFullYear() }} <a href="https://www.creative-tim.com/?ref=mdf-vuejs" target="_blank">Creative Tim</a>, made with <i class="fa fa-heart heart"></i> for a better web
+          &copy; {{ new Date().getFullYear() }} <a href="https://www.lambda.im/" target="_blank">lambda</a>
         </div>
     </div>
   </footer>

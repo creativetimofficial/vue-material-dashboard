@@ -12,7 +12,7 @@
         </md-button>
 
         <div class="md-collapse">
-          <div class="md-autocomplete">
+          <!-- <div class="md-autocomplete">
             <md-autocomplete class="search" v-model="selectedEmployee" :md-options="employees">
               <label>Search...</label>
             </md-autocomplete>
@@ -38,12 +38,15 @@
                   <li><a href="#">Another One</a></li>
                 </ul>
               </drop-down>
-            </md-list-item>
+            </md-list-item> -->
 
-            <md-list-item to="/user">
+            <!-- <md-list-item to="/user">
+              615e4c854e4fd0a192118bf50642832279d0d55d
               <i class="material-icons">person</i>
               <p class="hidden-lg hidden-md">Profile</p>
-            </md-list-item>
+
+            </md-list-item> -->
+
           </md-list>
         </div>
       </div>

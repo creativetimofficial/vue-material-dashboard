@@ -7,7 +7,7 @@
         </div>
       </a>
 
-      <a href="https://www.creative-tim.com/product/vue-material-dashboard" target="_blank" class="simple-text logo-normal">
+      <a  target="_blank" class="simple-text logo-normal">
         {{title}}
       </a>
     </div>
@@ -38,7 +38,7 @@ export default{
   props: {
     title: {
       type: String,
-      default: 'Vue MD'
+      default: 'lambda pdp'
     },
     backgroundImage: {
       type: String,
@@ -46,7 +46,7 @@ export default{
     },
     imgLogo: {
       type: String,
-      default: require('@/assets/img/vue-logo.png')
+      default: require('@/assets/img/smallogo.png')
     },
     activeColor: {
       type: String,

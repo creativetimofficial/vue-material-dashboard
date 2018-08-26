@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/',
     component: DashboardLayout,
-    redirect: '/dashboard',
+    redirect: '/filelist',
     children: [
       {
         path: 'dashboard',
@@ -26,8 +26,8 @@ const routes = [
         component: UserProfile
       },
       {
-        path: 'table',
-        name: 'Table List',
+        path: 'filelist',
+        name: 'File List',
         component: TableList
       },
       {
