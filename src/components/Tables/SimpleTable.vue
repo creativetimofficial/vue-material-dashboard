@@ -25,6 +25,7 @@ export default {
   mounted(){
     var count = ethcount();
     console.log(count);
+    this.getFileList();
 
 
 
@@ -41,6 +42,15 @@ export default {
         console.log('- - -')
          this.selected = item
          console.log(item)
+    },
+    getFileList(){
+      axios.get('/user?ID=12345')
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     }
 
   },

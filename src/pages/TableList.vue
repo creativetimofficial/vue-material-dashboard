@@ -46,6 +46,7 @@ export default{
 
   },
   methods: {
+    
 
     afterComplete(file) {
       // this.$refs.dropzone.removeAllFiles();

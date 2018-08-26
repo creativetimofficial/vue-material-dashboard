@@ -14,12 +14,45 @@
       </md-table-row>
     </md-table>
 
-    <p>Selected:</p>
+
     <md-dialog :md-active.sync="showDialog">
      <md-dialog-title>PDP details</md-dialog-title>
 
      <div class="contenthtml">
-       sss
+       <md-list class="md-triple-line">
+       <md-list-item>
+
+
+       <div class="md-list-item-text">
+         <span>Sandra Adams</span>
+         <span>Oui oui</span>
+
+       </div>
+
+     </md-list-item>
+
+     <md-list-item>
+
+
+     <div class="md-list-item-text">
+       <span>Sandra Adams</span>
+       <span>Oui oui</span>
+
+     </div>
+
+   </md-list-item>
+
+  <md-list-item>
+
+
+  <div class="md-list-item-text">
+    <span>Sandra Adams</span>
+    <span>Oui oui</span>
+
+  </div>
+
+</md-list-item>
+     </md-list>
      </div>
 
      <md-dialog-actions>
@@ -33,6 +66,7 @@
 
 <script>
 import ethcount from '../../ethcount.js'
+import axios from 'axios'
   export default {
     name: 'table-single',
     props: {
@@ -44,10 +78,12 @@ import ethcount from '../../ethcount.js'
     mounted(){
       var count = ethcount();
       console.log(count);
+      this.getFileList()
 
 
 
     },
+
     data: () => ({
       selected: {},
       showDialog: false,
@@ -92,15 +128,26 @@ import ethcount from '../../ethcount.js'
     methods: {
       refresh(){
         console.log('refresh')
+        this.getFileList();
       },
       onSelect (item) {
         this.selected = item
         console.log('选择',item)
         if(item!=undefined){
           this.$data.showDialog=true;
+          this.$data.selectItem=item;
 
         }
 
+      },
+      getFileList(){
+        axios.get('/user?ID=12345')
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
       }
     }
   }
