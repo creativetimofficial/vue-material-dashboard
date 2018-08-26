@@ -1,17 +1,19 @@
 <template>
   <div>
-    <md-table v-model="users" :table-header-color="tableHeaderColor">
-      <md-table-row slot="md-table-row" slot-scope="{ item }">
+    <md-table v-model="users" :table-header-color="tableHeaderColor"
+    @md-selected="onSelect">
+      <md-table-row slot="md-table-row" slot-scope="{ item }" selectable="single">
         <md-table-cell md-label="Name">{{ item.name }}</md-table-cell>
-        <md-table-cell md-label="Country">{{ item.country }}</md-table-cell>
-        <md-table-cell md-label="City">{{ item.city }}</md-table-cell>
-        <md-table-cell md-label="Salary">{{ item.salary }}</md-table-cell>
+        <md-table-cell md-label="Size">{{ item.country }}</md-table-cell>
+        <md-table-cell md-label="PDP details"  ><md-icon class="md-size-1x">description</md-icon></md-table-cell>
+
       </md-table-row>
     </md-table>
   </div>
 </template>
 
 <script>
+import ethcount from '../../ethcount.js'
 export default {
   name: 'simple-table',
   props: {
@@ -20,46 +22,48 @@ export default {
       default: ''
     }
   },
+  mounted(){
+    var count = ethcount();
+    console.log(count);
+
+
+
+  },
+  methods:{
+    refresh(){
+      console.log('refresh')
+    },
+    getClass: ({ id }) => ({
+       'md-primary': id === 2,
+       'md-accent': id === 3
+     }),
+    onSelect(item) {
+        console.log('- - -')
+         this.selected = item
+         console.log(item)
+    }
+
+  },
   data () {
+
     return {
-      selected: [],
+      selected: {},
       users: [
         {
+           id: 1,
           name: 'Dakota Rice',
           salary: '$36,738',
           country: 'Niger',
-          city: 'Oud-Turnhout'
+          city: '->'
         },
         {
-          name: 'Minerva Hooper',
-          salary: '$23,738',
-          country: 'Curaçao',
-          city: 'Sinaai-Waas'
+           id: 2,
+          name: 'Dakota Rice',
+          salary: '$36,738',
+          country: 'Niger',
+          city: '->'
         },
-        {
-          name: 'Sage Rodriguez',
-          salary: '$56,142',
-          country: 'Netherlands',
-          city: 'Overland Park'
-        },
-        {
-          name: 'Philip Chaney',
-          salary: '$38,735',
-          country: 'Korea, South',
-          city: 'Gloucester'
-        },
-        {
-          name: 'Doris Greene',
-          salary: '$63,542',
-          country: 'Malawi',
-          city: 'Feldkirchen in Kārnten'
-        },
-        {
-          name: 'Mason Porter',
-          salary: '$78,615',
-          country: 'Chile',
-          city: 'Gloucester'
-        }
+
       ]
     }
   }

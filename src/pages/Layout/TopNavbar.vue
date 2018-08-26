@@ -12,18 +12,18 @@
         </md-button>
 
         <div class="md-collapse">
-          <!-- <div class="md-autocomplete">
+          <!-- <div class="md-autocomplete" style="width:300px;">
             <md-autocomplete class="search" v-model="selectedEmployee" :md-options="employees">
-              <label>Search...</label>
+              <label>615e4c854e4fd0a192118bf50642832279d0d55d</label>
             </md-autocomplete>
-          </div>
+          </div> -->
           <md-list>
-            <md-list-item to="/">
-              <i class="material-icons">dashboard</i>
-              <p class="hidden-lg hidden-md">Dashboard</p>
-            </md-list-item>
+            <!-- <md-list-item>
+              <i class="material-icons">person</i>
 
-            <md-list-item to="/notifications" class="dropdown">
+            </md-list-item> -->
+
+            <!-- <md-list-item to="/notifications" class="dropdown">
               <drop-down>
                 <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="material-icons">notifications</i>
@@ -62,14 +62,7 @@ export default{
     return {
       selectedEmployee: null,
       employees: [
-        'Jim Halpert',
-        'Dwight Schrute',
-        'Michael Scott',
-        'Pam Beesly',
-        'Angela Martin',
-        'Kelly Kapoor',
-        'Ryan Howard',
-        'Kevin Malone'
+
       ]
     }
   },
