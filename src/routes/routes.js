@@ -3,7 +3,7 @@ import DashboardLayout from '@/pages/Layout/DashboardLayout.vue'
 import TableList from '@/pages/TableList.vue'
 
 // import Dashboard from '@/pages/Dashboard.vue'
-// import UserProfile from '@/pages/UserProfile.vue'
+import UserProfile from '@/pages/PDPProfile.vue'
 //
 // import Typography from '@/pages/Typography.vue'
 // import Icons from '@/pages/Icons.vue'
@@ -21,18 +21,19 @@ const routes = [
         path: 'filelist',
         name: 'File List',
         component: TableList
-      }
+      },
+      {
+        path: 'pdpdetails',
+        name: 'PDP details',
+        component: UserProfile
+      },
       // ,
       // {
       //   path: 'dashboard',
       //   name: 'Dashboard',
       //   component: Dashboard
       // },
-      // {
-      //   path: 'user',
-      //   name: 'User Profile',
-      //   component: UserProfile
-      // },
+
       //
       // {
       //   path: 'typography',

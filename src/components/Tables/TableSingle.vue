@@ -66,6 +66,9 @@
 
 <script>
 import ethcount from '../../ethcount.js'
+var count = ethcount();
+console.log(count);
+
 import axios from 'axios'
   export default {
     name: 'table-single',
@@ -76,8 +79,7 @@ import axios from 'axios'
       }
     },
     mounted(){
-      var count = ethcount();
-      console.log(count);
+
       this.getFileList()
 
 
@@ -134,14 +136,16 @@ import axios from 'axios'
         this.selected = item
         console.log('选择',item)
         if(item!=undefined){
-          this.$data.showDialog=true;
+          // this.$data.showDialog=true;
           this.$data.selectItem=item;
+          // this.$routes.push('/pdpdetails')
+          this.$router.push('/pdpdetails')
 
         }
 
       },
       getFileList(){
-        axios.get('/user?ID=12345')
+        axios.get('/filelist?address='+count)
         .then(function (response) {
           console.log(response);
         })

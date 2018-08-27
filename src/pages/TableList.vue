@@ -8,7 +8,10 @@
             <p class="category">Your test account: ea28799184925f734f9e38d66b333c85316ac0c4</p>
           </md-card-header>
           <md-card-content>
-            <vue-dropzone ref="dropzone" id="drop1" :options="dropOptionsbig"  @vdropzone-complete="afterComplete">
+            <vue-dropzone ref="dropzone" id="drop1" :options="dropOptionsbig"  @vdropzone-complete="afterComplete"
+            @vdropzone-error="verror"
+            @vdropzone-file-added="vfileAdded"
+            >
             </vue-dropzone>
             <div  style="margin-bottom: 20px"></div>
             <table-single table-header-color="green"  ref="simpletable" ></table-single>
@@ -31,6 +34,10 @@ import {
 import vueDropzone from "vue2-dropzone";
 import ethcount from '../ethcount.js'
 
+
+var count;
+count = ethcount();
+console.log(count);
 export default{
   components: {
     OrderedTable,
@@ -39,15 +46,18 @@ export default{
     TableSingle
   },
   mounted(){
-    var count = ethcount();
-    console.log(count);
+
 
 
 
   },
   methods: {
-    
-
+    vfileAdded(e){
+       console.log(e)
+    },
+    verror(e){
+      console.log(e)
+    },
     afterComplete(file) {
       // this.$refs.dropzone.removeAllFiles();
       console.log('ok')
@@ -60,15 +70,16 @@ export default{
      url: "https://httpbin.org/post"
    },
    dropOptionsbig: {
-     url: "https://httpbin.org/post",
+     url: "/upload?address="+count,
      parallelUploads: 1,  // since we're using a global 'currentFile', we could have issues if parallelUploads > 1, so we'll make it = 1
-     maxFilesize: 1024,   // max individual file size 1024 MB
-     chunking: true,      // enable chunking
-     forceChunking: true, // forces chunking when file.size < chunkSize
+     maxFilesize: 200,   // max individual file size 1024 MB
+     chunking: false,      // enable chunking
+     forceChunking: false, // forces chunking when file.size < chunkSize
      parallelChunkUploads: true, // allows chunks to be uploaded in parallel (this is independent of the parallelUploads option)
      chunkSize: 1000000,  // chunk size 1,000,000 bytes (~1MB)
      retryChunks: true,   // retry chunks on failure
      retryChunksLimit: 3, // retry maximum of 3 times (default is 3)
+     timeout:60000,
      dictDefaultMessage:'Click to select file or  Drop files here to upload to lambda'
 
 
