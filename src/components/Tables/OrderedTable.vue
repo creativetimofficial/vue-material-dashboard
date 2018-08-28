@@ -3,8 +3,8 @@
     <md-table v-model="datalist" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }">
 
-        <md-table-cell md-label="Ip">{{ item.name }}</md-table-cell>
-        <md-table-cell md-label="states">{{ item.salary }}</md-table-cell>
+        <md-table-cell md-label="Ip">{{ item.ip }}</md-table-cell>
+        <md-table-cell md-label="states">{{ item.states }}</md-table-cell>
       </md-table-row>
     </md-table>
   </div>

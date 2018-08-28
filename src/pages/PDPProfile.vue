@@ -9,7 +9,7 @@
            <p class="category">Here is a subtitle for this table</p>
          </md-card-header>
          <md-card-content>
-           <ordered-table table-header-color="green"  :datalist="storagelist"></ordered-table>
+           <ordered-table table-header-color="green"  :datalist="storageserverlist"></ordered-table>
          </md-card-content>
        </md-card>
        <md-card>
@@ -18,12 +18,12 @@
             <p class="category">Here is a subtitle for this table</p>
           </md-card-header>
           <md-card-content>
-            <ordered-table table-header-color="green"   :datalist="storagelist"></ordered-table>
+            <ordered-table table-header-color="green"   :datalist="validationserverlist"></ordered-table>
           </md-card-content>
         </md-card>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
-        <file-info>
+        <file-info  :data="fileinfo">
 
         </file-info>
       </div>
@@ -37,50 +37,51 @@ import {
   FileInfo
 } from '@/pages'
 
+import axios from 'axios';
+
 import {
   OrderedTable,
 
 } from '@/components'
 
-
+var fileid;
 export default{
   components: {
     EditProfileForm,
     OrderedTable,
     FileInfo
   },
+  mounted(){
+    console.log('- -!')
+     fileid=this.$route.params.fileid;
+     this.getfileinfo();
+
+  },
+  methods: {
+    getfileinfo(){
+      console.log(fileid);
+      var _this=this;
+      axios('/filepdpinfo?fileid='+fileid)
+      .then(function(response) {
+        console.log(response)
+        _this.$data.storageserverlist=response.data.storageserverlist;
+        _this.$data.validationserverlist=response.data.validationserverlist;
+        _this.$data.fileinfo=response.data.fileinfo;
+
+      })
+      .catch(function(err) {
+        console.log(err)
+
+      })
+
+    }
+
+  },
   data(){
     return {
-      storagelist:[
-        {
-          id: 1,
-          name: 'Dakota Rice',
-          salary: '$36,738',
-          country: 'Niger',
-          city: 'Oud-Turnhout'
-        },
-        {
-          id: 2,
-          name: 'Minerva Hooper',
-          salary: '$23,738',
-          country: 'Curaçao',
-          city: 'Sinaai-Waas'
-        },
-        {
-          id: 3,
-          name: 'Sage Rodriguez',
-          salary: '$56,142',
-          country: 'Netherlands',
-          city: 'Overland Park'
-        },
-        {
-          id: 4,
-          name: 'Philip Chaney',
-          salary: '$38,735',
-          country: 'Korea, South',
-          city: 'Gloucester'
-        }
-      ]
+      storageserverlist:[],
+      validationserverlist:[],
+      fileinfo:{}
     }
   }
 }

@@ -23,7 +23,7 @@ const routes = [
         component: TableList
       },
       {
-        path: 'pdpdetails',
+        path: 'pdpdetails/:fileid',
         name: 'PDP details',
         component: UserProfile
       },

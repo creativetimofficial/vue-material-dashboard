@@ -1,14 +1,14 @@
 <template>
   <div>
-    <md-table v-model="people"  @md-selected="onSelect" :table-header-color="tableHeaderColor">
+    <md-table v-model="list"  @md-selected="onSelect" :table-header-color="tableHeaderColor">
       <md-table-toolbar>
         <h1 class="md-title">File list</h1>
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }"  md-selectable="single">
-        <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.id }}</md-table-cell>
-        <md-table-cell md-label="Name" md-sort-by="name">{{ item.name }}</md-table-cell>
-        <md-table-cell md-label="Size" md-sort-by="name">{{ item.name }}</md-table-cell>
+        <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.fileid }}</md-table-cell>
+        <md-table-cell md-label="Name" md-sort-by="name">{{ item.filename }}</md-table-cell>
+        <md-table-cell md-label="Size" md-sort-by="name">{{bytesToSize(item.size) }}</md-table-cell>
         <md-table-cell md-label="PDP details"  ><md-icon class="md-size-1x">description</md-icon></md-table-cell>
 
       </md-table-row>
@@ -89,45 +89,15 @@ import axios from 'axios'
     data: () => ({
       selected: {},
       showDialog: false,
-      people: [
-        {
-          id: 1,
-          name: 'Shawna Dubbin',
-          email: 'sdubbin0@geocities.com',
-          gender: 'Male',
-          title: 'Assistant Media Planner'
-        },
-        {
-          id: 2,
-          name: 'Odette Demageard',
-          email: 'odemageard1@spotify.com',
-          gender: 'Female',
-          title: 'Account Coordinator'
-        },
-        {
-          id: 3,
-          name: 'Lonnie Izkovitz',
-          email: 'lizkovitz3@youtu.be',
-          gender: 'Female',
-          title: 'Operator'
-        },
-        {
-          id: 4,
-          name: 'Thatcher Stave',
-          email: 'tstave4@reference.com',
-          gender: 'Male',
-          title: 'Software Test Engineer III'
-        },
-        {
-          id: 5,
-          name: 'Clarinda Marieton',
-          email: 'cmarietonh@theatlantic.com',
-          gender: 'Female',
-          title: 'Paralegal'
-        }
-      ]
+      list: []
     }),
     methods: {
+      bytesToSize(bytes) {
+         var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+         if (bytes == 0) return '0 Byte';
+         var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+         return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+      },
       refresh(){
         console.log('refresh')
         this.getFileList();
@@ -139,14 +109,20 @@ import axios from 'axios'
           // this.$data.showDialog=true;
           this.$data.selectItem=item;
           // this.$routes.push('/pdpdetails')
-          this.$router.push('/pdpdetails')
+          this.$router.push('/pdpdetails/'+item.fileid)
 
         }
 
       },
       getFileList(){
+        var _this=this;
         axios.get('/filelist?address='+count)
         .then(function (response) {
+          if(response.data){
+            _this.$data.list=response.data;
+
+
+          }
           console.log(response);
         })
         .catch(function (error) {
