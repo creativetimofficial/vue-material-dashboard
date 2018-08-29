@@ -4,18 +4,43 @@
 
     <side-bar>
       <mobile-menu slot="content"></mobile-menu>
-      <!-- <sidebar-link to="/dashboard">
-        <md-icon>dashboard</md-icon>
-        <p>Dashboard</p>
-      </sidebar-link>
-      <sidebar-link to="/user">
-        <md-icon>person</md-icon>
-        <p>User Profile</p>
-      </sidebar-link> -->
       <sidebar-link to="/filelist">
-        <md-icon>content_paste</md-icon>
+        <md-icon>dashboard</md-icon>
         <p>File  list</p>
       </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>person</md-icon>
+        <p>about lambda</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>PDP introduction</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>About Token</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>Go Whitelist</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>Download whitepaper</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>Storage node</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>Verification node</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>Relevant papers</p>
+      </sidebar-link>
+
       <!-- <sidebar-link to="/typography">
         <md-icon>library_books</md-icon>
         <p>Typography</p>

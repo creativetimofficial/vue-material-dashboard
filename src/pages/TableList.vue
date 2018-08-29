@@ -3,7 +3,7 @@
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
-          <md-card-header data-background-color="green">
+          <md-card-header data-background-color="blue">
             <h4 class="title">Uploading files</h4>
             <p class="category">Your test account: ea28799184925f734f9e38d66b333c85316ac0c4</p>
           </md-card-header>
@@ -14,7 +14,7 @@
             >
             </vue-dropzone>
             <div  style="margin-bottom: 20px"></div>
-            <table-single table-header-color="green"  ref="simpletable" ></table-single>
+            <table-single table-header-color="blue"  ref="simpletable" ></table-single>
           </md-card-content>
         </md-card>
       </div>

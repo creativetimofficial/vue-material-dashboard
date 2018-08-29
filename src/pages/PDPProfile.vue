@@ -4,21 +4,21 @@
       <div class="md-layout-item md-medium-size-100 md-size-66">
 
       <md-card>
-         <md-card-header data-background-color="green">
+         <md-card-header data-background-color="blue">
            <h4 class="title">Storage server list</h4>
            <p class="category">Here is a subtitle for this table</p>
          </md-card-header>
          <md-card-content>
-           <ordered-table table-header-color="green"  :datalist="storageserverlist"></ordered-table>
+           <ordered-table table-header-color="blue"  :datalist="storageserverlist"></ordered-table>
          </md-card-content>
        </md-card>
        <md-card>
-          <md-card-header data-background-color="green">
+          <md-card-header data-background-color="blue">
             <h4 class="title">Validation server list</h4>
             <p class="category">Here is a subtitle for this table</p>
           </md-card-header>
           <md-card-content>
-            <ordered-table table-header-color="green"   :datalist="validationserverlist"></ordered-table>
+            <ordered-table table-header-color="blue"   :datalist="validationserverlist"></ordered-table>
           </md-card-content>
         </md-card>
       </div>

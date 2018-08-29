@@ -6,9 +6,11 @@
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }"  md-selectable="single">
-        <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.fileid }}</md-table-cell>
+        <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.orderid }}</md-table-cell>
         <md-table-cell md-label="Name" md-sort-by="name">{{ item.filename }}</md-table-cell>
-        <md-table-cell md-label="Size" md-sort-by="name">{{bytesToSize(item.size) }}</md-table-cell>
+        <md-table-cell md-label="Size" md-sort-by="name">{{bytesToSize(item.filesize) }}</md-table-cell>
+        <md-table-cell md-label="Upload Time" md-sort-by="name">{{item.timestamp }}</md-table-cell>
+        <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell>
         <md-table-cell md-label="PDP details"  ><md-icon class="md-size-1x">description</md-icon></md-table-cell>
 
       </md-table-row>
@@ -109,7 +111,7 @@ import axios from 'axios'
           // this.$data.showDialog=true;
           this.$data.selectItem=item;
           // this.$routes.push('/pdpdetails')
-          this.$router.push('/pdpdetails/'+item.fileid)
+          this.$router.push('/pdpdetails/'+item.orderid)
 
         }
 
@@ -119,7 +121,7 @@ import axios from 'axios'
         axios.get('/filelist?address='+count)
         .then(function (response) {
           if(response.data){
-            _this.$data.list=response.data;
+            _this.$data.list=response.data.orders;
 
 
           }
