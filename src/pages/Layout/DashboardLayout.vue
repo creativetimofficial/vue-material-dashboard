@@ -12,7 +12,7 @@
         <md-icon>person</md-icon>
         <p>about lambda</p>
       </sidebar-link>
-      <sidebar-link to="/">
+      <sidebar-link to="/scenario">
         <md-icon>business</md-icon>
         <p>Application Scenario</p>
       </sidebar-link>

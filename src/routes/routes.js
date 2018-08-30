@@ -6,7 +6,7 @@ import TableList from '@/pages/TableList.vue'
 import UserProfile from '@/pages/PDPProfile.vue'
 //
 // import Typography from '@/pages/Typography.vue'
-// import Icons from '@/pages/Icons.vue'
+import Icons from '@/pages/Icons.vue'
 // import Maps from '@/pages/Maps.vue'
 // import Notifications from '@/pages/Notifications.vue'
 import UpgradeToPRO from '@/pages/UpgradeToPRO.vue'
@@ -31,8 +31,12 @@ const routes = [
         path: 'about',
         name: 'About Lambda',
         component: UpgradeToPRO
+      },
+      {
+        path: 'scenario',
+        name: 'Application Scenario',
+        component: Icons
       }
-      // ,
       // {
       //   path: 'dashboard',
       //   name: 'Dashboard',
@@ -45,11 +49,7 @@ const routes = [
       //   name: 'Typography',
       //   component: Typography
       // },
-      // {
-      //   path: 'icons',
-      //   name: 'Icons',
-      //   component: Icons
-      // },
+
       // {
       //   path: 'maps',
       //   name: 'Maps',
