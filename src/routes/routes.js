@@ -7,7 +7,7 @@ import UserProfile from '@/pages/PDPProfile.vue'
 //
 // import Typography from '@/pages/Typography.vue'
 import Icons from '@/pages/Icons.vue'
-// import Maps from '@/pages/Maps.vue'
+import Maps from '@/pages/Maps.vue'
 // import Notifications from '@/pages/Notifications.vue'
 import UpgradeToPRO from '@/pages/UpgradeToPRO.vue'
 
@@ -36,7 +36,13 @@ const routes = [
         path: 'scenario',
         name: 'Application Scenario',
         component: Icons
-      }
+      },
+      {
+        path: 'whitepaper',
+        name: 'Download whitepaper',
+        component: Maps
+
+      },
       // {
       //   path: 'dashboard',
       //   name: 'Dashboard',
@@ -50,15 +56,6 @@ const routes = [
       //   component: Typography
       // },
 
-      // {
-      //   path: 'maps',
-      //   name: 'Maps',
-      //   meta: {
-      //     hideFooter: true
-      //   },
-      //   component: Maps
-      //
-      // },
       // {
       //   path: 'notifications',
       //   name: 'Notifications',

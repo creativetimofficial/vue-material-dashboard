@@ -16,9 +16,9 @@
         <md-icon>business</md-icon>
         <p>Application Scenario</p>
       </sidebar-link>
-      <sidebar-link to="/">
-        <md-icon>content_paste</md-icon>
-        <p>Download whitepaper</p>
+      <sidebar-link to="/whitepaper">
+        <md-icon>book</md-icon>
+        <p>Whitepaper</p>
       </sidebar-link>
       <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
