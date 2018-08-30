@@ -8,13 +8,17 @@
         <md-icon>dashboard</md-icon>
         <p>File  list</p>
       </sidebar-link>
-      <sidebar-link to="/">
+      <sidebar-link to="/about">
         <md-icon>person</md-icon>
         <p>about lambda</p>
       </sidebar-link>
       <sidebar-link to="/">
+        <md-icon>business</md-icon>
+        <p>Application Scenario</p>
+      </sidebar-link>
+      <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
-        <p>PDP introduction</p>
+        <p>Download whitepaper</p>
       </sidebar-link>
       <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
@@ -22,12 +26,11 @@
       </sidebar-link>
       <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
-        <p>Go Whitelist</p>
+        <p>PDP introduction</p>
       </sidebar-link>
-      <sidebar-link to="/">
-        <md-icon>content_paste</md-icon>
-        <p>Download whitepaper</p>
-      </sidebar-link>
+
+
+
       <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
         <p>Storage node</p>
