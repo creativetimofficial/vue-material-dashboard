@@ -5,11 +5,13 @@ import TableList from '@/pages/TableList.vue'
 // import Dashboard from '@/pages/Dashboard.vue'
 import UserProfile from '@/pages/PDPProfile.vue'
 //
-// import Typography from '@/pages/Typography.vue'
+import Typography from '@/pages/Typography.vue'
 import Icons from '@/pages/Icons.vue'
 import Maps from '@/pages/Maps.vue'
 // import Notifications from '@/pages/Notifications.vue'
 import UpgradeToPRO from '@/pages/UpgradeToPRO.vue'
+
+import Papers from '@/pages/Papers.vue'
 
 const routes = [
   {
@@ -43,6 +45,16 @@ const routes = [
         component: Maps
 
       },
+      {
+        path: 'token',
+        name: 'Token Distribution',
+        component: Typography
+      },
+      {
+        path: 'papers',
+        name: 'Relevant papers',
+        component: Papers
+      },
       // {
       //   path: 'dashboard',
       //   name: 'Dashboard',
@@ -56,11 +68,7 @@ const routes = [
       //   component: Typography
       // },
 
-      // {
-      //   path: 'notifications',
-      //   name: 'Notifications',
-      //   component: Notifications
-      // },
+
 
     ]
   }

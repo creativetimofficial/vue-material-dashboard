@@ -20,8 +20,8 @@
         <md-icon>book</md-icon>
         <p>Whitepaper</p>
       </sidebar-link>
-      <sidebar-link to="/">
-        <md-icon>content_paste</md-icon>
+      <sidebar-link to="/token">
+        <md-icon>attach_money</md-icon>
         <p>About Token</p>
       </sidebar-link>
       <sidebar-link to="/">
@@ -39,8 +39,8 @@
         <md-icon>content_paste</md-icon>
         <p>Verification node</p>
       </sidebar-link>
-      <sidebar-link to="/">
-        <md-icon>content_paste</md-icon>
+      <sidebar-link to="/papers">
+        <md-icon>find_in_page</md-icon>
         <p>Relevant papers</p>
       </sidebar-link>
 

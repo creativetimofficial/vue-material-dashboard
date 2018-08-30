@@ -38,7 +38,7 @@ export default{
   props: {
     title: {
       type: String,
-      default: 'lambda pdp'
+      default: 'lambda demo'
     },
     backgroundImage: {
       type: String,
