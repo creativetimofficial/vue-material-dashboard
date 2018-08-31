@@ -26,6 +26,9 @@
         <file-info  :data="fileinfo">
 
         </file-info>
+        <div>
+               <md-button  to="/filelist">Back to filelist </md-button>
+        </div>
       </div>
     </div>
   </div>

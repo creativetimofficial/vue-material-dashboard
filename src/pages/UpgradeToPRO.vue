@@ -41,8 +41,8 @@ Since 2017, we have begun to create a completely decentralized and highly availa
     </md-card-header>
 
     <md-card-content>
-<div class="row">
-            <div class="col-md-2 col-xxs-4">
+<div class="md-layout md-gutter md-alignment-center">
+            <div class="md-layout-item md-large-size-50 md-medium-size-66 md-small-size-50 md-xsmall-size-100">
               <div class="head">
                 <div class="head-wrapper">
                   <a target="_blank" class="userimga" href="https://www.linkedin.com/in/xiaoyang-he-0083b428/">
@@ -59,7 +59,7 @@ Since 2017, we have begun to create a completely decentralized and highly availa
 
               </div>
             </div>
-            <div class="col-md-2 col-xxs-4 ">
+            <div class="md-layout-item md-large-size-50 md-medium-size-66 md-small-size-50 md-xsmall-size-100">
     					<div class="head">
     						<div class="head-wrapper">
     							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/monanli/">
@@ -71,7 +71,7 @@ Since 2017, we have begun to create a completely decentralized and highly availa
     					</div>
     				</div>
 
-            				<div class="col-md-2 col-xxs-4 ">
+            				<div class="md-layout-item md-large-size-50 md-medium-size-66 md-small-size-50 md-xsmall-size-100">
             					<div class="head">
             						<div class="head-wrapper">
             							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/bingqing-he-119019b1/">
@@ -86,7 +86,7 @@ Since 2017, we have begun to create a completely decentralized and highly availa
             						</p>
             					</div>
             				</div>
-                    <div class="col-md-2 col-xxs-4 ">
+                    <div class="md-layout-item md-large-size-50 md-medium-size-66 md-small-size-50 md-xsmall-size-100">
             					<div class="head">
             						<div class="head-wrapper">
             							<a  target="_blank" class="userimga" href="https://www.linkedin.com/in/hongqiangguo/">
@@ -97,7 +97,7 @@ Since 2017, we have begun to create a completely decentralized and highly availa
             						<p class="name"><a href="https://www.linkedin.com/in/hongqiangguo/">Guo Hongqiang</a></p>
             					</div>
             				</div>
-                    <div class="col-md-2 col-xxs-4">
+                    <div class="md-layout-item md-large-size-50 md-medium-size-66 md-small-size-50 md-xsmall-size-100">
             					<div class="head">
             						<div class="head-wrapper">
             							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/%E6%B5%B7%E5%BC%BA-%E9%AB%98-187a60166/">
@@ -108,7 +108,7 @@ Since 2017, we have begun to create a completely decentralized and highly availa
             						<p class="name"><a href="https://www.linkedin.com/in/%E6%B5%B7%E5%BC%BA-%E9%AB%98-187a60166/">Gao Haiqiang</a></p>
             					</div>
             				</div>
-                    <div class="col-md-2 col-xxs-4 ">
+                    <div class="md-layout-item md-large-size-50 md-medium-size-66 md-small-size-50 md-xsmall-size-100">
             					<div class="head">
             						<div class="head-wrapper">
             							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/haijun-zhao-0a76652b/">
