@@ -20,38 +20,61 @@
     <md-dialog :md-active.sync="showDialog">
      <md-dialog-title>PDP details</md-dialog-title>
 
-     <div class="contenthtml">
+     <div v-if="pdpinfo.tpa" class="contenthtml">
        <md-list class="md-triple-line">
        <md-list-item>
+         <md-avatar>
+                <img src="@/assets/img/Verification.png" >
+              </md-avatar>
 
 
        <div class="md-list-item-text">
-         <span>Sandra Adams</span>
-         <span>Oui oui</span>
+         <span>Verification node</span>
+         <span>{{pdpinfo.tpa}}</span>
 
        </div>
 
      </md-list-item>
-
+  <md-divider class="md-inset"></md-divider>
      <md-list-item>
+       <md-avatar>
+              <img src="@/assets/img/Storage.png" >
+            </md-avatar>
 
 
      <div class="md-list-item-text">
-       <span>Sandra Adams</span>
-       <span>Oui oui</span>
+       <span>Storage node</span>
+       <span>{{pdpinfo.server}}</span>
 
      </div>
 
    </md-list-item>
-
+  <md-divider class="md-inset"></md-divider>
   <md-list-item>
+    <md-avatar>
+           <img src="@/assets/img/states.png" >
+         </md-avatar>
 
 
   <div class="md-list-item-text">
-    <span>Sandra Adams</span>
-    <span>Oui oui</span>
+    <span>Status</span>
+    <span>{{statusformat(pdpinfo.status)}}</span>
 
   </div>
+
+</md-list-item>
+  <md-divider class="md-inset"></md-divider>
+<md-list-item>
+
+  <md-avatar>
+         <img src="@/assets/img/time.png" >
+       </md-avatar>
+
+<div class="md-list-item-text">
+  <span>Verification time</span>
+  <p>{{DateTimeformat(pdpinfo.createtime)}}</p>
+
+</div>
 
 </md-list-item>
      </md-list>
@@ -68,6 +91,7 @@
 
 <script>
 import ethcount from '../../ethcount.js'
+import moment from "moment"
 var count = ethcount();
 console.log(count);
 
@@ -91,9 +115,26 @@ import axios from 'axios'
     data: () => ({
       selected: {},
       showDialog: false,
-      list: []
+      list: [],
+      pdpinfo:{}
     }),
     methods: {
+      DateTimeformat(t){
+                return moment(t).format('YYYY-MM-DD HH:mm:ss')
+      },
+      statusformat(num){
+        //0 进行中 1 完整存储  2 丢失或损坏
+        if(num==0){
+          return 'In progress'
+        }else if (num==1) {
+          return 'Complete storage'
+        }else if (num==2) {
+          return 'Loss or damage'
+        }else {
+          return 'Other'
+        }
+
+      },
       bytesToSize(bytes) {
          var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
          if (bytes == 0) return '0 Byte';
@@ -108,10 +149,11 @@ import axios from 'axios'
         this.selected = item
         console.log('选择',item)
         if(item!=undefined){
-          // this.$data.showDialog=true;
+          this.$data.showDialog=true;
           this.$data.selectItem=item;
           // this.$routes.push('/pdpdetails')
-          this.$router.push('/pdpdetails/'+item.orderid)
+          // this.$router.push('/pdpdetails/'+item.orderid)
+          this.getPDPinfo(item.id)
 
         }
 
@@ -130,6 +172,26 @@ import axios from 'axios'
         .catch(function (error) {
           console.log(error);
         });
+      },
+      getPDPinfo(fileid){
+        var _this=this;
+        axios.get('/filepdpinfo2?address='+count+"&fileid="+fileid)
+        .then(function (response) {
+          if(response.data){
+
+            console.log(response.data);
+            _this.$data.pdpinfo=response.data
+
+            // _this.$data.list=response.data.orders;
+
+
+          }
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
       }
     }
   }
@@ -143,4 +205,11 @@ import axios from 'axios'
     // width: 500px;
     margin: 20px;
   }
+  .md-list {
+   width: 320px;
+   max-width: 100%;
+   display: inline-block;
+   vertical-align: top;
+   border: 1px solid rgba(#000, .12);
+ }
 </style>
