@@ -1,16 +1,19 @@
 <template>
   <div>
+
     <md-table v-model="list"  @md-selected="onSelect" :table-header-color="tableHeaderColor">
       <md-table-toolbar>
         <h1 class="md-title">File list</h1>
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }"  md-selectable="single">
-        <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.orderid }}</md-table-cell>
-        <md-table-cell md-label="Name" md-sort-by="name">{{ item.filename }}</md-table-cell>
-        <md-table-cell md-label="Size" md-sort-by="name">{{bytesToSize(item.filesize) }}</md-table-cell>
-        <md-table-cell md-label="Upload Time" md-sort-by="name">{{item.timestamp }}</md-table-cell>
-        <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell>
+        <md-table-cell md-label="ID" md-sort-by="orderid" md-numeric>{{ item.orderid }}</md-table-cell>
+        <md-table-cell md-label="Name" md-sort-by="filename">
+          {{ item.filename }}
+        </md-table-cell>
+        <md-table-cell md-label="Size" md-sort-by="filesize">{{bytesToSize(item.filesize) }}</md-table-cell>
+        <md-table-cell md-label="Upload Time" md-sort-by="timestamp">{{DateTimeformat(item.timestamp) }}</md-table-cell>
+        <!-- <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell> -->
         <md-table-cell md-label="PDP details"  ><md-icon class="md-size-1x">description</md-icon></md-table-cell>
 
       </md-table-row>
@@ -19,8 +22,10 @@
 
     <md-dialog :md-active.sync="showDialog">
      <md-dialog-title>PDP details</md-dialog-title>
-
-     <div v-if="pdpinfo.tpa" class="contenthtml">
+<div v-if="pdpinfo.tpa==undefined" class="contenthtml">
+  Wait for Verification
+  </div>
+     <div v-if="pdpinfo.tpa!=undefined" class="contenthtml">
        <md-list class="md-triple-line">
        <md-list-item>
          <md-avatar>
@@ -92,6 +97,7 @@
 <script>
 import ethcount from '../../ethcount.js'
 import moment from "moment"
+import axiosget from '@/axiosget.js'
 var count = ethcount();
 console.log(count);
 
@@ -119,8 +125,21 @@ import axios from 'axios'
       pdpinfo:{}
     }),
     methods: {
+      notifyVue (msg) {
+        console.log('smg')
+        var color = Math.floor((Math.random() * 4) + 1)
+        this.$notify(
+          {
+            message: msg,
+            icon: 'add_alert',
+            horizontalAlign: 'center',
+            verticalAlign: 'top',
+            type: 'warning'
+          })
+      },
       DateTimeformat(t){
-                return moment(t).format('YYYY-MM-DD HH:mm:ss')
+                // console.log(t)
+                return moment.unix(t).format('YYYY-MM-DD HH:mm:ss')
       },
       statusformat(num){
         //0 进行中 1 完整存储  2 丢失或损坏
@@ -151,45 +170,51 @@ import axios from 'axios'
         if(item!=undefined){
           this.$data.showDialog=true;
           this.$data.selectItem=item;
+          this.getPDPinfo(item.orderid)
           // this.$routes.push('/pdpdetails')
           // this.$router.push('/pdpdetails/'+item.orderid)
-          this.getPDPinfo(item.id)
+
+
 
         }
 
       },
       getFileList(){
         var _this=this;
-        axios.get('/filelist?address='+count)
+        axiosget('filelist/'+count,[])
         .then(function (response) {
-          if(response.data){
-            _this.$data.list=response.data.orders;
+
+            _this.$data.list=response;
 
 
-          }
-          console.log(response);
+
+          // console.log(response);
         })
         .catch(function (error) {
           console.log(error);
+          this.notifyVue('error');
         });
       },
       getPDPinfo(fileid){
         var _this=this;
-        axios.get('/filepdpinfo2?address='+count+"&fileid="+fileid)
+        axiosget('filestatus/'+count,{},{
+          orderid:fileid
+        })
         .then(function (response) {
-          if(response.data){
+
 
             console.log(response.data);
-            _this.$data.pdpinfo=response.data
+            _this.$data.pdpinfo=response
 
             // _this.$data.list=response.data.orders;
 
 
-          }
+
           console.log(response);
         })
         .catch(function (error) {
           console.log(error);
+          this.notifyVue('error');
         });
 
       }

@@ -108,7 +108,7 @@ export default {
   .alert {
     z-index: 100;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     width: 41%;
 
     &.center {

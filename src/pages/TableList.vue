@@ -62,7 +62,12 @@ export default{
       // this.$refs.dropzone.removeAllFiles();
       console.log('ok')
       console.log(file);
-      this.$refs.simpletable.refresh();
+      var _this=this;
+      setTimeout(function () {
+        _this.$refs.simpletable.refresh();
+
+      },2000)
+
     }
   },
   data: () => ({
@@ -70,7 +75,7 @@ export default{
      url: "https://httpbin.org/post"
    },
    dropOptionsbig: {
-     url: "/upload?address="+count,
+     url: "/v1/api/putfile/"+count,
      parallelUploads: 1,  // since we're using a global 'currentFile', we could have issues if parallelUploads > 1, so we'll make it = 1
      maxFilesize: 200,   // max individual file size 1024 MB
      chunking: false,      // enable chunking

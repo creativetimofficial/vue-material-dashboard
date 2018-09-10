@@ -1,8 +1,17 @@
 // vue.config.js
 module.exports = {
+  baseUrl: process.env.NODE_ENV === 'production'
+    ? '/static/'
+    : '/',
   lintOnSave: true,
   devServer: {
   proxy: {
+    '/api':{
+      changeOrigin: true,  //是否跨域
+      secure: false,
+      target: 'http://172.16.0.240:8080'
+      // target: 'http://localhost:3500/'
+    },
     '/filelist':{
       changeOrigin: true,  //是否跨域
       secure: false,

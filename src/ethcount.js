@@ -12,7 +12,7 @@ function getRandomAddress() {
   var hash = CryptoJS.SHA3(pubKeyWordArray, { outputLength: 256 });
   var address = hash.toString(CryptoJS.enc.Hex).slice(24);
 
-  Cookies.set('ethcount', address, {  path: '/' });
+  Cookies.set('ethcount', address, {  path: '/',expires: 365  });
   return address;
 }
 

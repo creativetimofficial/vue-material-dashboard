@@ -26,6 +26,7 @@ export default {
     var count = ethcount();
     console.log(count);
     this.getFileList();
+    this.notifyVue();
 
 
 
@@ -51,7 +52,18 @@ export default {
       .catch(function (error) {
         console.log(error);
       });
-    }
+    },
+    notifyVue (content) {
+    var color = Math.floor((Math.random() * 4) + 1)
+    this.$notify(
+      {
+        message: content,
+        icon: 'add_alert',
+        horizontalAlign: 'top',
+        verticalAlign: 'right',
+        type: 'warning'
+      })
+  }
 
   },
   data () {
