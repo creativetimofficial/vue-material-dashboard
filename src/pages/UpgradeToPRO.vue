@@ -10,6 +10,7 @@
 
           <md-card-content>
             <div class="table-responsive table-upgrade">
+              <p>
               The blockchain system is essentially a distributed system based on peer-to-peer networks, and a computer
 network system. In the computer world, the infrastructure at the bottom of any system includes computing,
 network, and storage resources. Currently, public blockchains are dedicated to providing computing power. Some
@@ -20,7 +21,7 @@ FileCoin and earlier projects failed to solve, ensuring the integrity and retrie
 of Retrievability (POR) and Provable Data Possession (PDP). In addition, by implementing Lambda FS and Lambda
 DB, Lambda provides all decentralized applications with formatting and programmatic access to distributed stored
 data.
-
+</p>
             </div>
 
           </md-card-content>
@@ -31,6 +32,7 @@ data.
     </md-card-header>
 
     <md-card-content>
+      <p>
       Our core team consists of serial entrepreneur in infrastructure software, and open source community contributors, and seasoned digital marketing professionals.
 
 Our team members mostly are from OneAPM, the business feature of OneAPM is application performance monitoring. Therefore, there will be massive data sources converging from various mobile terminals, browsers, and servers to the OneAPM server in 7X24 hours. The server needs to support the real-time writing, calculation, and query of massive data. At peak time, the OneAPM SaaS system needs to process 100 billion pieces of data every day.
@@ -38,6 +40,7 @@ Our team members mostly are from OneAPM, the business feature of OneAPM is appli
 In order to process these data, we built an analytical database druid cluster which is at the forefront in the world. This cluster deeply rewrites the Clickhouse database, creates a Chinese druid user group, compiles a number of technical books, and promotes practical experience of real-time analysis of massive data throughout China.
 
 Since 2017, we have begun to create a completely decentralized and highly available database software using the open source community based on our own experience and business characteristics. In the process we have gained great support from Apache foundation, Akka community, Druid Community, and the clickhouse team, as well as three well-known soft companies in China: OneAPM, YiFang Cloud ( which is positioned as the Dropbox of China ), and Sequoia DB ( which aspired to be the Oracle in China ), have also joined in as partners, all of which form today’s Lambda project.
+</p>
     </md-card-content>
 
 
@@ -190,6 +193,8 @@ export default {
     min-height: 100px;
   }
 }
+
+p   {   text-indent:2em   }
 
 
 </style>

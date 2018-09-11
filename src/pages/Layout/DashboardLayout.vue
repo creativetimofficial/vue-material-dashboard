@@ -24,7 +24,7 @@
         <md-icon>attach_money</md-icon>
         <p> Economic System</p>
       </sidebar-link>
-      <sidebar-link to="/">
+      <!-- <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
         <p>PDP introduction</p>
       </sidebar-link>
@@ -38,7 +38,7 @@
       <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
         <p>Verification node</p>
-      </sidebar-link>
+      </sidebar-link> -->
       <sidebar-link to="/papers">
         <md-icon>find_in_page</md-icon>
         <p>Relevant papers</p>

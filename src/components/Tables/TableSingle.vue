@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <md-table v-model="list"  @md-selected="onSelect" :table-header-color="tableHeaderColor">
+    <md-table v-model="list"   :table-header-color="tableHeaderColor">
       <md-table-toolbar>
         <h1 class="md-title">File list</h1>
       </md-table-toolbar>
@@ -9,15 +9,27 @@
       <md-table-row slot="md-table-row" slot-scope="{ item }"  md-selectable="single">
         <md-table-cell md-label="ID" md-sort-by="orderid" md-numeric>{{ item.orderid }}</md-table-cell>
         <md-table-cell md-label="Name" md-sort-by="filename">
-          {{ item.filename }}
+          <div @click="onSelect(item)">
+            {{ item.filename }}
+          </div>
         </md-table-cell>
         <md-table-cell md-label="Size" md-sort-by="filesize">{{bytesToSize(item.filesize) }}</md-table-cell>
         <md-table-cell md-label="Upload Time" md-sort-by="timestamp">{{DateTimeformat(item.timestamp) }}</md-table-cell>
         <!-- <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell> -->
-        <md-table-cell md-label="PDP details"  ><md-icon class="md-size-1x">description</md-icon></md-table-cell>
+        <md-table-cell  md-label="PDP details"  >
+          <div @click="onSelect(item)">
+            <md-icon class="md-size-1x">description</md-icon>
+          </div>
+        </md-table-cell>
 
       </md-table-row>
     </md-table>
+    <md-empty-state v-if="list.length==0"
+      md-icon="file_copy"
+      md-label="No uploaded files "
+      md-description="Please select file upload">
+
+    </md-empty-state>
 
 
     <md-dialog :md-active.sync="showDialog">
@@ -164,19 +176,25 @@ import axios from 'axios'
         console.log('refresh')
         this.getFileList();
       },
+      ondownload(item){
+        this.getPDPinfoDown(item.orderid)
+      },
       onSelect (item) {
         this.selected = item
         console.log('选择',item)
+        var _this=this;
         if(item!=undefined){
-          this.$data.showDialog=true;
-          this.$data.selectItem=item;
-          this.getPDPinfo(item.orderid)
+          _this.$data.showDialog=true;
+          _this.$data.selectItem=item;
+          _this.getPDPinfo(item.orderid)
           // this.$routes.push('/pdpdetails')
           // this.$router.push('/pdpdetails/'+item.orderid)
 
 
 
         }
+
+
 
       },
       getFileList(){
@@ -192,10 +210,33 @@ import axios from 'axios'
         })
         .catch(function (error) {
           console.log(error);
-          this.notifyVue('error');
+          _this.notifyVue(error.message);
         });
       },
       getPDPinfo(fileid){
+        var _this=this;
+        axiosget('filestatus/'+count,{},{
+          orderid:fileid
+        })
+        .then(function (response) {
+
+
+            console.log(response.data);
+            _this.$data.pdpinfo=response
+
+            // _this.$data.list=response.data.orders;
+
+
+
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+          _this.notifyVue(error.message);
+        });
+
+      },
+      getPDPinfoDown(fileid){
         var _this=this;
         axiosget('filestatus/'+count,{},{
           orderid:fileid

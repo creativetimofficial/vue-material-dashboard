@@ -202,3 +202,6 @@ export default{
   }
 }
 </script>
+<style scoped>
+p   {   text-indent:2em   }
+</style>
