@@ -17,7 +17,7 @@
                 </iframe>
             </div>
             <div class="hidden-md">
-                <h5>The WhitePaper are visible on Desktop .  Not working on Mobile and Tablets, please visit <a href="https://www.lambda.im/doc/Lambda-WhitePaper-en.pdf" target="_blank">Lambda-WhitePaper</a>
+                <h5>The WhitePaper are visible on Desktop .  Not working on Mobile and Tablets, please visit <a href="https://www.lambda.im/doc/Lambda-Economic-White-Paper.pdf" target="_blank">Lambda-WhitePaper</a>
                 </h5>
             </div>
           </md-card-content>

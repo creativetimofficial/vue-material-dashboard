@@ -7198,7 +7198,7 @@ vue-loader@^15.2.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-material@1.0.0-beta-8:
+vue-material@^1.0.0-beta-8:
   version "1.0.0-beta-8"
   resolved "http://registry.npm.taobao.org/vue-material/download/vue-material-1.0.0-beta-8.tgz#88b44095a59d46df5beed722dd5e2fb962f74138"
 

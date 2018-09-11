@@ -1,5 +1,10 @@
 <template>
   <div>
+    <div>
+
+
+
+</div>
 
     <md-table v-model="list"   :table-header-color="tableHeaderColor">
       <md-table-toolbar>
@@ -7,11 +12,11 @@
       </md-table-toolbar>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }"  md-selectable="single">
-        <md-table-cell md-label="ID" md-sort-by="orderid" md-numeric>{{ item.orderid }}</md-table-cell>
+
         <md-table-cell md-label="Name" md-sort-by="filename">
-          <div @click="onSelect(item)">
+
             {{ item.filename }}
-          </div>
+
         </md-table-cell>
         <md-table-cell md-label="Size" md-sort-by="filesize">{{bytesToSize(item.filesize) }}</md-table-cell>
         <md-table-cell md-label="Upload Time" md-sort-by="timestamp">{{DateTimeformat(item.timestamp) }}</md-table-cell>
@@ -21,15 +26,27 @@
             <md-icon class="md-size-1x">description</md-icon>
           </div>
         </md-table-cell>
+        <md-table-cell md-label="Download" md-sort-by="orderid" >
+          <div @click="ondownload(item)">
+            <md-icon class="md-size-1x">cloud_download</md-icon>
+          </div>
+        </md-table-cell>
 
       </md-table-row>
     </md-table>
-    <md-empty-state v-if="list.length==0"
+    <md-empty-state v-if="list.length==0&&loading==false"
       md-icon="file_copy"
       md-label="No uploaded files "
       md-description="Please select file upload">
 
     </md-empty-state>
+    <md-empty-state v-if="list.length==0&&loading==true"
+
+      md-label="loading"
+      md-description="Please wait a moment">
+
+    </md-empty-state>
+
 
 
     <md-dialog :md-active.sync="showDialog">
@@ -103,6 +120,20 @@
 
      </md-dialog-actions>
    </md-dialog>
+   <md-dialog :md-active.sync="showurl">
+    <md-dialog-title>Download the file</md-dialog-title>
+
+    <div class="down">
+      <a target="_blank" :href="urlfordown">Click downloads</a>
+    </div>
+
+    <md-dialog-actions>
+      <md-button class="md-raised" @click="showurl = false">Close</md-button>
+
+
+    </md-dialog-actions>
+  </md-dialog>
+
   </div>
 </template>
 
@@ -133,8 +164,11 @@ import axios from 'axios'
     data: () => ({
       selected: {},
       showDialog: false,
+      showurl:false,
       list: [],
-      pdpinfo:{}
+      pdpinfo:{},
+      urlfordown:'',
+      loading:true,
     }),
     methods: {
       notifyVue (msg) {
@@ -199,10 +233,12 @@ import axios from 'axios'
       },
       getFileList(){
         var _this=this;
+        _this.$data.loading=true;
         axiosget('filelist/'+count,[])
         .then(function (response) {
 
             _this.$data.list=response;
+            _this.$data.loading=false;
 
 
 
@@ -210,6 +246,7 @@ import axios from 'axios'
         })
         .catch(function (error) {
           console.log(error);
+          _this.$data.loading=false;
           _this.notifyVue(error.message);
         });
       },
@@ -245,13 +282,21 @@ import axios from 'axios'
 
 
             console.log(response.data);
-            _this.$data.pdpinfo=response
-
             // _this.$data.list=response.data.orders;
+            //如果文件已经交验了 则调用获取url的接口
+            return axiosget('filestatus/'+count,{},{
+              orderid:fileid
+            })
+
 
 
 
           console.log(response);
+        })
+        .then(function(item) {
+          _this.$data.showurl=true;
+          _this.$data.urlfordown='xxxxxxx'
+
         })
         .catch(function (error) {
           console.log(error);
@@ -278,4 +323,14 @@ import axios from 'axios'
    vertical-align: top;
    border: 1px solid rgba(#000, .12);
  }
+
+ .down{
+       text-align: center;
+       margin: 20px;
+
+ }
+
+ .md-progress-bar {
+    margin: 24px;
+  }
 </style>

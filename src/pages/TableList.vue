@@ -52,11 +52,26 @@ export default{
 
   },
   methods: {
+    notifyVue (msg) {
+      console.log('smg')
+      var color = Math.floor((Math.random() * 4) + 1)
+      this.$notify(
+        {
+          message: msg,
+          icon: 'add_alert',
+          horizontalAlign: 'center',
+          verticalAlign: 'top',
+          type: 'warning'
+        })
+    },
     vfileAdded(e){
+      console.log('vfileAdded')
        console.log(e)
     },
-    verror(e){
+    verror(file,e){
+      console.log('verror')
       console.log(e)
+      this.notifyVue('Failed to upload files');
     },
     afterComplete(file) {
       // this.$refs.dropzone.removeAllFiles();
