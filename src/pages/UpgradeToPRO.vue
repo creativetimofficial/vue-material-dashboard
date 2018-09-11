@@ -4,15 +4,22 @@
       <div class="md-layout-item md-size-66 mx-auto md-small-size-100">
         <md-card>
           <md-card-header data-background-color="blue">
-            <h4 class="title">Lambda blockchain - A Disruptor in Blockchain-Based Storage Solution</h4>
-            <p class="category">Providing Unlimited Storage Capabilities
-
-</p>
+            <h4 class="title">One Small Step for Lambda,one Giant Leap for the Future</h4>
+            <p class="category">Lambda is committed to solving the blockchain storage problem</p>
           </md-card-header>
 
           <md-card-content>
             <div class="table-responsive table-upgrade">
-              Lambda is a fast, safe, and scalable blockchain infrastructure project, which provides decentralized applications (DAPPs) data storage capabilities with unlimited scalability and fulfills services such as multi-chain data co-storage, cross-chain data management, data privacy protection, PDP, and distributed intelligent computing through logic decoupling and independent implementation of Lambda Chain and Lambda DB
+              The blockchain system is essentially a distributed system based on peer-to-peer networks, and a computer
+network system. In the computer world, the infrastructure at the bottom of any system includes computing,
+network, and storage resources. Currently, public blockchains are dedicated to providing computing power. Some
+protocols aim to change TCP/IP to provide better network connectivity, while Lambda is committed to providing
+storage infrastructure for blockchains. As a fast, safe, and scalable blockchain infrastructure project that provides
+decentralized data storage capabilities with unlimited scalability, Lambda has solved the data integrity problem that
+FileCoin and earlier projects failed to solve, ensuring the integrity and retrievability of stored data through Proofs
+of Retrievability (POR) and Provable Data Possession (PDP). In addition, by implementing Lambda FS and Lambda
+DB, Lambda provides all decentralized applications with formatting and programmatic access to distributed stored
+data.
 
             </div>
 

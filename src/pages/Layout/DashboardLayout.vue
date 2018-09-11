@@ -18,11 +18,11 @@
       </sidebar-link>
       <sidebar-link to="/whitepaper">
         <md-icon>book</md-icon>
-        <p>Whitepaper</p>
+        <p>Economic WhitePaper</p>
       </sidebar-link>
       <sidebar-link to="/token">
         <md-icon>attach_money</md-icon>
-        <p>About Token</p>
+        <p> Economic System</p>
       </sidebar-link>
       <sidebar-link to="/">
         <md-icon>content_paste</md-icon>

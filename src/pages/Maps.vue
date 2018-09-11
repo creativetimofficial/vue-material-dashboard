@@ -6,13 +6,13 @@
           <md-card-header data-background-color="blue">
             <h4 class="title">Lambda-WhitePaper</h4>
             <p class="category">more about lambda
-              <a target="_blank" href="https://www.lambda.im/doc/Lambda-WhitePaper-en.pdf">Lambda</a>
+              <a target="_blank" href="https://www.lambda.im/">Lambda</a>
             </p>
           </md-card-header>
 
           <md-card-content>
             <div class="iframe-container hidden-sm">
-                <iframe src="https://www.lambda.im/doc/Lambda-WhitePaper-en.pdf">
+                <iframe src="https://www.lambda.im/doc/Lambda-Economic-White-Paper.pdf">
                     <p>Your browser does not support iframes.</p>
                 </iframe>
             </div>

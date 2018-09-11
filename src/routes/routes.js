@@ -41,13 +41,13 @@ const routes = [
       },
       {
         path: 'whitepaper',
-        name: 'Download whitepaper',
+        name: 'Economic WhitePaper',
         component: Maps
 
       },
       {
         path: 'token',
-        name: 'Token Distribution',
+        name: 'Economic system',
         component: Typography
       },
       {
