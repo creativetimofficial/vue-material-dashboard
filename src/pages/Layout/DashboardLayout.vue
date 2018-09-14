@@ -6,7 +6,7 @@
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/filelist">
         <md-icon>dashboard</md-icon>
-        <p>File  list</p>
+        <p>Files</p>
       </sidebar-link>
       <sidebar-link to="/about">
         <md-icon>person</md-icon>

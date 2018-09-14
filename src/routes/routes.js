@@ -21,7 +21,7 @@ const routes = [
     children: [
       {
         path: 'filelist',
-        name: 'File List',
+        name: 'File upload',
         component: TableList
       },
       {

@@ -19,13 +19,14 @@
 
           </md-table-cell>
           <md-table-cell md-label="Size" md-sort-by="filesize">{{bytesToSize(item.filesize) }}</md-table-cell>
-          <md-table-cell md-label="Upload Time" md-sort-by="timestamp">{{DateTimeformat(item.timestamp) }}</md-table-cell>
-          <!-- <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell> -->
           <md-table-cell  md-label="PDP details"  >
             <div @click="onSelect(item)">
               <md-icon class="md-size-1x">description</md-icon>
             </div>
           </md-table-cell>
+          <md-table-cell md-label="Upload Time" md-sort-by="timestamp">{{DateTimeformat(item.timestamp) }}</md-table-cell>
+          <!-- <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell> -->
+          
           <md-table-cell md-label="Download" md-sort-by="orderid" >
             
             <a :href="ondownload(item)">
@@ -84,8 +85,9 @@
 
 
      <div class="md-list-item-text">
-       <span>Storage node</span>
-       <span>{{pdpinfo.server}}</span>
+       <span>Storage nodes</span>
+       
+        <div v-html='nodelist(pdpinfo.server)'></div>
 
      </div>
 
@@ -202,7 +204,7 @@ import axios from 'axios'
         if(num==0){
           return 'In progress'
         }else if (num==1) {
-          return 'Complete storage'
+          return 'Completely stored'
         }else if (num==2) {
           return 'Loss or damage'
         }else {
@@ -223,6 +225,9 @@ import axios from 'axios'
       ondownload(item){
         return  '/v1/api/downloadfile/'+count+"/?orderid="+item.orderid;
         // this.getPDPinfoDown(item.orderid)
+      },
+      nodelist(nodestr){
+       return nodestr.replace(/;/g,'</br>')
       },
       onSelect (item) {
         this.selected = item

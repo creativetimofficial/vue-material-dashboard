@@ -92,7 +92,7 @@ export default{
    dropOptionsbig: {
      url: "/v1/api/putfile/"+count,
      parallelUploads: 1,  // since we're using a global 'currentFile', we could have issues if parallelUploads > 1, so we'll make it = 1
-     maxFilesize: 200,   // max individual file size 1024 MB
+     maxFilesize: 20,   // max individual file size 1024 MB
      chunking: false,      // enable chunking
      forceChunking: false, // forces chunking when file.size < chunkSize
      parallelChunkUploads: true, // allows chunks to be uploaded in parallel (this is independent of the parallelUploads option)
