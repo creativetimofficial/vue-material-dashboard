@@ -5,47 +5,54 @@
 
 
 </div>
+    <div v-if="list.length>0">
+      <md-table   v-model="list"   :table-header-color="tableHeaderColor">
+        <md-table-toolbar>
+          <h1 class="md-title">File list</h1>
+        </md-table-toolbar>
 
-    <md-table v-model="list"   :table-header-color="tableHeaderColor">
-      <md-table-toolbar>
-        <h1 class="md-title">File list</h1>
-      </md-table-toolbar>
+        <md-table-row slot="md-table-row" slot-scope="{ item }"  md-selectable="single">
 
-      <md-table-row slot="md-table-row" slot-scope="{ item }"  md-selectable="single">
+          <md-table-cell md-label="Name" md-sort-by="filename">
 
-        <md-table-cell md-label="Name" md-sort-by="filename">
+              {{ item.filename }}
 
-            {{ item.filename }}
+          </md-table-cell>
+          <md-table-cell md-label="Size" md-sort-by="filesize">{{bytesToSize(item.filesize) }}</md-table-cell>
+          <md-table-cell md-label="Upload Time" md-sort-by="timestamp">{{DateTimeformat(item.timestamp) }}</md-table-cell>
+          <!-- <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell> -->
+          <md-table-cell  md-label="PDP details"  >
+            <div @click="onSelect(item)">
+              <md-icon class="md-size-1x">description</md-icon>
+            </div>
+          </md-table-cell>
+          <md-table-cell md-label="Download" md-sort-by="orderid" >
+            
+            <a :href="ondownload(item)">
+              <md-icon class="md-size-1x">cloud_download</md-icon>
+            </a>
+            
+          </md-table-cell>
 
-        </md-table-cell>
-        <md-table-cell md-label="Size" md-sort-by="filesize">{{bytesToSize(item.filesize) }}</md-table-cell>
-        <md-table-cell md-label="Upload Time" md-sort-by="timestamp">{{DateTimeformat(item.timestamp) }}</md-table-cell>
-        <!-- <md-table-cell md-label="Hash" md-sort-by="id" md-numeric>{{ item.hash }}</md-table-cell> -->
-        <md-table-cell  md-label="PDP details"  >
-          <div @click="onSelect(item)">
-            <md-icon class="md-size-1x">description</md-icon>
-          </div>
-        </md-table-cell>
-        <md-table-cell md-label="Download" md-sort-by="orderid" >
-          <div @click="ondownload(item)">
-            <md-icon class="md-size-1x">cloud_download</md-icon>
-          </div>
-        </md-table-cell>
+        </md-table-row>
+      </md-table>
+    </div>
+    <div v-else>
+      <md-empty-state v-if="loading==false"
+        md-icon="file_copy"
+        md-label="No uploaded files "
+        md-description="Please select file upload">
 
-      </md-table-row>
-    </md-table>
-    <md-empty-state v-if="list.length==0&&loading==false"
-      md-icon="file_copy"
-      md-label="No uploaded files "
-      md-description="Please select file upload">
+      </md-empty-state>
+      <md-empty-state v-if="loading==true"
 
-    </md-empty-state>
-    <md-empty-state v-if="list.length==0&&loading==true"
+        md-label="loading"
+        md-description="Please wait a moment">
 
-      md-label="loading"
-      md-description="Please wait a moment">
+      </md-empty-state>
 
-    </md-empty-state>
+    </div>
+
 
 
 
@@ -120,6 +127,9 @@
 
      </md-dialog-actions>
    </md-dialog>
+
+
+
    <md-dialog :md-active.sync="showurl">
     <md-dialog-title>Download the file</md-dialog-title>
 
@@ -211,7 +221,8 @@ import axios from 'axios'
         this.getFileList();
       },
       ondownload(item){
-        this.getPDPinfoDown(item.orderid)
+        return  '/v1/api/downloadfile/'+count+"/?orderid="+item.orderid;
+        // this.getPDPinfoDown(item.orderid)
       },
       onSelect (item) {
         this.selected = item
@@ -234,11 +245,12 @@ import axios from 'axios'
       getFileList(){
         var _this=this;
         _this.$data.loading=true;
+
         axiosget('filelist/'+count,[])
         .then(function (response) {
-
-            _this.$data.list=response;
             _this.$data.loading=false;
+            _this.$data.list=response;
+
 
 
 

@@ -22,7 +22,7 @@
       </sidebar-link>
       <sidebar-link to="/token">
         <md-icon>attach_money</md-icon>
-        <p> Economic System</p>
+        <p>Ecosystem </p>
       </sidebar-link>
       <!-- <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
