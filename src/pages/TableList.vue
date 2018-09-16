@@ -8,10 +8,15 @@
             <p class="category">Your test account: ea28799184925f734f9e38d66b333c85316ac0c4</p>
           </md-card-header>
           <md-card-content>
-            <vue-dropzone ref="dropzone" id="drop1" :options="dropOptionsbig"  @vdropzone-complete="afterComplete"
+            <vue-dropzone ref="dropzone" id="drop1" :options="dropOptionsbig"   @vdropzone-complete="afterComplete"
             @vdropzone-error="verror"
             @vdropzone-file-added="vfileAdded"
+            
             >
+              <div class="dropzone-custom-content">
+        <h3 class="dropzone-custom-title">Drag and drop to upload content!</h3>
+        <div class="subtitle">...or click to select a file from your computer</div>
+      </div>
             </vue-dropzone>
             <div  style="margin-bottom: 20px"></div>
             <table-single table-header-color="blue"  ref="simpletable" ></table-single>
@@ -72,14 +77,16 @@ export default{
       console.log('verror')
       console.log(e)
       this.notifyVue('Failed to upload files');
+      this.$refs.dropzone.removeAllFiles();
     },
     afterComplete(file) {
-      // this.$refs.dropzone.removeAllFiles();
+      
       console.log('ok')
       console.log(file);
       var _this=this;
       setTimeout(function () {
         _this.$refs.simpletable.refresh();
+        _this.$refs.dropzone.removeAllFiles();
 
       },2000)
 
@@ -100,10 +107,22 @@ export default{
      retryChunks: true,   // retry chunks on failure
      retryChunksLimit: 3, // retry maximum of 3 times (default is 3)
      timeout:60000,
-     dictDefaultMessage:'Click to select file or  Drop files here to upload to lambda'
+     dictDefaultMessage:'Click to select file or  Drop files here to upload to lambda',
+     maxFiles:1,
+     thumbnailWidth: 100,
+     thumbnailHeight:100
+
 
 
    }
  })
 }
 </script>
+
+
+<style>
+#drop1{
+      text-align: center
+}
+
+</style>
