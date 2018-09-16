@@ -1,12 +1,12 @@
 <template>
   <ul class="nav nav-mobile-menu">
-    <li>
+    <!-- <li>
       <md-field>
         <label>Search</label>
         <md-input v-model="search" type="text"></md-input>
       </md-field>
-    </li>
-    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    </li> -->
+    <!-- <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
       <i class="material-icons">dashboard</i>
       <p>Dashboard</p></a>
     </li>
@@ -25,11 +25,11 @@
           <li><a href="#">Another One</a></li>
         </ul>
       </drop-down>
-    </li>
-    <li>
+    </li> -->
+    <!-- <li>
       <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="material-icons">person</i>
       <p>Profile</p></a>
-    </li>
+    </li> -->
   </ul>
 </template>
 <script>

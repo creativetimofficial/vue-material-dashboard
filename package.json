@@ -9,12 +9,17 @@
     "dev": "npm run serve"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "chartist": "0.11.0",
+    "cryptojslib": "^3.1.2",
     "google-maps": "3.2.1",
+    "js-cookie": "^2.2.0",
+    "moment": "^2.22.2",
     "vue": "2.5.16",
     "vue-clickaway": "2.2.2",
-    "vue-material": "1.0.0-beta-8",
-    "vue-router": "3.0.1"
+    "vue-material": "^1.0.0-beta-8",
+    "vue-router": "3.0.1",
+    "vue2-dropzone": "^3.2.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "3.0.0-beta.15",

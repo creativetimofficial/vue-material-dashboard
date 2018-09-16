@@ -4,19 +4,47 @@
 
     <side-bar>
       <mobile-menu slot="content"></mobile-menu>
-      <sidebar-link to="/dashboard">
+      <sidebar-link to="/filelist">
         <md-icon>dashboard</md-icon>
-        <p>Dashboard</p>
+        <p>Files</p>
       </sidebar-link>
-      <sidebar-link to="/user">
+      <sidebar-link to="/about">
         <md-icon>person</md-icon>
-        <p>User Profile</p>
+        <p>about lambda</p>
       </sidebar-link>
-      <sidebar-link to="/table">
+      <sidebar-link to="/scenario">
+        <md-icon>business</md-icon>
+        <p>Application Scenario</p>
+      </sidebar-link>
+      <sidebar-link to="/whitepaper">
+        <md-icon>book</md-icon>
+        <p>Economic WhitePaper</p>
+      </sidebar-link>
+      <sidebar-link to="/token">
+        <md-icon>attach_money</md-icon>
+        <p>Ecosystem </p>
+      </sidebar-link>
+      <!-- <sidebar-link to="/">
         <md-icon>content_paste</md-icon>
-        <p>Table list</p>
+        <p>PDP introduction</p>
       </sidebar-link>
-      <sidebar-link to="/typography">
+
+
+
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>Storage node</p>
+      </sidebar-link>
+      <sidebar-link to="/">
+        <md-icon>content_paste</md-icon>
+        <p>Verification node</p>
+      </sidebar-link> -->
+      <sidebar-link to="/papers">
+        <md-icon>find_in_page</md-icon>
+        <p>Relevant papers</p>
+      </sidebar-link>
+
+      <!-- <sidebar-link to="/typography">
         <md-icon>library_books</md-icon>
         <p>Typography</p>
       </sidebar-link>
@@ -35,7 +63,7 @@
       <sidebar-link to="/upgrade" class="active-pro">
         <md-icon>unarchive</md-icon>
         <p>Upgrade to PRO</p>
-      </sidebar-link>
+      </sidebar-link> -->
     </side-bar>
 
     <div class="main-panel">
