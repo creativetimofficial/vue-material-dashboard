@@ -29,12 +29,7 @@ Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
 Vue.use(Notifications);
 
-// global library setup
-Object.defineProperty(Vue.prototype, "$Chartist", {
-  get() {
-    return this.$root.Chartist;
-  }
-});
+Vue.prototype.$Chartist = Chartist;
 
 /* eslint-disable no-new */
 new Vue({
