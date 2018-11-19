@@ -84,11 +84,11 @@ export default {
       marker.setMap(map);
     }
   },
-  mounted () {
-    GoogleMapsLoader.KEY = 'AIzaSyDxRCErL0rrgOYJx3jVUPSWZQT7JQysQ64'
-    GoogleMapsLoader.load((google) => {
-      this.initMap(google)
-    })
+  mounted() {
+    GoogleMapsLoader.KEY = "AIzaSyDxRCErL0rrgOYJx3jVUPSWZQT7JQysQ64";
+    GoogleMapsLoader.load(google => {
+      this.initMap(google);
+    });
   }
 };
 </script>

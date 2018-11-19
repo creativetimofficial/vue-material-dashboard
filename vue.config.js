@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-  baseUrl: '/vue-material-dashboard/'
-}
+  baseUrl: "/vue-material-dashboard/"
+};

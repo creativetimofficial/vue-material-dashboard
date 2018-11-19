@@ -72,7 +72,7 @@ export default {
     sidebarStyle() {
       return {
         backgroundImage: `url(${this.sidebarBackgroundImage})`
-      }
+      };
     }
   }
 };

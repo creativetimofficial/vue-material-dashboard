@@ -60,77 +60,78 @@
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import SocialSharing from 'vue-social-sharing'
-import VueGitHubButtons from 'vue-github-buttons'
-import 'vue-github-buttons/dist/vue-github-buttons.css'
+import Vue from "vue";
+import SocialSharing from "vue-social-sharing";
+import VueGitHubButtons from "vue-github-buttons";
+import "vue-github-buttons/dist/vue-github-buttons.css";
 
-Vue.use(SocialSharing)
-Vue.use(VueGitHubButtons, {useCache: true})
+Vue.use(SocialSharing);
+Vue.use(VueGitHubButtons, { useCache: true });
 export default {
-  data () {
+  data() {
     return {
-      documentationLink: 'https://creativetimofficial.github.io/vue-material-dashboard/documentation',
-      shareUrl: 'https://www.creative-tim.com/product/vue-material-dashboard',
-      buyUrl: '',
-      freeUrl: 'https://www.creative-tim.com/product/vue-material-dashboard',
+      documentationLink:
+        "https://creativetimofficial.github.io/vue-material-dashboard/documentation",
+      shareUrl: "https://www.creative-tim.com/product/vue-material-dashboard",
+      buyUrl: "",
+      freeUrl: "https://www.creative-tim.com/product/vue-material-dashboard",
       isOpen: false,
       sidebarColors: [
-        {color: 'purple', active: false},
-        {color: 'blue', active: false},
-        {color: 'green', active: true},
-        {color: 'orange', active: false},
-        {color: 'red', active: false}
+        { color: "purple", active: false },
+        { color: "blue", active: false },
+        { color: "green", active: true },
+        { color: "orange", active: false },
+        { color: "red", active: false }
       ],
       sidebarImages: [
-        {image: require('@/assets/img/sidebar-1.jpg'), active: false},
-        {image: require('@/assets/img/sidebar-2.jpg'), active: true},
-        {image: require('@/assets/img/sidebar-3.jpg'), active: false},
-        {image: require('@/assets/img/sidebar-4.jpg'), active: false}
+        { image: require("@/assets/img/sidebar-1.jpg"), active: false },
+        { image: require("@/assets/img/sidebar-2.jpg"), active: true },
+        { image: require("@/assets/img/sidebar-3.jpg"), active: false },
+        { image: require("@/assets/img/sidebar-4.jpg"), active: false }
       ]
-    }
+    };
   },
   methods: {
-    toggleDropDown () {
-      this.isOpen = !this.isOpen
+    toggleDropDown() {
+      this.isOpen = !this.isOpen;
     },
-    closeDropDown () {
-      this.isOpen = false
+    closeDropDown() {
+      this.isOpen = false;
     },
-    toggleList (list, itemToActivate) {
-      list.forEach((listItem) => {
-        listItem.active = false
-      })
-      itemToActivate.active = true
+    toggleList(list, itemToActivate) {
+      list.forEach(listItem => {
+        listItem.active = false;
+      });
+      itemToActivate.active = true;
     },
-    updateValue (name, val) {
-      console.log(name)
-      this.$emit(`update:${name}`, val)
+    updateValue(name, val) {
+      console.log(name);
+      this.$emit(`update:${name}`, val);
     },
-    changeSidebarBackground (item) {
-      this.$emit('update:color', item.color)
-      this.toggleList(this.sidebarColors, item)
+    changeSidebarBackground(item) {
+      this.$emit("update:color", item.color);
+      this.toggleList(this.sidebarColors, item);
     },
-    changeSidebarImage (item) {
-      this.$emit('update:image', item.image)
-      this.toggleList(this.sidebarImages, item)
+    changeSidebarImage(item) {
+      this.$emit("update:image", item.image);
+      this.toggleList(this.sidebarImages, item);
     }
   }
-}
+};
 </script>
 <style>
-  .centered-row {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
+.centered-row {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
 
-  .button-container .btn {
-    margin-right: 10px;
-  }
+.button-container .btn {
+  margin-right: 10px;
+}
 
-  .centered-buttons {
-    display: flex;
-    justify-content: center;
-  }
+.centered-buttons {
+  display: flex;
+  justify-content: center;
+}
 </style>

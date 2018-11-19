@@ -55,11 +55,11 @@
 </template>
 
 <script>
-import TopNavbar from './TopNavbar.vue'
-import ContentFooter from './ContentFooter.vue'
-import DashboardContent from './Content.vue'
-import MobileMenu from '@/pages/Layout/MobileMenu.vue'
-import FixedPlugin from './Extra/FixedPlugin.vue'
+import TopNavbar from "./TopNavbar.vue";
+import ContentFooter from "./ContentFooter.vue";
+import DashboardContent from "./Content.vue";
+import MobileMenu from "@/pages/Layout/MobileMenu.vue";
+import FixedPlugin from "./Extra/FixedPlugin.vue";
 
 export default {
   components: {
@@ -69,11 +69,11 @@ export default {
     MobileMenu,
     FixedPlugin
   },
-  data () {
+  data() {
     return {
-      sidebarBackground: 'green',
-      sidebarBackgroundImage: require('@/assets/img/sidebar-2.jpg')
-    }
+      sidebarBackground: "green",
+      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg")
+    };
   }
 };
 </script>
