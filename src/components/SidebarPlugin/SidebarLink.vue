@@ -8,7 +8,7 @@
   </md-list-item>
 </template>
 <script>
-export default{
+export default {
   inject: {
     autoClose: {
       default: true
@@ -19,25 +19,29 @@ export default{
       type: [String, Object],
       default: () => {
         return {
-          name: '',
-          path: '',
-          icon: ''
-        }
+          name: "",
+          path: "",
+          icon: ""
+        };
       }
     },
     tag: {
       type: String,
-      default: 'router-link'
+      default: "router-link"
     }
   },
   methods: {
-    hideSidebar () {
-      if (this.autoClose && this.$sidebar && this.$sidebar.showSidebar === true) {
-        this.$sidebar.displaySidebar(false)
+    hideSidebar() {
+      if (
+        this.autoClose &&
+        this.$sidebar &&
+        this.$sidebar.showSidebar === true
+      ) {
+        this.$sidebar.displaySidebar(false);
       }
     }
   }
-}
+};
 </script>
 <style>
 </style>

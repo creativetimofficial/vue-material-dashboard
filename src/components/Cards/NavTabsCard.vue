@@ -8,7 +8,6 @@
 
 <script>
 export default {
-  name: 'nav-tabs-card'
-}
-
+  name: "nav-tabs-card"
+};
 </script>

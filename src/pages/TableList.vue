@@ -29,15 +29,12 @@
 </template>
 
 <script>
-import {
-  SimpleTable,
-  OrderedTable
-} from '@/components'
+import { SimpleTable, OrderedTable } from "@/components";
 
-export default{
+export default {
   components: {
     OrderedTable,
     SimpleTable
   }
-}
+};
 </script>

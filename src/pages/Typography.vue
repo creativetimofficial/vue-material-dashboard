@@ -103,12 +103,12 @@
 </template>
 
 <script>
-export default{
+export default {
   props: {
     dataBackgroundColor: {
       type: String,
-      default: ''
+      default: ""
     }
   }
-}
+};
 </script>
