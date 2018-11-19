@@ -1,4 +1,4 @@
-# Tables
+## Tables
 
 To use the table component, import it:
 
@@ -7,14 +7,14 @@ import {SimpleTable} from 'src/components'
 import {OrderedTable} from 'src/components'
 ```
 
-### Global Usage
+#### Global Usage
 
 ```js  
 Vue.component(SimpleTable)
 Vue.component(OrderedTable)
 ```
 
-### For Local Usage
+#### For Local Usage
 
 ```js
 export default {
@@ -27,7 +27,7 @@ export default {
 
 > Note: For more details about the tables and which tables you can use in your project please see the **Table** section from [vuematerial.io](https://vuematerial.io/components/table)
 
-## Simple Table
+### Simple Table
 
 ::: demo
 ```html
@@ -64,7 +64,7 @@ export default{
 ```
 :::
 
-## Ordered Table
+### Ordered Table
 
 ::: demo
 ```html

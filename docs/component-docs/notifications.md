@@ -1,4 +1,4 @@
-# Notifications
+## Notifications
 
 <script>
 module.exports = {
@@ -32,7 +32,7 @@ module.exports = {
 
 We crafted a custom plugin inspired by **vue-notifyjs** which is simple yet effective.
 
-### Usage
+#### Usage
 
 To use the notification plugin, import it from the components folder. Note that this is already done in **src/main.js**
 
@@ -41,7 +41,7 @@ import Notifications from './components/NotificationPlugin'
 Vue.use(Notifications)
 ```
 
-### Trigger Notifications
+#### Trigger Notifications
 
 ::: demo
 ```html
@@ -109,7 +109,7 @@ export default {
 
 > Note: ```<notifications></notifications>``` can be declared only once anywhere in your app, preferably in your root component so the notification component is alive inside any other components.
 
-### Notification options
+#### Notification options
 
 ```js
 this.$notify(
@@ -122,9 +122,7 @@ this.$notify(
   })
 ```
 
-### Props
-
-#### Notification (passed through the object sent to **$notify** method)
+### Notification (passed through the object sent to **$notify** method)
 
 ```js
 props: {

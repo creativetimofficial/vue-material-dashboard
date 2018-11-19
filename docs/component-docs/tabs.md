@@ -1,4 +1,4 @@
-# Tabs
+## Tabs
 
 If you have information that you don't need to show at once, we suggest you use tabs. We carefully re-styled the custom tabs component from vuematerial.io which you can easily use.
 
@@ -8,13 +8,13 @@ In order to use the tabs, import the necessary components:
 import {NavTabsCard, NavTabsTable} from 'src/components'
 ```
 
-### Global Usage
+#### Global Usage
 
 ```js
 Vue.component(NavTabsCard)
 Vue.component(NavTabsTable)
 ```
-### For Local Usage
+#### For Local Usage
 
 ```js
 export default {
@@ -26,7 +26,7 @@ export default {
 
 ```
 
-## Nav Tabs table
+### Nav Tabs table
 
 ::: demo
 ```html

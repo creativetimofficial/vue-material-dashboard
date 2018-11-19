@@ -1,4 +1,4 @@
-# Material Icons
+## Material Icons
 
 Through most of the examples in this dashboard, we have used the default Icons for the Material Design provided by Google. You can easily use them like this:
 

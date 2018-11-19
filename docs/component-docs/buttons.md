@@ -1,4 +1,4 @@
-# Buttons
+## Buttons
 
 To use the custom button you don't need to import the custom made component, you can easily use it like this:
 
@@ -8,7 +8,7 @@ To use the custom button you don't need to import the custom made component, you
 </md-button>
 ```
 
-## Colors
+### Colors
 
 We has changed the predefined button styles from vuematerial.io, each serving its own semantic purpose, with a few extras thrown in for more control.
 
@@ -24,7 +24,7 @@ We has changed the predefined button styles from vuematerial.io, each serving it
 ```
 :::
 
-## Style Buttons
+### Style Buttons
 
 ::: demo
 ```html
@@ -36,7 +36,7 @@ We has changed the predefined button styles from vuematerial.io, each serving it
 ```
 :::
 
-## Sizes
+### Sizes
 
 Fancy larger or smaller buttons? Add the classes `md-lg` or `md-sm` for additional sizes.
 
@@ -48,7 +48,7 @@ Fancy larger or smaller buttons? Add the classes `md-lg` or `md-sm` for addition
 ```
 :::
 
-## Extra Mile
+### Extra Mile
 
 We added extra classes that can help you better customise the look. Please see the examples:
 

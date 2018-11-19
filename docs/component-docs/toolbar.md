@@ -1,4 +1,4 @@
-# Toolbar
+### Toolbar
 
 We re-styled the default toolbar from vuematerial.io and you can easily use this like the example below:
 
@@ -36,7 +36,7 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
 ```
 :::
 
-## Colors
+### Colors
 
 ::: demo
 ```html

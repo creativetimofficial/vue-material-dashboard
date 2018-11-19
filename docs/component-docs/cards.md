@@ -1,4 +1,4 @@
-# Cards
+## Cards
 
 We think cards are one of the best ways to organise your information. We went all out with possibilities and we recommended finding the right fit for your product.
 
@@ -51,7 +51,7 @@ module.exports = {
 }
 </script>
 
-## Stats card
+### Stats card
 
 :::demo
 ```html
@@ -99,7 +99,7 @@ module.exports = {
 |  footer  | Content for card footer |
 
 
-## Chart card
+### Chart card
 
 For the implementation of graphic charts, we used [Chartist.js](https://gionkunz.github.io/chartist-js/).
 
@@ -109,7 +109,7 @@ For the implementation of graphic charts, we used [Chartist.js](https://gionkunz
  <chart-card
      :chart-data="dailySalesChart.data"
      :chart-options="dailySalesChart.options"
-     :chart-type="'Line'"
+     chart-type="Line"
      data-background-color="green">
      <template slot="content">
        <h4 class="title">Daily Sales</h4>

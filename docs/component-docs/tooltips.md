@@ -1,4 +1,4 @@
-# Tooltips
+## Tooltips
 
 We used, Tooltip from vuematerial.io and customized the look of it. It's a really handy component and can be integrated very easily.
 

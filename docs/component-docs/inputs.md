@@ -1,4 +1,4 @@
-# Inputs
+## Inputs
 
 <script>
 module.exports = {

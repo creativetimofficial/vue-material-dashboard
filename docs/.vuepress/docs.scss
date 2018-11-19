@@ -1,8 +1,32 @@
-@import '../../src/assets/scss/md/_variables';
+@import '../../src/assets/scss/md/variables';
 
 .theme-container .page {
   min-height: 100vh;
   background-color: white;
+}
+
+.content:not(.custom) {
+  max-width: none;
+}
+
+.sidebar .nav-links a {
+  font-weight: 400;
+  color: inherit !important;
+}
+
+@media (max-width: 719px) {
+  .sidebar .nav-links {
+    padding-top: 2rem;
+  }
+}
+
+.nav-item > a:not(.external):hover,
+.nav-item > a:not(.external).router-link-active {
+  border: 0;
+}
+
+.navbar .links {
+  background-color: transparent;
 }
 
 h1{

@@ -15,6 +15,9 @@ module.exports = {
   ],
   themeConfig: {
     repo: 'creativetimofficial/vue-material-dashboard',
+    nav: [
+      { text: 'v1.0.2', link: '/' }
+    ],
     sidebar: [
       {
         title: 'General Information',

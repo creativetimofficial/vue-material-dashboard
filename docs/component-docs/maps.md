@@ -1,4 +1,4 @@
-# Maps
+## Maps
 
 For maps we've used the library **google-maps**. You can use it by simply importing the maps view in the page you want to render it:
 
