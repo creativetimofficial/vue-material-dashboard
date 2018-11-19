@@ -20,8 +20,8 @@
 
 <script>
 export default {
-  name: 'nav-tabs-table',
-  data () {
+  name: "nav-tabs-table",
+  data() {
     return {
       selected: [],
       users: [
@@ -29,18 +29,19 @@ export default {
           name: 'Sign contract for "What are conference organizers afraid of?"'
         },
         {
-          name: 'Lines From Great Russian Literature? Or E-mails From My Boss?'
+          name: "Lines From Great Russian Literature? Or E-mails From My Boss?"
         },
         {
-          name: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit'
+          name:
+            "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit"
         }
       ]
-    }
+    };
   },
   methods: {
-    onSelect: function (items) {
-      this.selected = items
+    onSelect: function(items) {
+      this.selected = items;
     }
   }
-}
+};
 </script>

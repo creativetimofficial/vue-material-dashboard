@@ -27,33 +27,31 @@
   </div>
 </template>
 <script>
-import SidebarLink from './SidebarLink.vue'
-import MobileMenu from '@/pages/Layout/MobileMenu.vue'
+import SidebarLink from "./SidebarLink.vue";
 
-export default{
+export default {
   components: {
-    SidebarLink,
-    MobileMenu
+    SidebarLink
   },
   props: {
     title: {
       type: String,
-      default: 'Vue MD'
+      default: "Vue MD"
     },
     sidebarBackgroundImage: {
       type: String,
-      default: require('@/assets/img/sidebar-2.jpg')
+      default: require("@/assets/img/sidebar-2.jpg")
     },
     imgLogo: {
       type: String,
-      default: require('@/assets/img/vue-logo.png')
+      default: require("@/assets/img/vue-logo.png")
     },
     sidebarItemColor: {
       type: String,
-      default: 'green',
-      validator: (value) => {
-        let acceptedValues = ['', 'purple', 'blue', 'green', 'orange', 'red']
-        return acceptedValues.indexOf(value) !== -1
+      default: "green",
+      validator: value => {
+        let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
+        return acceptedValues.indexOf(value) !== -1;
       }
     },
     sidebarLinks: {
@@ -65,24 +63,24 @@ export default{
       default: true
     }
   },
-  provide () {
+  provide() {
     return {
       autoClose: this.autoClose
-    }
+    };
   },
   computed: {
-    sidebarStyle () {
+    sidebarStyle() {
       return {
         backgroundImage: `url(${this.sidebarBackgroundImage})`
       }
     }
   }
-}
+};
 </script>
 <style>
-  @media screen and (min-width: 991px) {
-    .nav-mobile-menu{
-      display: none;
-    }
+@media screen and (min-width: 991px) {
+  .nav-mobile-menu {
+    display: none;
   }
+}
 </style>

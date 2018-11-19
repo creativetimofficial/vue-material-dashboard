@@ -75,5 +75,5 @@ export default {
       sidebarBackgroundImage: require('@/assets/img/sidebar-2.jpg')
     }
   }
-}
+};
 </script>

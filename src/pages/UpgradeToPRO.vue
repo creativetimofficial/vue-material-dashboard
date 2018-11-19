@@ -79,8 +79,7 @@
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -107,28 +106,28 @@ export default {
     font-size: 1.063rem;
     border-top-width: 0;
     font-weight: 300;
-    border-bottom: 1px solid rgba(0,0,0,.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   }
 
-  &>tbody>tr>td,
-  &>tbody>tr>th,
-  &>tfoot>tr>td,
-  &>tfoot>tr>th,
-  &>thead>tr>td,
-  &>thead>tr>th {
+  & > tbody > tr > td,
+  & > tbody > tr > th,
+  & > tfoot > tr > td,
+  & > tfoot > tr > th,
+  & > thead > tr > td,
+  & > thead > tr > th {
     padding: 12px 8px;
     vertical-align: middle;
   }
 
-  &>tbody>tr {
+  & > tbody > tr {
     position: relative;
   }
 
   td,
   th {
-    padding: .75rem;
+    padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid rgba(0,0,0,.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
   }
 }
 </style>

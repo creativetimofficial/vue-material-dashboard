@@ -15,12 +15,12 @@
 </template>
 <script>
 export default {
-  name: 'stats-card',
+  name: "stats-card",
   props: {
     dataBackgroundColor: {
       type: String,
-      default: ''
+      default: ""
     }
   }
-}
+};
 </script>

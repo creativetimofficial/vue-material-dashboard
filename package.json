@@ -1,59 +1,35 @@
 {
   "name": "vue-material-dashboard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
+    "dev": "npm run serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "npm run serve",
     "deploy": "npm run build && cd docs && npm run build && cd .. && sudo gh-pages -d dist"
   },
   "dependencies": {
-    "chartist": "0.11.0",
-    "google-maps": "3.2.1",
-    "vue": "2.5.16",
-    "vue-analytics": "5.10.3",
+    "chartist": "^0.11.0",
+    "google-maps": "^3.3.0",
+    "vue": "^2.5.17",
     "vue-clickaway": "2.2.2",
-    "vue-github-buttons": "2.0.5",
+    "vue-github-buttons": "2.1.1",
     "vue-material": "1.0.0-beta-8",
     "vue-router": "3.0.1",
     "vue-social-sharing": "2.3.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.0.0-beta.15",
-    "@vue/cli-plugin-eslint": "3.0.0-beta.15",
-    "@vue/cli-service": "3.0.0-beta.15",
-    "@vue/eslint-config-standard": "3.0.0-rc.3",
-    "babel-plugin-component": "1.1.1",
-    "babel-plugin-module-resolver": "3.1.1",
-    "babel-plugin-transform-runtime": "6.23.0",
-    "es6-promise": "4.2.4",
-    "lint-staged": "7.2.0",
-    "node-sass": "4.9.2",
-    "sass-loader": "7.0.3",
-    "vue-template-compiler": "2.5.16"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "author": "dragosct <dragosc@creative-tim.com>",
-  "description": "Vue Material Dashboard",
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "es6-promise": "^4.2.5",
+    "eslint": "^5.9.0",
+    "eslint-plugin-vue": "^5.0.0-beta.4",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.17"
   }
 }

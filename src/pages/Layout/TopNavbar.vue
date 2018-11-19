@@ -53,29 +53,28 @@
 </template>
 
 <script>
-
-export default{
-  data () {
+export default {
+  data() {
     return {
       selectedEmployee: null,
       employees: [
-        'Jim Halpert',
-        'Dwight Schrute',
-        'Michael Scott',
-        'Pam Beesly',
-        'Angela Martin',
-        'Kelly Kapoor',
-        'Ryan Howard',
-        'Kevin Malone'
+        "Jim Halpert",
+        "Dwight Schrute",
+        "Michael Scott",
+        "Pam Beesly",
+        "Angela Martin",
+        "Kelly Kapoor",
+        "Ryan Howard",
+        "Kevin Malone"
       ]
-    }
+    };
   },
   methods: {
-    toggleSidebar () {
-      this.$sidebar.displaySidebar(!this.$sidebar.showSidebar)
+    toggleSidebar() {
+      this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
     }
   }
-}
+};
 </script>
 
 <style lang="css">
