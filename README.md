@@ -1,7 +1,7 @@
 # [Vue Material Dashboard](https://demos.creative-tim.com/vue-material-dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Dashboard,%20a%20free%20Material%20Admin%20Template%20%E2%9D%A4%EF%B8%8F%20https%3A//bit.ly/2Nh5aVy%20%20%23vue%20%23material%20%23design%20%23developers%20%23freebie%20%20via%20%40CreativeTim)
 
 
- ![version](https://img.shields.io/badge/version-1.0.1-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-1.0.2-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 
 ![Product Gif](https://s3.amazonaws.com/creativetim_bucket/github/gif/vue-material-dashboard.gif)
@@ -83,75 +83,62 @@ Within the download you'll find the following directories and files:
 ```
 vue-material-dashboard
 ├── README.md
+├── babel.config.js
 ├── package.json
+├── postcss.config.js
 ├── public
-│   ├── favicon.png
 │   └── index.html
-├── src
-│   ├── App.vue
-│   ├── assets
-│   │   ├── img
-│   │   │   ├── apple-icon.png
-│   │   │   ├── faces
-│   │   │   │   └── marc.jpg
-│   │   │   ├── favicon.png
-│   │   │   ├── mask.png
-│   │   │   ├── new_logo.png
-│   │   │   ├── sidebar-1.jpg
-│   │   │   ├── sidebar-2.jpg
-│   │   │   ├── sidebar-3.jpg
-│   │   │   ├── sidebar-4.jpg
-│   │   │   ├── tim_80x80.png
-│   │   │   └── vue-logo.png
-│   │   └── scss
-│   │       ├── material-dashboard.scss
-│   │       └── md
-│   ├── components
-│   │   ├── Cards
-│   │   │   ├── ChartCard.vue
-│   │   │   ├── NavTabsCard.vue
-│   │   │   └── StatsCard.vue
-│   │   ├── Dropdown.vue
-│   │   ├── NotificationPlugin
-│   │   │   ├── Notification.vue
-│   │   │   ├── Notifications.vue
-│   │   │   └── index.js
-│   │   ├── SidebarPlugin
-│   │   │   ├── SideBar.vue
-│   │   │   ├── SidebarLink.vue
-│   │   │   └── index.js
-│   │   ├── Tables
-│   │   │   ├── NavTabsTable.vue
-│   │   │   ├── OrderedTable.vue
-│   │   │   └── SimpleTable.vue
-│   │   └── index.js
-│   ├── globalComponents.js
-│   ├── globalDirectives.js
-│   ├── main.js
-│   ├── material-dashboard.js
-│   ├── pages
-│   │   ├── Dashboard.vue
-│   │   ├── Icons.vue
-│   │   ├── Layout
-│   │   │   ├── Content.vue
-│   │   │   ├── ContentFooter.vue
-│   │   │   ├── DashboardLayout.vue
-│   │   │   ├── Extra
-│   │   │   │   └── FixedPlugin.vue
-│   │   │   ├── MobileMenu.vue
-│   │   │   └── TopNavbar.vue
-│   │   ├── Maps.vue
-│   │   ├── Notifications.vue
-│   │   ├── TableList.vue
-│   │   ├── Typography.vue
-│   │   ├── UserProfile
-│   │   │   ├── EditProfileForm.vue
-│   │   │   └── UserCard.vue
-│   │   ├── UserProfile.vue
-│   │   └── index.js
-│   └── routes
-│       └── routes.js
-└── vue.config.js
+└── src
+    ├── App.vue
+    ├── assets
+    │   ├── img
+    │   └── scss
+    │       ├── material-dashboard.scss
+    │       └── md
+    ├── components
+    │   ├── Cards
+    │   │   ├── ChartCard.vue
+    │   │   ├── NavTabsCard.vue
+    │   │   └── StatsCard.vue
+    │   ├── Dropdown.vue
+    │   ├── NotificationPlugin
+    │   │   ├── Notification.vue
+    │   │   ├── Notifications.vue
+    │   │   └── index.js
+    │   ├── SidebarPlugin
+    │   │   ├── SideBar.vue
+    │   │   ├── SidebarLink.vue
+    │   │   └── index.js
+    │   ├── Tables
+    │   │   ├── NavTabsTable.vue
+    │   │   ├── OrderedTable.vue
+    │   │   └── SimpleTable.vue
+    │   └── index.js
+    ├── globalComponents.js
+    ├── globalDirectives.js
+    ├── main.js
+    ├── material-dashboard.js
+    ├── pages
+    │   ├── Dashboard.vue
+    │   ├── Icons.vue
+    │   ├── Layout
+    │   │   ├── Content.vue
+    │   │   ├── ContentFooter.vue
+    │   │   ├── DashboardLayout.vue
+    │   │   ├── MobileMenu.vue
+    │   │   └── TopNavbar.vue
+    │   ├── Maps.vue
+    │   ├── Notifications.vue
+    │   ├── TableList.vue
+    │   ├── Typography.vue
+    │   ├── UpgradeToPRO.vue
+    │   ├── UserProfile
+    │   │   ├── EditProfileForm.vue
+    │   │   └── UserCard.vue
+    │   ├── UserProfile.vue
+    │   └── index.js
+    └── routes
+        └── routes.js
 ```
 
 

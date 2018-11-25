@@ -1,15 +1,14 @@
-// http://eslint.org/docs/user-guide/configuring
-
 module.exports = {
-  "extends": [
-    'plugin:vue/essential',
-    '@vue/standard'
-  ],
-  "parserOptions": {
-    "parser": "babel-eslint"
+  root: true,
+  env: {
+    node: true
   },
-  "root": true,
-  "env": {
-    "node": true
+  extends: ["plugin:vue/essential", "@vue/prettier"],
+  rules: {
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
   },
+  parserOptions: {
+    parser: "babel-eslint"
+  }
 };

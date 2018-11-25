@@ -16,20 +16,17 @@
 </template>
 <script>
 export default {
-  name: 'user-card',
+  name: "user-card",
   props: {
     cardUserImage: {
       type: String,
-      default: require('@/assets/img/faces/marc.jpg')
+      default: require("@/assets/img/faces/marc.jpg")
     }
   },
-  data () {
-    return {
-    }
+  data() {
+    return {};
   }
-}
-
+};
 </script>
 <style>
-
 </style>

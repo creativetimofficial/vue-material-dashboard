@@ -15,30 +15,30 @@
 </template>
 <script>
 export default {
-  name: 'chart-card',
+  name: "chart-card",
   props: {
     footerText: {
       type: String,
-      default: ''
+      default: ""
     },
     headerTitle: {
       type: String,
-      default: 'Chart title'
+      default: "Chart title"
     },
     chartType: {
       type: String,
-      default: 'Line' // Line | Pie | Bar
+      default: "Line" // Line | Pie | Bar
     },
     chartOptions: {
       type: Object,
       default: () => {
-        return {}
+        return {};
       }
     },
     chartResponsiveOptions: {
       type: Array,
       default: () => {
-        return []
+        return [];
       }
     },
     chartData: {
@@ -47,42 +47,46 @@ export default {
         return {
           labels: [],
           series: []
-        }
+        };
       }
     },
     dataBackgroundColor: {
       type: String,
-      default: ''
+      default: ""
     }
   },
-  data () {
+  data() {
     return {
-      chartId: 'no-id'
-    }
+      chartId: "no-id"
+    };
   },
   methods: {
     /***
      * Initializes the chart by merging the chart options sent via props and the default chart options
      */
-    initChart () {
-      var chartIdQuery = `#${this.chartId}`
-      this.$Chartist[this.chartType](chartIdQuery, this.chartData, this.chartOptions)
+    initChart() {
+      var chartIdQuery = `#${this.chartId}`;
+      this.$Chartist[this.chartType](
+        chartIdQuery,
+        this.chartData,
+        this.chartOptions
+      );
     },
     /***
      * Assigns a random id to the chart
      */
-    updateChartId () {
-      var currentTime = new Date().getTime().toString()
-      var randomInt = this.getRandomInt(0, currentTime)
-      this.chartId = `div_${randomInt}`
+    updateChartId() {
+      var currentTime = new Date().getTime().toString();
+      var randomInt = this.getRandomInt(0, currentTime);
+      this.chartId = `div_${randomInt}`;
     },
-    getRandomInt (min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min
+    getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
     }
   },
-  mounted () {
-    this.updateChartId()
-    this.$nextTick(this.initChart)
+  mounted() {
+    this.updateChartId();
+    this.$nextTick(this.initChart);
   }
-}
+};
 </script>

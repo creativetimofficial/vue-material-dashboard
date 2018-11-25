@@ -12,24 +12,24 @@
   </div>
 </template>
 <script>
-export default{
-  name: 'drop-down',
+export default {
+  name: "drop-down",
   props: {
     title: String,
     icon: String
   },
-  data () {
+  data() {
     return {
       isOpen: false
-    }
+    };
   },
   methods: {
-    toggleDropDown () {
-      this.isOpen = !this.isOpen
+    toggleDropDown() {
+      this.isOpen = !this.isOpen;
     },
-    closeDropDown () {
-      this.isOpen = false
+    closeDropDown() {
+      this.isOpen = false;
     }
   }
-}
+};
 </script>

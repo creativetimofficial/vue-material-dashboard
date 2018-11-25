@@ -79,14 +79,14 @@
 </template>
 <script>
 export default {
-  name: 'edit-profile-form',
+  name: "edit-profile-form",
   props: {
     dataBackgroundColor: {
       type: String,
-      default: ''
+      default: ""
     }
   },
-  data () {
+  data() {
     return {
       username: null,
       disabled: null,
@@ -97,12 +97,11 @@ export default {
       city: null,
       country: null,
       code: null,
-      aboutme: "Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
-    }
+      aboutme:
+        "Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+    };
   }
-}
-
+};
 </script>
 <style>
-
 </style>
