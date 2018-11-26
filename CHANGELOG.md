@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.3] 2018-11-26
+### Bug Fixing
+- Fixed error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
+
 ## [1.0.2] 2018-11-19
 ### Plugin Updates, BugFixing
 - Updated all `dependencies` and `devDependencies` to the latest versions
