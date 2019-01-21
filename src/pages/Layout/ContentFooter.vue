@@ -4,22 +4,22 @@
         <nav>
             <ul>
               <li>
-                <router-link :to="{path:'/dashboard'}">Home</router-link>
+                <a href="https://www.creative-tim.com">Creative Tim</a>
               </li>
                 <li>
-                    <a href="#">
-                        Company
-                    </a>
+                  <a href="https://creative-tim.com/presentation">
+                    About Us
+                  </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Portfolio
-                    </a>
+                  <a href="http://blog.creative-tim.com">
+                    Blog
+                  </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Blog
-                    </a>
+                  <a href="https://www.creative-tim.com/license">
+                    Licenses
+                  </a>
                 </li>
             </ul>
         </nav>
