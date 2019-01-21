@@ -64,9 +64,13 @@ export default {
     /***
      * Initializes the chart by merging the chart options sent via props and the default chart options
      */
-    initChart(Chartist) {
+    initChart() {
       var chartIdQuery = `#${this.chartId}`;
-      Chartist[this.chartType](chartIdQuery, this.chartData, this.chartOptions);
+      this.$Chartist[this.chartType](
+        chartIdQuery,
+        this.chartData,
+        this.chartOptions
+      );
     },
     /***
      * Assigns a random id to the chart
@@ -82,12 +86,7 @@ export default {
   },
   mounted() {
     this.updateChartId();
-    import("chartist").then(Chartist => {
-      let ChartistLib = Chartist.default || Chartist;
-      this.$nextTick(() => {
-        this.initChart(ChartistLib);
-      });
-    });
+    this.$nextTick(this.initChart);
   }
 };
 </script>
