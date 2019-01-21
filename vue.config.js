@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-  baseUrl: "/vue-material-dashboard/"
+  publicPath: "/vue-material-dashboard/"
 };
