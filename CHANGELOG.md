@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.1.0] 2019-01-21
+### Dependencies Updates, Improvements
+- Updated all out of date dependencies from `package.json` file
+- Changed links from footer 
+
 ## [1.0.3] 2018-11-26
 ### Bug Fixing
 - Fixed error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
