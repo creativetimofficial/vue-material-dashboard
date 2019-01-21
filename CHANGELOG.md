@@ -2,8 +2,8 @@
 
 ## [1.1.0] 2019-01-21
 ### Dependencies Updates, Improvements
-- Updated all out of date dependencies from `package.json` file
-- Changed links from footer 
+- Updated all out of date dependencies from `package.json` file, without `vue-router` who remains at version `3.0.1` because the new version `3.0.2` it cause an conflict with vuematerial.io 
+- Changed links from footer
 
 ## [1.0.3] 2018-11-26
 ### Bug Fixing
