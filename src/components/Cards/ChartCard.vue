@@ -14,6 +14,9 @@
   </md-card>
 </template>
 <script>
+import Chartist from "chartist";
+let ChartistLib = Chartist.default || Chartist;
+
 export default {
   name: "chart-card",
   props: {
@@ -64,13 +67,9 @@ export default {
     /***
      * Initializes the chart by merging the chart options sent via props and the default chart options
      */
-    initChart() {
+    initChart(Chartist) {
       var chartIdQuery = `#${this.chartId}`;
-      this.$Chartist[this.chartType](
-        chartIdQuery,
-        this.chartData,
-        this.chartOptions
-      );
+      Chartist[this.chartType](chartIdQuery, this.chartData, this.chartOptions);
     },
     /***
      * Assigns a random id to the chart
@@ -86,7 +85,9 @@ export default {
   },
   mounted() {
     this.updateChartId();
-    this.$nextTick(this.initChart);
+    this.$nextTick(() => {
+      this.initChart(ChartistLib);
+    });
   }
 };
 </script>
