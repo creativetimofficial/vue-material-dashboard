@@ -11,7 +11,7 @@
     "cheerio": "^1.0.0-rc.2",
     "markdown-it-container": "^2.0.0",
     "ncp": "^2.0.0",
-    "vuepress": "^0.14.5"
+    "vuepress": "0.14.8"
   },
   "author": "dragosct <dragosc@creative-tim.com>",
   "description": "Vue Material Dashboard"
