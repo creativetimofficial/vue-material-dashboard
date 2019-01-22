@@ -15,8 +15,6 @@ import Notifications from "./components/NotificationPlugin";
 // MaterialDashboard plugin
 import MaterialDashboard from "./material-dashboard";
 
-import Chartist from "chartist";
-
 // configure router
 const router = new VueRouter({
   routes, // short for routes: routes
@@ -29,14 +27,9 @@ Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
 Vue.use(Notifications);
 
-Vue.prototype.$Chartist = Chartist;
-
 /* eslint-disable no-new */
 new Vue({
   el: "#app",
   render: h => h(App),
-  router,
-  data: {
-    Chartist: Chartist
-  }
+  router
 });
