@@ -3,13 +3,14 @@
     <router-link
       class="md-list-item-router md-list-item-container md-button-clean"
       @click="hideSidebar"
-      v-bind="$attrs">
+      v-bind="$attrs"
+    >
       <div class="md-list-item-content md-ripple">
         <slot>
           <md-icon>{{ link.icon }}</md-icon>
           <p>{{ link.name }}</p>
         </slot>
-      </div>    
+      </div>
     </router-link>
   </li>
 </template>
