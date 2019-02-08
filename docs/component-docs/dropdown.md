@@ -8,7 +8,7 @@ To use the custom dropdown you don't need to import the custom made component be
 :::demo
 ```html
 <div class="md-list">
-  <md-list-item to="#something" class="dropdown">
+  <md-list-item href="#something" class="dropdown">
     <drop-down>
       <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
         <i class="material-icons">notifications</i>

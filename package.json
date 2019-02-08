@@ -12,23 +12,22 @@
   "dependencies": {
     "chartist": "0.11.0",
     "google-maps": "3.3.0",
-    "v-chartist": "0.1.6",
-    "vue": "2.5.22",
+    "vue": "2.6.3",
     "vue-clickaway": "2.2.2",
-    "vue-github-buttons": "2.1.1",
+    "vue-github-buttons": "3.0.1",
     "vue-material": "1.0.0-beta-8",
     "vue-router": "3.0.1",
     "vue-social-sharing": "2.3.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.3.0",
-    "@vue/cli-plugin-eslint": "3.3.0",
-    "@vue/cli-service": "3.3.0",
+    "@vue/cli-plugin-babel": "3.4.0",
+    "@vue/cli-plugin-eslint": "3.4.0",
+    "@vue/cli-service": "3.4.0",
     "@vue/eslint-config-prettier": "4.0.1",
     "es6-promise": "4.2.5",
     "eslint-plugin-vue": "5.1.0",
     "node-sass": "4.11.0",
     "sass-loader": "7.1.0",
-    "vue-template-compiler": "2.5.22"
+    "vue-template-compiler": "2.6.3"
   }
 }

@@ -1,7 +1,10 @@
 <template>
   <md-card>
-    <md-card-header class="card-chart" :data-background-color="dataBackgroundColor">
-      <vue-chartist :data="chartData" :options="chartOptions" :type="chartType"></vue-chartist>
+    <md-card-header
+      class="card-chart"
+      :data-background-color="dataBackgroundColor"
+    >
+      <div :id="chartId" class="ct-chart"></div>
     </md-card-header>
 
     <md-card-content>
@@ -14,14 +17,17 @@
   </md-card>
 </template>
 <script>
-import VueChartist from "v-chartist";
-
 export default {
-  components: {
-    "vue-chartist": VueChartist
-  },
   name: "chart-card",
   props: {
+    footerText: {
+      type: String,
+      default: ""
+    },
+    headerTitle: {
+      type: String,
+      default: "Chart title"
+    },
     chartType: {
       type: String,
       default: "Line" // Line | Pie | Bar
@@ -30,6 +36,12 @@ export default {
       type: Object,
       default: () => {
         return {};
+      }
+    },
+    chartResponsiveOptions: {
+      type: Array,
+      default: () => {
+        return [];
       }
     },
     chartData: {
@@ -45,6 +57,40 @@ export default {
       type: String,
       default: ""
     }
+  },
+  data() {
+    return {
+      chartId: "no-id"
+    };
+  },
+  methods: {
+    /***
+     * Initializes the chart by merging the chart options sent via props and the default chart options
+     */
+    initChart(Chartist) {
+      var chartIdQuery = `#${this.chartId}`;
+      Chartist[this.chartType](chartIdQuery, this.chartData, this.chartOptions);
+    },
+    /***
+     * Assigns a random id to the chart
+     */
+    updateChartId() {
+      var currentTime = new Date().getTime().toString();
+      var randomInt = this.getRandomInt(0, currentTime);
+      this.chartId = `div_${randomInt}`;
+    },
+    getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  },
+  mounted() {
+    this.updateChartId();
+    import("chartist").then(Chartist => {
+      let ChartistLib = Chartist.default || Chartist;
+      this.$nextTick(() => {
+        this.initChart(ChartistLib);
+      });
+    });
   }
 };
 </script>

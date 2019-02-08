@@ -1,14 +1,23 @@
 <template>
-  <div class="sidebar" :data-color="sidebarItemColor" :data-image="sidebarBackgroundImage" :style="sidebarStyle">
+  <div
+    class="sidebar"
+    :data-color="sidebarItemColor"
+    :data-image="sidebarBackgroundImage"
+    :style="sidebarStyle"
+  >
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
         <div class="logo-img">
-            <img :src="imgLogo" alt="">
+          <img :src="imgLogo" alt="" />
         </div>
       </a>
 
-      <a href="https://www.creative-tim.com/product/vue-material-dashboard" target="_blank" class="simple-text logo-normal">
-        {{title}}
+      <a
+        href="https://www.creative-tim.com/product/vue-material-dashboard"
+        target="_blank"
+        class="simple-text logo-normal"
+      >
+        {{ title }}
       </a>
     </div>
     <div class="sidebar-wrapper">
@@ -16,10 +25,12 @@
       <md-list class="nav">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
         <slot>
-          <sidebar-link v-for="(link,index) in sidebarLinks"
-                        :key="link.name + index"
-                        :to="link.path"
-                        :link="link">
+          <sidebar-link
+            v-for="(link, index) in sidebarLinks"
+            :key="link.name + index"
+            :to="link.path"
+            :link="link"
+          >
           </sidebar-link>
         </slot>
       </md-list>
