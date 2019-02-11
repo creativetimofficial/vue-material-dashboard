@@ -72,7 +72,6 @@
             <md-button class="md-raised md-success">Update Profile</md-button>
           </div>
         </div>
-
       </md-card-content>
     </md-card>
   </form>
@@ -103,5 +102,4 @@ export default {
   }
 };
 </script>
-<style>
-</style>
+<style></style>

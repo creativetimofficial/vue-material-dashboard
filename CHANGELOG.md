@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.0] 2019-02-08
+### Dependencies Updates, Improvements
+- Updated all out of date dependencies from `package.json` file
+- Removed all `to=""` and replaced with `href=""` props from non router-link components for avoid this error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`
+- Changed links from footer
+
 ## [1.0.3] 2018-11-26
 ### Bug Fixing
 - Fixed error `[Vue warn]: Error in render: "TypeError: Cannot read property 'options' of undefined"`

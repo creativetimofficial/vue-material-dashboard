@@ -2,10 +2,14 @@
   <md-toolbar md-elevation="0" class="md-transparent">
     <div class="md-toolbar-row">
       <div class="md-toolbar-section-start">
-        <h3 class="md-title">{{$route.name}}</h3>
+        <h3 class="md-title">{{ $route.name }}</h3>
       </div>
       <div class="md-toolbar-section-end">
-        <md-button class="md-just-icon md-simple md-toolbar-toggle" :class="{toggled: $sidebar.showSidebar}" @click="toggleSidebar">
+        <md-button
+          class="md-just-icon md-simple md-toolbar-toggle"
+          :class="{ toggled: $sidebar.showSidebar }"
+          @click="toggleSidebar"
+        >
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -13,17 +17,21 @@
 
         <div class="md-collapse">
           <div class="md-autocomplete">
-            <md-autocomplete class="search" v-model="selectedEmployee" :md-options="employees">
+            <md-autocomplete
+              class="search"
+              v-model="selectedEmployee"
+              :md-options="employees"
+            >
               <label>Search...</label>
             </md-autocomplete>
           </div>
           <md-list>
-            <md-list-item to="/">
+            <md-list-item href="#/">
               <i class="material-icons">dashboard</i>
               <p class="hidden-lg hidden-md">Dashboard</p>
             </md-list-item>
 
-            <md-list-item to="/notifications" class="dropdown">
+            <md-list-item href="#/notifications" class="dropdown">
               <drop-down>
                 <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="material-icons">notifications</i>
@@ -40,7 +48,7 @@
               </drop-down>
             </md-list-item>
 
-            <md-list-item to="/user">
+            <md-list-item href="#/user">
               <i class="material-icons">person</i>
               <p class="hidden-lg hidden-md">Profile</p>
             </md-list-item>
@@ -48,7 +56,6 @@
         </div>
       </div>
     </div>
-
   </md-toolbar>
 </template>
 
@@ -77,5 +84,4 @@ export default {
 };
 </script>
 
-<style lang="css">
-</style>
+<style lang="css"></style>

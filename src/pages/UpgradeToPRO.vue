@@ -5,71 +5,100 @@
         <md-card>
           <md-card-header data-background-color="purple">
             <h4 class="title">Vue Material Dashboard PRO</h4>
-            <p class="category">Are you looking for more components? Please check our Premium Version of Vue Material Dashboard.</p>
+            <p class="category">
+              Are you looking for more components? Please check our Premium
+              Version of Vue Material Dashboard.
+            </p>
           </md-card-header>
 
           <md-card-content>
             <div class="table-responsive table-upgrade">
-                <table class="table" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th class="text-center">Free</th>
-                            <th class="text-center">PRO</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Components</td>
-                            <td class="text-center">60</td>
-                            <td class="text-center">200</td>
-                        </tr>
-                        <tr>
-                            <td>Plugins</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">15</td>
-                        </tr>
-                        <tr>
-                            <td>Example Pages</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">27</td>
-                        </tr>
-                        <tr>
-                            <td>Login, Register, Pricing, Lock Pages</td>
-                            <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                            <td class="text-center"><i class="fa fa-check text-success"></i></td>
-                        </tr>
-                        <tr>
-                            <td>DataTables, VectorMap, SweetAlert, Wizard, jQueryValidation, FullCalendar etc...</td>
-                            <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                            <td class="text-center"><i class="fa fa-check text-success"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Mini Sidebar</td>
-                            <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                            <td class="text-center"><i class="fa fa-check text-success"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Premium Support</td>
-                            <td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                            <td class="text-center"><i class="fa fa-check text-success"></i></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="text-center">Free</td>
-                            <td class="text-center">Just $59</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"></td>
-                            <td class="text-center">
-                                <md-button href="#" class="md-default md-round" disabled>Current Version</md-button>
-                            </td>
-                            <td class="text-center">
-                                <md-button target="_blank" href="https://www.creative-tim.com/product/vue-material-dashboard-pro/?ref=vue-md-free-upgrade-live" class="md-info md-round">Upgrade to PRO</md-button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+              <table class="table" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="text-center">Free</th>
+                    <th class="text-center">PRO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Components</td>
+                    <td class="text-center">60</td>
+                    <td class="text-center">200</td>
+                  </tr>
+                  <tr>
+                    <td>Plugins</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">15</td>
+                  </tr>
+                  <tr>
+                    <td>Example Pages</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">27</td>
+                  </tr>
+                  <tr>
+                    <td>Login, Register, Pricing, Lock Pages</td>
+                    <td class="text-center">
+                      <i class="fa fa-times text-danger"></i>
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-check text-success"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      DataTables, VectorMap, SweetAlert, Wizard,
+                      jQueryValidation, FullCalendar etc...
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-times text-danger"></i>
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-check text-success"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mini Sidebar</td>
+                    <td class="text-center">
+                      <i class="fa fa-times text-danger"></i>
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-check text-success"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Premium Support</td>
+                    <td class="text-center">
+                      <i class="fa fa-times text-danger"></i>
+                    </td>
+                    <td class="text-center">
+                      <i class="fa fa-check text-success"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td class="text-center">Free</td>
+                    <td class="text-center">Just $59</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"></td>
+                    <td class="text-center">
+                      <md-button href="#" class="md-default md-round" disabled
+                        >Current Version</md-button
+                      >
+                    </td>
+                    <td class="text-center">
+                      <md-button
+                        target="_blank"
+                        href="https://www.creative-tim.com/product/vue-material-dashboard-pro/?ref=vue-md-free-upgrade-live"
+                        class="md-info md-round"
+                        >Upgrade to PRO</md-button
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </md-card-content>
         </md-card>
