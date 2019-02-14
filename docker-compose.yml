@@ -3,10 +3,14 @@ services:
     vue:
         environment:
           - NODE_ENV=development
+          - CHOKIDAR_USEPOLLING=true
+          - CHOKIDAR_INTERVAL=1000
         build:
           context: .
           dockerfile: Dockerfile.dev
         ports:
           - "8080:8080"
         volumes:
-          - ./src:/usr/src/app/src
+          - ./src:/usr/src/app/src:cached
+        stdin_open: true
+        tty: true
