@@ -1,0 +1,16 @@
+FROM node:lts
+
+MAINTAINER Bryan Waters
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . /usr/src/app
+
+
+EXPOSE 8080
+
+CMD npm run dev || cat /root/.npm/_logs/*.log

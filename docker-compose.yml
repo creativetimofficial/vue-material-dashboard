@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+    vue:
+        environment:
+          - NODE_ENV=development
+        build:
+          context: .
+          dockerfile: Dockerfile.dev
+        ports:
+          - "8080:8080"
+        volumes:
+          - ./src:/usr/src/app/src
