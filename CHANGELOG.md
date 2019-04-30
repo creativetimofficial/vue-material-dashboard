@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.2.0] 2019-04-30
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
+
 ## [1.1.0] 2019-02-08
 ### Dependencies Updates, Improvements
 - Updated all out of date dependencies from `package.json` file
