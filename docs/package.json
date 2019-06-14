@@ -1,6 +1,6 @@
 {
   "name": "vue-material-dashboard-docs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "scripts": {
     "dev": "vuepress dev",
