@@ -183,7 +183,7 @@
         <nav-tabs-card>
           <template slot="content">
             <span class="md-nav-tabs-title">Tasks:</span>
-            <md-tabs md-sync-route class="md-success" md-alignment="left">
+            <md-tabs class="md-success" md-alignment="left">
               <md-tab id="tab-home" md-label="Bugs" md-icon="bug_report">
                 <nav-tabs-table></nav-tabs-table>
               </md-tab>
