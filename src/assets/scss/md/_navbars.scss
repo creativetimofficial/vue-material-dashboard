@@ -16,6 +16,10 @@
     }
   }
 
+  .md-list-item-content {
+    padding: 0;
+  }
+
   .md-list-item{
     .md-button{
       &.md-just-icon{
@@ -310,6 +314,7 @@
   }
 }
 
-.md-list-item{
-  list-style: none;
+.md-list-item {
+    margin-left: 5px;
+    list-style: none;
 }
