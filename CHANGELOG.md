@@ -1,7 +1,5 @@
 # Change Log
 
-
-
 ## [1.3.1] 2019-12-13
 ### Dependencies Updates
 - Updated all out of date dependencies from `package.json` file
