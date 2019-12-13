@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build && npm run copy-docs",
-    "copy-docs": "ncp .vuepress/dist ../dist/documentation"
+    "copy-docs": "ncp .vuepress/dist ../dist/documentation",
+    "build-copy-docs": "npm run build && npm run copy-docs"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
