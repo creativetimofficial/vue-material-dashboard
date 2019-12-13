@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.3.2] 2019-12-13
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
+- The version is now `v1.3.2` to have the same versioning line with the PRO version of this product
+
 ## [1.2.1] 2019-06-14
 ### Dependencies Updates, Vue Material Update
 - Updated all out of date dependencies from `package.json` file

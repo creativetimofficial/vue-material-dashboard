@@ -1,5 +1,5 @@
 // =========================================================
-// * Vue Material Dashboard - v1.2.1
+// * Vue Material Dashboard - v1.3.2
 // =========================================================
 //
 // * Product Page: https://www.creative-tim.com/product/vue-material-dashboard
