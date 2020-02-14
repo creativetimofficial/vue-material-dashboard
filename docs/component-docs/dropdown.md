@@ -5,7 +5,6 @@ To use the custom dropdown you don't need to import the custom made component be
 
 ### As List Item
 
-:::demo
 ```html
 <div class="md-list">
   <md-list-item href="#something" class="dropdown">
@@ -26,7 +25,6 @@ To use the custom dropdown you don't need to import the custom made component be
   </md-list-item>
 </div>
 ```
-:::
 
 > Note: Drop-down uses a click outside directive internally. You will get a warning if the directive is not imported. You can find the declaration of this directive in **src/globalDirectives.js**
 

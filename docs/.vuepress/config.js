@@ -11,7 +11,8 @@ module.exports = {
   },
   head: [
     ['link', { rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons` }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon.png' }]
+    ['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon.png' }],
+    ['link', { rel: 'canonical', href: 'https://www.creative-tim.com/product/vue-material-dashboard' }]
   ],
   themeConfig: {
     repo: 'creativetimofficial/vue-material-dashboard',

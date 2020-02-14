@@ -5,8 +5,13 @@
   background-color: white;
 }
 
-.content:not(.custom) {
-  max-width: none;
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-weight: 300 !important;
+}
+
+.theme-default-content:not(.custom) {
+  max-width: none !important;
+  padding-top: 5rem !important;
 }
 
 .sidebar .nav-links a {
@@ -25,9 +30,6 @@
   border: 0;
 }
 
-.navbar .links {
-  background-color: transparent;
-}
 
 h1{
   font-size: 3rem !important;
@@ -53,13 +55,14 @@ p{
 .navbar{
   display: flex;
   align-items: center;
-  background-color: $brand-success;
-  box-shadow: 0 12px 20px -10px rgba(76,175,80,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(76,175,80,.2);
-  border: 0;
-  height: 70px;
+  background-color: $brand-success !important;
+  box-shadow: 0 12px 20px -10px rgba(76,175,80,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(76,175,80,.2) !important;
+  border: 0 !important;
+  height: 70px !important;
 
   .links{
-    top: unset;
+    top: unset !important;
+    background-color: transparent !important;
 
     .search-box{
       .suggestions li a{
@@ -82,9 +85,9 @@ p{
   }
 
   .site-name{
-    font-size: 1.125rem;
-    color: $white-color;
-    font-weight: 300;
+    font-size: 1.125rem !important;
+    color: $white-color !important;
+    font-weight: 300 !important;
   }
 }
 

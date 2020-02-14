@@ -53,7 +53,25 @@ module.exports = {
 
 ### Stats card
 
-:::demo
+<stats-card data-background-color="green">
+  <template slot="header">
+    <md-icon>store</md-icon>
+  </template>
+
+  <template slot="content">
+    <p class="category">Revenue</p>
+    <h3 class="title">$34,245</h3>
+  </template>
+
+  <template slot="footer">
+    <div class="stats">
+        <md-icon>date_range</md-icon>
+        Last 24 Hours
+    </div>
+  </template>
+</stats-card>
+
+
 ```html
 <template>
   <div>
@@ -81,7 +99,6 @@ module.exports = {
   export default {}
 </script>
 ```
-:::
 
 ### StatsCard Attributes
 | Attribute      | Description    | Type      | Accepted values       | Default   |
@@ -103,7 +120,26 @@ module.exports = {
 
 For the implementation of graphic charts, we used [Chartist.js](https://gionkunz.github.io/chartist-js/).
 
-:::demo
+<chart-card
+    :chart-data="dailySalesChart.data"
+    :chart-options="dailySalesChart.options"
+    chart-type="Line"
+    data-background-color="green">
+    <template slot="content">
+      <h4 class="title">Daily Sales</h4>
+        <p class="category">
+          <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.
+        </p>
+    </template>
+
+    <template slot="footer">
+      <div class="stats">
+        <md-icon>access_time</md-icon>
+        updated 4 minutes ago
+      </div>
+    </template>
+  </chart-card>
+
 ```html
 <template>
  <chart-card
@@ -157,7 +193,6 @@ For the implementation of graphic charts, we used [Chartist.js](https://gionkunz
   }
 </script>
 ```
-:::
 
 ### ChartCard Attributes
 | Attribute      | Description    | Type      | Accepted values       | Default   |

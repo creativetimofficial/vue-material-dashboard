@@ -1,4 +1,5 @@
 ## Inputs
+To use the custom form group inputs you don't need to import the custom made component, you can use it like this:
 
 <script>
 module.exports = {
@@ -9,9 +10,7 @@ module.exports = {
 }
 </script>
 
-To use the custom form group inputs you don't need to import the custom made component, you can use it like this:
 
-::: demo
 ```html
 <md-field>
   <label>Initial Value</label>
@@ -31,6 +30,5 @@ To use the custom form group inputs you don't need to import the custom made com
   }
 </script>
 ```
-:::
 
 > Note: For more details about the all inputs that you can use please see the **Input & Textarea** section from [vuematerial.io](https://vuematerial.io/components/input)
