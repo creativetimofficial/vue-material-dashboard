@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.3.2] 2019-12-13
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
+- The version is now `v1.3.2` to have the same versioning line with the PRO version of this product
+
+## [1.2.1] 2019-06-14
+### Dependencies Updates, Vue Material Update
+- Updated all out of date dependencies from `package.json` file
+- The framework `Vuematerial.io` was updated to the latest beta version `1.0.0-beta-11`
+
+## [1.2.0] 2019-04-30
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
+
 ## [1.1.0] 2019-02-08
 ### Dependencies Updates, Improvements
 - Updated all out of date dependencies from `package.json` file

@@ -150,6 +150,10 @@
             }
         }
 
+        .router-link-active p {
+          color: $white-color;
+        }
+
         p{
           margin: 0;
           line-height: 30px;

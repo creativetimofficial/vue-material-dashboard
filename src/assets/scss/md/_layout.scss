@@ -3,6 +3,10 @@
   padding-left: 15px;
 }
 
+.md-list .md-ripple {
+  overflow: hidden;
+}
+
 @media (min-width: 992px) {
     .typo-line {
         padding-left: 140px;
