@@ -4,12 +4,12 @@
 
 <script>
 import { API_KEY } from "./API_KEY";
-import {Loader, LoaderOptions} from 'google-maps';
+import { Loader, LoaderOptions } from "google-maps";
 
 const loader = new Loader(API_KEY);
 export default {
   mounted() {
-    loader.load().then(function (google) {
+    loader.load().then(function(google) {
       var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
       var mapOptions = {
         zoom: 13,
