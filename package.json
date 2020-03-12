@@ -33,7 +33,7 @@
     "prettier": "1.19.1",
     "sass": "1.26.2",
     "sass-loader": "8.0.2",
-    "vue-template-compiler": "2.6.11"
+    "vue-template-compiler": "2.6.11",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8"
   }
