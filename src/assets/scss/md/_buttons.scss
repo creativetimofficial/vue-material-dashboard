@@ -36,6 +36,12 @@
       display: none;
     }
 
+    &.md-block{
+      width: 100%;
+    }
+
+    @include social-buttons();
+
     &,
     &.md-default{
         @include btn-styles($gray-light);
@@ -169,6 +175,12 @@
       position: relative;
       line-height: 41px;
       border-radius: 50%;
+      text-align: center;
+
+      .fab{
+        font-size: 20px;
+
+      }
     }
 
     .md-button-content{

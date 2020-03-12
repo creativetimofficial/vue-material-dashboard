@@ -3,10 +3,13 @@
 </template>
 
 <script>
-import GoogleMapsLoader from "google-maps";
+import { API_KEY } from "./API_KEY";
+import {Loader, LoaderOptions} from 'google-maps';
+
+const loader = new Loader(API_KEY);
 export default {
-  methods: {
-    initMap(google) {
+  mounted() {
+    loader.load().then(function (google) {
       var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
       var mapOptions = {
         zoom: 13,
@@ -82,12 +85,6 @@ export default {
 
       // To add the marker to the map, call setMap();
       marker.setMap(map);
-    }
-  },
-  mounted() {
-    GoogleMapsLoader.KEY = "YOUR_KEY_HERE";
-    GoogleMapsLoader.load(google => {
-      this.initMap(google);
     });
   }
 };
