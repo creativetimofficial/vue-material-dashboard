@@ -3,7 +3,7 @@
 const gulp = require("gulp"),
   gap = require("gulp-append-prepend"),
   product_name = "Vue Material Dashboard",
-  product_version = "1.3.2",
+  product_version = "1.4.0",
   year = "2019",
   product_link = "https://www.creative-tim.com/product/vue-material-dashboard",
   product_copyright_template =
@@ -24,7 +24,7 @@ const gulp = require("gulp"),
     year +
     ` Creative Tim (https://www.creative-tim.com)
   * MIT License
-  
+
   * Coded by Creative Tim
 
   =========================================================
