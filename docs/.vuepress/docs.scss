@@ -1,0 +1,151 @@
+@import '../../src/assets/scss/md/variables';
+
+.theme-container .page {
+  min-height: 100vh;
+  background-color: white;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-weight: 300 !important;
+}
+
+.theme-default-content:not(.custom) {
+  max-width: none !important;
+  padding-top: 5rem !important;
+}
+
+.sidebar .nav-links a {
+  font-weight: 400;
+  color: inherit !important;
+}
+
+@media (max-width: 719px) {
+  .sidebar .nav-links {
+    padding-top: 2rem;
+  }
+}
+
+.nav-item > a:not(.external):hover,
+.nav-item > a:not(.external).router-link-active {
+  border: 0;
+}
+
+
+h1{
+  font-size: 3rem !important;
+  border-bottom: 1px solid #eaecef;
+}
+
+h2{
+  border: 0;
+}
+
+p{
+  font-size: 15px;
+}
+
+.links .nav-links a{
+
+  .icon.outbound,
+  &{
+    color: $white-color !important;
+  }
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  background-color: $brand-success !important;
+  box-shadow: 0 12px 20px -10px rgba(76,175,80,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(76,175,80,.2) !important;
+  border: 0 !important;
+  height: 70px !important;
+
+  .links{
+    top: unset !important;
+    background-color: transparent !important;
+
+    .search-box{
+      .suggestions li a{
+        color: $black-color;
+
+        &:hover,
+        &:focus{
+          color: $brand-success !important;
+        }
+      }
+    }
+  }
+
+  .sidebar-button{
+    top: 0.9rem;
+
+    svg path{
+      fill: $white-color;
+    }
+  }
+
+  .site-name{
+    font-size: 1.125rem !important;
+    color: $white-color !important;
+    font-weight: 300 !important;
+  }
+}
+
+.sidebar{
+  a.sidebar-link{
+    color: $black-color !important;
+
+    &:hover,
+    &:focus{
+      color: $brand-success !important;
+    }
+
+    &.active{
+      color: $brand-success !important;
+    }
+  }
+}
+
+.page .page-nav{
+  .next a,
+  .next a:hover,
+  .next a:focus,
+  .prev a,
+  .prev a:hover,
+  .prev a:focus{
+    color: $brand-success !important;
+  }
+}
+
+.md-list{
+  width: 11%;
+}
+
+.md-card{
+  th, td, tr{
+    border: 0;
+  }
+
+  tr:nth-child(2n){
+    background-color: transparent;
+  }
+}
+
+#sizes + p + .demo-block .source{
+  display: flex;
+  align-items: center;
+}
+
+.md-toolbar .md-list{
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.demo-block .source .md-toolbar{
+  margin-bottom: 10px;
+}
+
+.theme-container{
+  height: 100vh;
+  position: relative;
+}
