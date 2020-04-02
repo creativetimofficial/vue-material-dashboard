@@ -17,6 +17,7 @@ module.exports = {
   themeConfig: {
     repo: 'creativetimofficial/vue-material-dashboard',
     nav: [
+      { text: 'Upgrade to PRO', link: 'https://www.creative-tim.com/product/vue-material-dashboard-pro?ref=vmd-upgrade-docs-free' },
       { text: 'v1.4.0', link: '/' }
     ],
     sidebar: [
