@@ -1,0 +1,17 @@
+{
+    "hosting": {
+      "public": "dist",
+      "site": "ford-prevention-system",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  }
