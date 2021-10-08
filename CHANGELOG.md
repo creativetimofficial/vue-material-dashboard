@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.4.0] 2020-03-12
+### Dependencies Updates
+- Updated all out of date dependencies from `package.json` file
+- Add `API_KEY` file
+- Add new structure for google maps plugin
+
 ## [1.3.2] 2019-12-13
 ### Dependencies Updates
 - Updated all out of date dependencies from `package.json` file
