@@ -38,7 +38,7 @@ import { SimpleTable, OrderedTable } from "@/components";
 export default {
   components: {
     OrderedTable,
-    SimpleTable
-  }
+    SimpleTable,
+  },
 };
 </script>

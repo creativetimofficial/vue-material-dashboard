@@ -42,50 +42,50 @@ import SidebarLink from "./SidebarLink.vue";
 
 export default {
   components: {
-    SidebarLink
+    SidebarLink,
   },
   props: {
     title: {
       type: String,
-      default: "Vue MD"
+      default: "Vue MD",
     },
     sidebarBackgroundImage: {
       type: String,
-      default: require("@/assets/img/sidebar-2.jpg")
+      default: require("@/assets/img/sidebar-2.jpg"),
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png")
+      default: require("@/assets/img/vue-logo.png"),
     },
     sidebarItemColor: {
       type: String,
       default: "green",
-      validator: value => {
+      validator: (value) => {
         let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
         return acceptedValues.indexOf(value) !== -1;
-      }
+      },
     },
     sidebarLinks: {
       type: Array,
-      default: () => []
+      default: () => [],
     },
     autoClose: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
   provide() {
     return {
-      autoClose: this.autoClose
+      autoClose: this.autoClose,
     };
   },
   computed: {
     sidebarStyle() {
       return {
-        backgroundImage: `url(${this.sidebarBackgroundImage})`
+        backgroundImage: `url(${this.sidebarBackgroundImage})`,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 <style>

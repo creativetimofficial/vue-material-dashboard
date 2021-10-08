@@ -22,45 +22,45 @@ export default {
   props: {
     footerText: {
       type: String,
-      default: ""
+      default: "",
     },
     headerTitle: {
       type: String,
-      default: "Chart title"
+      default: "Chart title",
     },
     chartType: {
       type: String,
-      default: "Line" // Line | Pie | Bar
+      default: "Line", // Line | Pie | Bar
     },
     chartOptions: {
       type: Object,
       default: () => {
         return {};
-      }
+      },
     },
     chartResponsiveOptions: {
       type: Array,
       default: () => {
         return [];
-      }
+      },
     },
     chartData: {
       type: Object,
       default: () => {
         return {
           labels: [],
-          series: []
+          series: [],
         };
-      }
+      },
     },
     dataBackgroundColor: {
       type: String,
-      default: ""
-    }
+      default: "",
+    },
   },
   data() {
     return {
-      chartId: "no-id"
+      chartId: "no-id",
     };
   },
   methods: {
@@ -81,16 +81,16 @@ export default {
     },
     getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+    },
   },
   mounted() {
     this.updateChartId();
-    import("chartist").then(Chartist => {
+    import("chartist").then((Chartist) => {
       let ChartistLib = Chartist.default || Chartist;
       this.$nextTick(() => {
         this.initChart(ChartistLib);
       });
     });
-  }
+  },
 };
 </script>

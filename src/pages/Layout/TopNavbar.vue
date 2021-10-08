@@ -51,7 +51,10 @@
             <li class="md-list-item">
               <a
                 href="#/notifications"
-                class="md-list-item-router md-list-item-container md-button-clean dropdown"
+                class="
+                  md-list-item-router md-list-item-container md-button-clean
+                  dropdown
+                "
               >
                 <div class="md-list-item-content">
                   <drop-down>
@@ -100,15 +103,15 @@ export default {
         "Angela Martin",
         "Kelly Kapoor",
         "Ryan Howard",
-        "Kevin Malone"
-      ]
+        "Kevin Malone",
+      ],
     };
   },
   methods: {
     toggleSidebar() {
       this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
-    }
-  }
+    },
+  },
 };
 </script>
 

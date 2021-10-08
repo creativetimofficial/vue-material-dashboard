@@ -18,48 +18,48 @@ const routes = [
       {
         path: "dashboard",
         name: "Dashboard",
-        component: Dashboard
+        component: Dashboard,
       },
       {
         path: "user",
         name: "User Profile",
-        component: UserProfile
+        component: UserProfile,
       },
       {
         path: "table",
         name: "Table List",
-        component: TableList
+        component: TableList,
       },
       {
         path: "typography",
         name: "Typography",
-        component: Typography
+        component: Typography,
       },
       {
         path: "icons",
         name: "Icons",
-        component: Icons
+        component: Icons,
       },
       {
         path: "maps",
         name: "Maps",
         meta: {
-          hideFooter: true
+          hideFooter: true,
         },
-        component: Maps
+        component: Maps,
       },
       {
         path: "notifications",
         name: "Notifications",
-        component: Notifications
+        component: Notifications,
       },
       {
         path: "upgrade",
         name: "Upgrade to PRO",
-        component: UpgradeToPRO
-      }
-    ]
-  }
+        component: UpgradeToPRO,
+      },
+    ],
+  },
 ];
 
 export default routes;

@@ -152,8 +152,8 @@ export default {
     return {
       type: ["", "info", "success", "warning", "danger"],
       notifications: {
-        topCenter: false
-      }
+        topCenter: false,
+      },
     };
   },
   methods: {
@@ -165,9 +165,9 @@ export default {
         icon: "add_alert",
         horizontalAlign: horizontalAlign,
         verticalAlign: verticalAlign,
-        type: this.type[color]
+        type: this.type[color],
       });
-    }
-  }
+    },
+  },
 };
 </script>

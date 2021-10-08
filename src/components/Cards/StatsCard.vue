@@ -19,8 +19,8 @@ export default {
   props: {
     dataBackgroundColor: {
       type: String,
-      default: ""
-    }
-  }
+      default: "",
+    },
+  },
 };
 </script>

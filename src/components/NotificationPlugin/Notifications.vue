@@ -20,18 +20,18 @@
 import Notification from "./Notification.vue";
 export default {
   components: {
-    Notification
+    Notification,
   },
   data() {
     return {
-      notifications: this.$notifications.state
+      notifications: this.$notifications.state,
     };
   },
   methods: {
     removeNotification(timestamp) {
       this.$notifications.removeNotification(timestamp);
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss">

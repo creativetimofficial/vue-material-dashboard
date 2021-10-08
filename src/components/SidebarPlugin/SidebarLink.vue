@@ -18,8 +18,8 @@
 export default {
   inject: {
     autoClose: {
-      default: true
-    }
+      default: true,
+    },
   },
   props: {
     link: {
@@ -28,14 +28,14 @@ export default {
         return {
           name: "",
           path: "",
-          icon: ""
+          icon: "",
         };
-      }
+      },
     },
     tag: {
       type: String,
-      default: "router-link"
-    }
+      default: "router-link",
+    },
   },
   methods: {
     hideSidebar() {
@@ -46,8 +46,8 @@ export default {
       ) {
         this.$sidebar.displaySidebar(false);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style></style>

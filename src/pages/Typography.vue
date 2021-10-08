@@ -69,9 +69,7 @@
                       responsibility that I have, to push possibilities, to show
                       people, this is the level that things could be at.
                     </p>
-                    <small>
-                      Kanye West, Musician
-                    </small>
+                    <small> Kanye West, Musician </small>
                   </blockquote>
                 </div>
                 <div class="tim-typo">
@@ -138,8 +136,8 @@ export default {
   props: {
     dataBackgroundColor: {
       type: String,
-      default: ""
-    }
-  }
+      default: "",
+    },
+  },
 };
 </script>

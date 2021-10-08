@@ -29,28 +29,28 @@ export default {
     icon: String,
     verticalAlign: {
       type: String,
-      default: "top"
+      default: "top",
     },
     horizontalAlign: {
       type: String,
-      default: "center"
+      default: "center",
     },
     type: {
       type: String,
-      default: "info"
+      default: "info",
     },
     timeout: {
       type: Number,
-      default: 2500
+      default: 2500,
     },
     timestamp: {
       type: Date,
-      default: () => new Date()
-    }
+      default: () => new Date(),
+    },
   },
   data() {
     return {
-      elmHeight: 0
+      elmHeight: 0,
     };
   },
   computed: {
@@ -63,7 +63,7 @@ export default {
     customPosition() {
       let initialMargin = 20;
       let alertHeight = this.elmHeight + 10;
-      let sameAlertsCount = this.$notifications.state.filter(alert => {
+      let sameAlertsCount = this.$notifications.state.filter((alert) => {
         return (
           alert.horizontalAlign === this.horizontalAlign &&
           alert.verticalAlign === this.verticalAlign &&
@@ -78,19 +78,19 @@ export default {
         styles.bottom = `${pixels}px`;
       }
       return styles;
-    }
+    },
   },
   methods: {
     close() {
       this.$emit("on-close", this.timestamp);
-    }
+    },
   },
   mounted() {
     this.elmHeight = this.$el.clientHeight;
     if (this.timeout) {
       setTimeout(this.close, this.timeout);
     }
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
