@@ -120,8 +120,8 @@
             width: $mdb-btn-fab-size-mini;
 
             &.material-icons {
-                top: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) / 2;
-                left: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) / 2;
+                top: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) * 0.5;
+                left: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) * 0.5;
             }
 
             .material-icons{
@@ -133,7 +133,7 @@
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-($mdb-btn-fab-font-size / 2), -($mdb-btn-fab-font-size / 2));
+          transform: translate(-($mdb-btn-fab-font-size * 0.5), -($mdb-btn-fab-font-size * 0.5));
           line-height: $mdb-btn-fab-font-size;
           width: $mdb-btn-fab-font-size;
           font-size: $mdb-btn-fab-font-size;
