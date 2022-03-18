@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.5.0] 2021-10-08
+## [1.5.0] 2022-03-18
 ### Dependencies Updates
 - Updated all out of date dependencies from `package.json` file
 
