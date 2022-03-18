@@ -430,8 +430,8 @@ $container-lg:                 $container-large-desktop !default;
 $navbar-height:                    50px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
-$navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
-$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+$navbar-padding-horizontal:        floor(($grid-gutter-width * 0.5)) !default;
+$navbar-padding-vertical:          (($navbar-height - $line-height-computed) * 0.5) !default;
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             #777 !default;
@@ -963,8 +963,8 @@ $contrast-factor: 40% !default;
 // inputs
 $mdb-input-placeholder-color: #AAAAAA !default;
 $mdb-input-underline-color: #D2D2D2 !default;
-$mdb-label-static-size-ratio: 75 / 100 !default;
-$mdb-help-block-size-ratio: 75 / 100 !default;
+$mdb-label-static-size-ratio: 75 * 0.01 !default;
+$mdb-help-block-size-ratio: 75 * 0.01 !default;
 
 $mdb-input-font-size-base: 14px !default;
 $mdb-input-font-size-large: ceil(($font-size-base * 1.25)) !default; // ~20px
