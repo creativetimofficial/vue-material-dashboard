@@ -64,18 +64,22 @@
             twitter-user="creativetim"
           >
             <div class="centered-buttons">
-              <network
+              <ShareNetwork
+                title=""
+                url="https://www.creative-tim.com/product/vue-material-dashboard"
                 network="facebook"
                 class="md-button md-round md-just-icon md-facebook"
               >
                 <i class="fab fa-facebook-f"></i>
-              </network>
-              <network
+              </ShareNetwork>
+              <ShareNetwork
+                url="https://www.creative-tim.com/product/vue-material-dashboard"
+                title=""
                 network="twitter"
                 class="md-button md-round md-just-icon md-twitter"
               >
                 <i class="fab fa-twitter"></i>
-              </network>
+              </ShareNetwork>
             </div>
           </social-sharing>
         </li>
@@ -98,6 +102,7 @@ import "vue-github-buttons/dist/vue-github-buttons.css";
 Vue.use(SocialSharing);
 Vue.use(VueGitHubButtons, { useCache: true });
 export default {
+  components: { SocialSharing },
   data() {
     return {
       documentationLink:
