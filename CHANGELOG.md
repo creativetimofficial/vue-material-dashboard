@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.5.1] 2022-12-12
+## [1.5.1] 2023-01-10
 
 - Update dependencies and devDependencies.
 - Fix issue when running `npm install`.
