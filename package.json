@@ -1,16 +1,17 @@
 {
   "name": "vue-material-dashboard",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "dev": "npm run serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prettify": "prettier --write ."
   },
   "dependencies": {
     "chartist": "0.11.4",
-    "core-js": "3.26.1",
+    "core-js": "3.30.1",
     "google-maps": "4.3.3",
     "vue": "2.7.14",
     "vue-clickaway": "2.2.2",
@@ -20,18 +21,18 @@
     "vue-social-sharing": "3.0.9"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "4.5.19",
-    "@vue/cli-plugin-eslint": "4.5.19",
-    "@vue/cli-plugin-router": "4.5.19",
-    "@vue/cli-service": "4.5.19",
-    "@vue/eslint-config-prettier": "7.0.0",
-    "babel-eslint": "10.1.0",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-plugin-router": "5.0.8",
+    "@vue/cli-service": "5.0.8",
+    "@vue/eslint-config-prettier": "7.1.0",
+    "@babel/eslint-parser": "7.21.3",
     "es6-promise": "4.2.8",
-    "eslint": "7.32.0",
+    "eslint": "8.38.0",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-vue": "7.20.0",
-    "prettier": "2.8.1",
-    "sass": "1.56.2",
+    "eslint-plugin-vue": "9.11.0",
+    "prettier": "2.8.7",
+    "sass": "1.62.0",
     "sass-loader": "10.2.0",
     "vue-template-compiler": "2.7.14"
   }
