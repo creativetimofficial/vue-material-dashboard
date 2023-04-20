@@ -78,7 +78,8 @@ Follow these steps to get an API key:
 2. Create or select a project.
 3. Click Continue to enable the API and any related services.
 4. On the Credentials page, get an API key.
-> Note: If you have an existing unrestricted API key, or a key with browser restrictions, you may use that key.
+
+   > Note: If you have an existing unrestricted API key, or a key with browser restrictions, you may use that key.
 
 5. From the dialog displaying the API key, select Restrict key to set a browser restriction on the API key.
 6. In the Key restriction section, select HTTP referrers (web sites), then follow the on-screen instructions to set referrers.

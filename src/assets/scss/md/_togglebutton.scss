@@ -2,7 +2,10 @@
 
 .togglebutton {
   vertical-align: middle;
-  &, label, input, .toggle {
+  &,
+  label,
+  input,
+  .toggle {
     user-select: none;
   }
   label {
@@ -11,7 +14,7 @@
     @include mdb-label-color-toggle-focus();
 
     // Hide original checkbox
-    input[type=checkbox] {
+    input[type="checkbox"] {
       opacity: 0;
       width: 0;
       height: 0;
@@ -23,7 +26,7 @@
     }
     // Switch bg off and disabled
     .toggle,
-    input[type=checkbox][disabled] + .toggle {
+    input[type="checkbox"][disabled] + .toggle {
       content: "";
       display: inline-block;
       width: 30px;
@@ -40,7 +43,7 @@
       display: inline-block;
       width: 20px;
       height: 20px;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       border-radius: 20px;
       position: relative;
       box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
@@ -49,18 +52,19 @@
       border: 1px solid $mdb-checkbox-border-color;
       transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
     }
-    input[type=checkbox] {
+    input[type="checkbox"] {
       // Handle disabled
       &[disabled] {
         & + .toggle:after,
         &:checked + .toggle:after {
-          background-color: #BDBDBD;
+          background-color: #bdbdbd;
         }
       }
 
       & + .toggle:active:after,
       &[disabled] + .toggle:active:after {
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4),
+          0 0 0 15px rgba(0, 0, 0, 0.1);
       }
 
       // Ripple off and disabled
@@ -70,9 +74,9 @@
     }
 
     // set bg when checked
-    input[type=checkbox]:checked {
+    input[type="checkbox"]:checked {
       + .toggle {
-        background-color: rgba($brand-primary, (70*0.01)); // Switch bg on
+        background-color: rgba($brand-primary, (70 * 0.01)); // Switch bg on
       }
 
       + .toggle:after {
@@ -80,7 +84,8 @@
       }
 
       + .toggle:active:after {
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba($brand-primary, (10*0.01)); // Ripple on
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4),
+          0 0 0 15px rgba($brand-primary, (10 * 0.01)); // Ripple on
       }
     }
   }

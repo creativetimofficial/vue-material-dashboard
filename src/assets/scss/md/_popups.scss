@@ -1,4 +1,4 @@
-.md-tooltip{
+.md-tooltip {
   padding: 10px 15px;
   min-width: 130px;
   max-width: 200px;
@@ -11,7 +11,7 @@
   font-weight: 400;
   @include shadow-8dp();
 
-  &:after{
+  &:after {
     position: absolute;
     bottom: -5px;
     height: 0;
@@ -20,24 +20,24 @@
     margin-left: auto;
     margin-right: auto;
     width: 5px;
-    vertical-align: .255em;
+    vertical-align: 0.255em;
     content: "";
   }
 
-  &[x-placement="top"]:after{
+  &[x-placement="top"]:after {
     border-top: 5px solid $white-color;
     border-right: 5px solid transparent;
     border-bottom: 0;
     border-left: 5px solid transparent;
   }
-  &[x-placement="bottom"]:after{
+  &[x-placement="bottom"]:after {
     top: -5px;
     border-top: 0;
     border-right: 5px solid transparent;
     border-bottom: 5px solid $white-color;
     border-left: 5px solid transparent;
   }
-  &[x-placement="left"]:after{
+  &[x-placement="left"]:after {
     margin-right: 0;
     right: -5px;
     top: 16px;
@@ -45,7 +45,7 @@
     border-bottom: 5px solid transparent;
     border-left: 5px solid $white-color;
   }
-  &[x-placement="right"]:after{
+  &[x-placement="right"]:after {
     margin-left: 0;
     left: -5px;
     top: 16px;

@@ -1,4 +1,5 @@
 ## Inputs
+
 To use the custom form group inputs you don't need to import the custom made component, you can use it like this:
 
 <script>
@@ -9,7 +10,6 @@ module.exports = {
   })
 }
 </script>
-
 
 ```html
 <md-field>
@@ -24,10 +24,10 @@ module.exports = {
 <script>
   export default {
     data: () => ({
-      initial: 'Initial Value',
-      type: null
-    })
-  }
+      initial: "Initial Value",
+      type: null,
+    }),
+  };
 </script>
 ```
 

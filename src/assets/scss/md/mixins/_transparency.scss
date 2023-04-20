@@ -7,14 +7,14 @@
   filter: #{alpha(opacity=$opacity-ie)};
 }
 
-@mixin black-filter($opacity){
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(17,17,17,$opacity);
-    display: block;
-    content: "";
-    z-index: 1; 
+@mixin black-filter($opacity) {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(17, 17, 17, $opacity);
+  display: block;
+  content: "";
+  z-index: 1;
 }

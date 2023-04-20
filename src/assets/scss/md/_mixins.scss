@@ -6,12 +6,18 @@
 
 // Placeholder text
 @mixin material-placeholder() {
-  &::-moz-placeholder {@content; } // Firefox
-  &:-ms-input-placeholder {@content; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  {@content; } // Safari and Chrome
+  &::-moz-placeholder {
+    @content;
+  } // Firefox
+  &:-ms-input-placeholder {
+    @content;
+  } // Internet Explorer 10+
+  &::-webkit-input-placeholder {
+    @content;
+  } // Safari and Chrome
 }
 
-@mixin toolbar-colors($variation-color){
+@mixin toolbar-colors($variation-color) {
   background-color: $variation-color !important;
   @include shadow-big-color($variation-color);
 
@@ -20,11 +26,10 @@
   .md-toolbar-toggle .icon-bar,
   &,
   &:hover,
-  &:focus{
+  &:focus {
     color: $white-color !important;
   }
 }
-
 
 @mixin dropdown-colors($variation-color) {
   .dropdown-menu {
@@ -54,183 +59,224 @@
   background-color: $color;
   color: $white-color;
   border-radius: $border-radius-base;
-  @include shadow-big-color($color)
+  @include shadow-big-color($color);
 }
 
-@mixin transition($time, $type){
-    -webkit-transition: all $time $type;
-    -moz-transition: all $time $type;
-    -o-transition: all $time $type;
-    -ms-transition: all $time $type;
-    transition: all $time $type;
+@mixin transition($time, $type) {
+  -webkit-transition: all $time $type;
+  -moz-transition: all $time $type;
+  -o-transition: all $time $type;
+  -ms-transition: all $time $type;
+  transition: all $time $type;
 }
 
-@mixin transform-scale($value){
-     -webkit-transform: scale($value);
-        -moz-transform: scale($value);
-        -o-transform: scale($value);
-        -ms-transform: scale($value);
-        transform: scale($value);
+@mixin transform-scale($value) {
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  -o-transform: scale($value);
+  -ms-transform: scale($value);
+  transform: scale($value);
 }
 
-@mixin transform-scale3d($value){
-     -webkit-transform: scale3d($value);
-        -moz-transform: scale3d($value);
-        -o-transform: scale3d($value);
-        -ms-transform: scale3d($value);
-        transform: scale3d($value);
+@mixin transform-scale3d($value) {
+  -webkit-transform: scale3d($value);
+  -moz-transform: scale3d($value);
+  -o-transform: scale3d($value);
+  -ms-transform: scale3d($value);
+  transform: scale3d($value);
 }
 
-@mixin transform-translate-x($value){
-     -webkit-transform:  translate3d($value, 0, 0);
-        -moz-transform: translate3d($value, 0, 0);
-        -o-transform: translate3d($value, 0, 0);
-        -ms-transform: translate3d($value, 0, 0);
-        transform: translate3d($value, 0, 0);
+@mixin transform-translate-x($value) {
+  -webkit-transform: translate3d($value, 0, 0);
+  -moz-transform: translate3d($value, 0, 0);
+  -o-transform: translate3d($value, 0, 0);
+  -ms-transform: translate3d($value, 0, 0);
+  transform: translate3d($value, 0, 0);
 }
 
-@mixin transform-translate-y($value){
-     -webkit-transform:  translate3d(0,$value, 0);
-        -moz-transform: translate3d(0, $value, 0);
-        -o-transform: translate3d(0, $value, 0);
-        -ms-transform: translate3d(0, $value, 0);
-        transform: translate3d(0, $value, 0);
+@mixin transform-translate-y($value) {
+  -webkit-transform: translate3d(0, $value, 0);
+  -moz-transform: translate3d(0, $value, 0);
+  -o-transform: translate3d(0, $value, 0);
+  -ms-transform: translate3d(0, $value, 0);
+  transform: translate3d(0, $value, 0);
 }
 
-@mixin transform-origin($coordinates){
-      -webkit-transform-origin: $coordinates;
-        -moz-transform-origin: $coordinates;
-        -o-transform-origin: $coordinates;
-        -ms-transform-origin: $coordinates;
-        transform-origin: $coordinates;
+@mixin transform-origin($coordinates) {
+  -webkit-transform-origin: $coordinates;
+  -moz-transform-origin: $coordinates;
+  -o-transform-origin: $coordinates;
+  -ms-transform-origin: $coordinates;
+  transform-origin: $coordinates;
 }
 
-@mixin black-filter(){
-    background: rgba(0,0,0,.55);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    z-index: 0;
-    left: 0;
-    top: 0;
+@mixin black-filter() {
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 0;
+  left: 0;
+  top: 0;
 }
 
-@mixin animation($value){
-      -webkit-animation: $value;
-        -moz-animation: $value;
-        -o-animation: $value;
-        -ms-animation: $value;
-        animation: $value;
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -o-animation: $value;
+  -ms-animation: $value;
+  animation: $value;
 }
 
-@mixin radial-gradient($extern-color, $center-color){
-    background: $extern-color;
-    background: -moz-radial-gradient(center, ellipse cover, $center-color 0%, $extern-color 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$center-color), color-stop(100%,$extern-color)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, $center-color 0%,$extern-color 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, $center-color 0%,$extern-color 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover, $center-color 0%,$extern-color 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center, $center-color 0%,$extern-color 100%); /* W3C */
-    background-size: 550% 450%;
+@mixin radial-gradient($extern-color, $center-color) {
+  background: $extern-color;
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    $center-color 0%,
+    $extern-color 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, $center-color),
+    color-stop(100%, $extern-color)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    $center-color 0%,
+    $extern-color 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    $center-color 0%,
+    $extern-color 100%
+  ); /* Opera 12+ */
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    $center-color 0%,
+    $extern-color 100%
+  ); /* IE10+ */
+  background: radial-gradient(
+    ellipse at center,
+    $center-color 0%,
+    $extern-color 100%
+  ); /* W3C */
+  background-size: 550% 450%;
 }
 
-@mixin tag-color ($color){
-    .tag{
-         background-color: $color;
-         color: $white-color;
-         .tagsinput-remove-link{
-             color: $white-color;
-         }
-     }
-     .tagsinput-add{
-         color: $color;
-     }
-}
-@mixin create-colored-tags(){
-    &.tag-primary{
-        @include tag-color($brand-primary);
+@mixin tag-color($color) {
+  .tag {
+    background-color: $color;
+    color: $white-color;
+    .tagsinput-remove-link {
+      color: $white-color;
     }
-    &.tag-info {
-        @include tag-color($brand-info);
-    }
-    &.tag-success{
-        @include tag-color($brand-success);
-    }
-    &.tag-warning{
-        @include tag-color($brand-warning);
-    }
-    &.tag-danger{
-        @include tag-color($brand-danger);
-    }
-    &.tag-rose{
-      @include tag-color($brand-rose);
-    }
+  }
+  .tagsinput-add {
+    color: $color;
+  }
+}
+@mixin create-colored-tags() {
+  &.tag-primary {
+    @include tag-color($brand-primary);
+  }
+  &.tag-info {
+    @include tag-color($brand-info);
+  }
+  &.tag-success {
+    @include tag-color($brand-success);
+  }
+  &.tag-warning {
+    @include tag-color($brand-warning);
+  }
+  &.tag-danger {
+    @include tag-color($brand-danger);
+  }
+  &.tag-rose {
+    @include tag-color($brand-rose);
+  }
 }
 
-@mixin rotate-180(){
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+@mixin rotate-180() {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @mixin rotate() {
-    -webkit-transform: rotate( 45deg );
-    -moz-transform: rotate( 45deg );
-    -o-transform: rotate( 45deg );
-    -ms-transform: rotate(45deg);
-    transform: rotate( 45deg );
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-@mixin linear-gradient($color1, $color2){
-    background: $color1; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(60deg, $color1 , $color2); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(60deg, $color1, $color2); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(60deg, $color1, $color2); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(60deg, $color1 , $color2); /* Standard syntax */
+@mixin linear-gradient($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    60deg,
+    $color1,
+    $color2
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    60deg,
+    $color1,
+    $color2
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    60deg,
+    $color1,
+    $color2
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(60deg, $color1, $color2); /* Standard syntax */
 }
-
-
 
 // Mixins for buttons
 
 @mixin btn-styles($btn-color) {
+  // remove this line if you want black shadows
+  @include shadow-2dp-color($btn-color);
 
-    // remove this line if you want black shadows
+  &.md-raised {
     @include shadow-2dp-color($btn-color);
+  }
 
-    &.md-raised{
-        @include shadow-2dp-color($btn-color);
-    }
+  &,
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &:active:focus,
+  &:active:hover,
+  &.active:focus,
+  &.active:hover,
+  .open > &.dropdown-toggle,
+  .open > &.dropdown-toggle:focus,
+  .open > &.dropdown-toggle:hover {
+    background-color: $btn-color !important;
+    color: $white-color !important;
 
-    &,
-    &:hover,
-    &:focus,
-    &:active,
-    &.active,
-    &:active:focus,
-    &:active:hover,
-    &.active:focus,
-    &.active:hover,
-    .open > &.dropdown-toggle,
-    .open > &.dropdown-toggle:focus,
-    .open > &.dropdown-toggle:hover {
-      background-color: $btn-color !important;
+    i {
       color: $white-color !important;
-
-      i{
-        color: $white-color !important;
-      }
     }
+  }
 
-    &:focus,
-    &:active,
-    &:hover{
-      // remove this line if you want black shadows
-      @include button-shadow-color($btn-color);
-      background-color: darken($btn-color, 3%) !important;
-    }
+  &:focus,
+  &:active,
+  &:hover {
+    // remove this line if you want black shadows
+    @include button-shadow-color($btn-color);
+    background-color: darken($btn-color, 3%) !important;
+  }
 
   &.disabled,
   &:disabled,
@@ -242,48 +288,13 @@
     &.focus,
     &:active,
     &.active {
-      opacity: .65;
+      opacity: 0.65;
       pointer-events: none;
     }
   }
 
-  &.md-simple{
-      &,
-      &:hover,
-      &:focus,
-      &:active,
-      &.active,
-      &:active:focus,
-      &:active:hover,
-      &.active:focus,
-      &.active:hover{
-        background-color: transparent !important;
-        color: $btn-color !important;
-        box-shadow: none;
-
-        i{
-          color: $btn-color !important;
-        }
-      }
-  }
-
-}
-
-@mixin set-background-color-button ($color){
-    .nav{
-        .md-list-item-container.active {
-            background-color: $color !important;
-            @include shadow-big-color($color);
-        }
-    }
-}
-
-// for social buttons
-@mixin social-buttons-color ($color){
-    background-color: $color !important;
-    color: #fff;
-    @include shadow-2dp-color($color);
-
+  &.md-simple {
+    &,
     &:hover,
     &:focus,
     &:active,
@@ -291,20 +302,54 @@
     &:active:focus,
     &:active:hover,
     &.active:focus,
-    &.active:hover{
-        background-color: $color !important;
-        color: #fff;
-        @include button-shadow-color($color);
-    }
+    &.active:hover {
+      background-color: transparent !important;
+      color: $btn-color !important;
+      box-shadow: none;
 
-    &.btn-simple{
-        color: $color;
-        background-color: transparent;
-        box-shadow: none;
+      i {
+        color: $btn-color !important;
+      }
     }
+  }
 }
 
-@mixin social-buttons(){
+@mixin set-background-color-button($color) {
+  .nav {
+    .md-list-item-container.active {
+      background-color: $color !important;
+      @include shadow-big-color($color);
+    }
+  }
+}
+
+// for social buttons
+@mixin social-buttons-color($color) {
+  background-color: $color !important;
+  color: #fff;
+  @include shadow-2dp-color($color);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &:active:focus,
+  &:active:hover,
+  &.active:focus,
+  &.active:hover {
+    background-color: $color !important;
+    color: #fff;
+    @include button-shadow-color($color);
+  }
+
+  &.btn-simple {
+    color: $color;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+@mixin social-buttons() {
   &.md-facebook {
     @include social-buttons-color($social-facebook);
   }

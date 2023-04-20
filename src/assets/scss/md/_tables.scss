@@ -1,39 +1,39 @@
-.md-table-cell-container{
+.md-table-cell-container {
   padding: 0;
-  .md-table-cell:last-child &{
+  .md-table-cell:last-child & {
     padding-right: 0;
     text-align: right;
     display: flex;
   }
 }
-.md-table-head-container{
+.md-table-head-container {
   height: auto;
   padding: 0;
 }
-.md-tabs-content table thead{
+.md-tabs-content table thead {
   display: none;
 }
 
-.md-tabs-container tbody .md-table-row:first-child td{
+.md-tabs-container tbody .md-table-row:first-child td {
   border: 0;
 }
 
-.md-table-cell{
+.md-table-cell {
   padding: 12px 8px;
   font-size: $font-size-base;
 }
 
-.md-table-head-label{
+.md-table-head-label {
   font-size: $font-size-h5;
   padding-left: 8px;
   font-weight: 300;
 }
 
-.md-table .md-table-row:hover .md-table-cell{
+.md-table .md-table-row:hover .md-table-cell {
   background-color: transparent !important;
 }
 
-.md-table .md-table-row:hover{
+.md-table .md-table-row:hover {
   background: $table-bg-hover !important;
 }
 
@@ -42,24 +42,24 @@
   background-color: transparent !important;
 }
 
-.md-table{
-  &[table-header-color="orange"] .md-table-head{
+.md-table {
+  &[table-header-color="orange"] .md-table-head {
     color: $brand-warning !important;
   }
-  &[table-header-color="purple"] .md-table-head{
+  &[table-header-color="purple"] .md-table-head {
     color: $brand-primary !important;
   }
-  &[table-header-color="blue"] .md-table-head{
+  &[table-header-color="blue"] .md-table-head {
     color: $brand-info !important;
   }
-  &[table-header-color="red"] .md-table-head{
+  &[table-header-color="red"] .md-table-head {
     color: $brand-danger !important;
   }
-  &[table-header-color="green"] .md-table-head{
+  &[table-header-color="green"] .md-table-head {
     color: $brand-success !important;
   }
 
-  .md-table-row td{
-    border-top-color: rgba(0,0,0,.06) !important;
+  .md-table-row td {
+    border-top-color: rgba(0, 0, 0, 0.06) !important;
   }
 }

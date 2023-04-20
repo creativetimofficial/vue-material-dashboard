@@ -12,28 +12,28 @@
   // Top section of the modal w/ title and dismiss
   .modal-header {
     border-bottom: none;
-    padding-top:    24px;
-    padding-right:  24px;
+    padding-top: 24px;
+    padding-right: 24px;
     padding-bottom: 0;
-    padding-left:   24px;
+    padding-left: 24px;
   }
   // Modal body
   // Where all modal content resides (sibling of .modal-header and .modal-footer)
   .modal-body {
-    padding-top:    24px;
-    padding-right:  24px;
+    padding-top: 24px;
+    padding-right: 24px;
     padding-bottom: 16px;
-    padding-left:   24px;
+    padding-left: 24px;
   }
   // Footer (for actions)
   .modal-footer {
     border-top: none;
     padding: 7px;
-    
-    &.text-center{
-        text-align: center;
+
+    &.text-center {
+      text-align: center;
     }
-    
+
     button {
       margin: 0;
       padding-left: 16px;
@@ -46,7 +46,7 @@
         left: -5px;
       }
     }
-    button+button {
+    button + button {
       margin-bottom: 16px;
     }
   }
@@ -55,45 +55,45 @@
   }
 }
 .modal-backdrop {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.modal{
-    .modal-dialog{
-        margin-top: 100px;
-    }
-    .modal-header .close{
-        color: $gray-light;
+.modal {
+  .modal-dialog {
+    margin-top: 100px;
+  }
+  .modal-header .close {
+    color: $gray-light;
 
-        &:hover,
-        &:focus{
-            opacity: 1;
-        }
-        
-        i{
-            font-size: 16px;
-        }
+    &:hover,
+    &:focus {
+      opacity: 1;
     }
+
+    i {
+      font-size: 16px;
+    }
+  }
 }
 
 .modal-notice {
-    .instruction{
-         margin-bottom: 25px;
-    }
-    .picture{
-        max-width: 150px;
-    }
+  .instruction {
+    margin-bottom: 25px;
+  }
+  .picture {
+    max-width: 150px;
+  }
 
-    .modal-content{
-        .btn-raised{
-            margin-bottom: 15px;
-        }
+  .modal-content {
+    .btn-raised {
+      margin-bottom: 15px;
     }
+  }
 }
 
-.modal-small{
-    width: 300px;    
-    .modal-body{
-        margin-top: 20px;
-    }
+.modal-small {
+  width: 300px;
+  .modal-body {
+    margin-top: 20px;
+  }
 }
