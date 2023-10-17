@@ -11,6 +11,10 @@
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
+      <sidebar-link to="/dd">
+        <md-icon>CDR</md-icon>
+        <p>Call Details Record</p>
+      </sidebar-link>
       <sidebar-link to="/user">
         <md-icon>person</md-icon>
         <p>User Profile</p>
@@ -37,7 +41,7 @@
       </sidebar-link>
       <sidebar-link to="/upgrade" class="active-pro">
         <md-icon>unarchive</md-icon>
-        <p>Upgrade to PRO</p>
+        <p>Upgrade to PROS</p>
       </sidebar-link>
     </side-bar>
 
