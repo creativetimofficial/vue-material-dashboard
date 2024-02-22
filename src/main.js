@@ -3,7 +3,7 @@
 // =========================================================
 //
 // * Product Page: https://www.creative-tim.com/product/vue-material-dashboard
-// * Copyright 2023 Creative Tim (https://www.creative-tim.com)
+// * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 // * Licensed under MIT (https://github.com/creativetimofficial/vue-material-dashboard/blob/master/LICENSE.md)
 //
 // * Coded by Creative Tim

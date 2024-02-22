@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.5.2] 2023-10-15
+## [1.5.2] 2024-02-22
 
 - Update dependencies and devDependencies.
 - Fix installation issues.
