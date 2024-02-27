@@ -60,12 +60,10 @@ output {
 
 .radio,
 .checkbox {
-
   label {
     min-height: $mdb-input-line-height-computed; // Ensure the input doesn't jump when there is no text
   }
 }
-
 
 // Static form control text
 //
@@ -79,7 +77,6 @@ output {
   min-height: ($mdb-input-line-height-computed + $mdb-input-font-size-base);
 }
 
-
 // Form control sizing
 //
 // Relative text size, padding, and border-radii changes for form controls. For
@@ -88,8 +85,15 @@ output {
 
 // mixin pulled from bootstrap and altered for less/sass compatibility with sass parent hack.
 //  bootstrap-sass has this one, but we would have to then convert it back to less.  chicken meet egg.
-@mixin input-size($parent, $mdb-input-height, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius){
-
+@mixin input-size(
+  $parent,
+  $mdb-input-height,
+  $padding-vertical,
+  $padding-horizontal,
+  $font-size,
+  $line-height,
+  $border-radius
+) {
   #{$parent} {
     height: $mdb-input-height;
     padding: $padding-vertical $padding-horizontal;
@@ -109,8 +113,6 @@ output {
   }
 }
 
-
-
 // Form control sizing
 //
 // Build on `.form-control` with modifier classes to decrease or increase the
@@ -119,12 +121,21 @@ output {
 // The `.form-group-* form-control` variations are sadly duplicated to avoid the
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 .input-sm {
-  @include input-size(unquote(".input-sm"), $mdb-input-height-small, $mdb-input-padding-small-vertical, $mdb-input-padding-small-horizontal, $mdb-input-font-size-small, $mdb-input-line-height-small, $mdb-input-border-radius-small);
+  @include input-size(
+    unquote(".input-sm"),
+    $mdb-input-height-small,
+    $mdb-input-padding-small-vertical,
+    $mdb-input-padding-small-horizontal,
+    $mdb-input-font-size-small,
+    $mdb-input-line-height-small,
+    $mdb-input-border-radius-small
+  );
 }
 .form-group-sm {
   .form-control {
     height: $mdb-input-height-small;
-    padding: $mdb-input-padding-small-vertical $mdb-input-padding-small-horizontal;
+    padding: $mdb-input-padding-small-vertical
+      $mdb-input-padding-small-horizontal;
     font-size: $mdb-input-font-size-small;
     line-height: $mdb-input-line-height-small;
   }
@@ -139,19 +150,29 @@ output {
   .form-control-static {
     height: $mdb-input-height-small;
     min-height: ($mdb-input-line-height-computed + $mdb-input-font-size-small);
-    padding: ($mdb-input-padding-small-vertical + 1) $mdb-input-padding-small-horizontal;
+    padding: ($mdb-input-padding-small-vertical + 1)
+      $mdb-input-padding-small-horizontal;
     font-size: $mdb-input-font-size-small;
     line-height: $mdb-input-line-height-small;
   }
 }
 
 .input-lg {
-  @include input-size(unquote(".input-lg"), $mdb-input-height-large, $mdb-input-padding-large-vertical, $mdb-input-padding-large-horizontal, $mdb-input-font-size-large, $mdb-input-line-height-large, $mdb-input-border-radius-large);
+  @include input-size(
+    unquote(".input-lg"),
+    $mdb-input-height-large,
+    $mdb-input-padding-large-vertical,
+    $mdb-input-padding-large-horizontal,
+    $mdb-input-font-size-large,
+    $mdb-input-line-height-large,
+    $mdb-input-border-radius-large
+  );
 }
 .form-group-lg {
   .form-control {
     height: $mdb-input-height-large;
-    padding: $mdb-input-padding-large-vertical $mdb-input-padding-large-horizontal;
+    padding: $mdb-input-padding-large-vertical
+      $mdb-input-padding-large-horizontal;
     font-size: $mdb-input-font-size-large;
     line-height: $mdb-input-line-height-large;
   }
@@ -166,15 +187,14 @@ output {
   .form-control-static {
     height: $mdb-input-height-large;
     min-height: ($mdb-input-line-height-computed + $mdb-input-font-size-large);
-    padding: ($mdb-input-padding-large-vertical + 1) $mdb-input-padding-large-horizontal;
+    padding: ($mdb-input-padding-large-vertical + 1)
+      $mdb-input-padding-large-horizontal;
     font-size: $mdb-input-font-size-large;
     line-height: $mdb-input-line-height-large;
   }
 }
 
-
 .form-horizontal {
-
   // Consistent vertical alignment of radios and checkboxes
   //
   // Labels also get some reset styles, but that is scoped to a media query below.
@@ -182,23 +202,28 @@ output {
   .checkbox,
   .radio-inline,
   .checkbox-inline {
-    padding-top: ($mdb-input-padding-base-vertical + 1); // Default padding plus a border
+    padding-top: (
+      $mdb-input-padding-base-vertical + 1
+    ); // Default padding plus a border
   }
   // Account for padding we're adding to ensure the alignment and of help text
   // and other content below items
   .radio,
   .checkbox {
-    min-height: ($mdb-input-line-height-computed + ($mdb-input-padding-base-vertical + 1));
+    min-height: (
+      $mdb-input-line-height-computed + ($mdb-input-padding-base-vertical + 1)
+    );
   }
 
   // Reset spacing and right align labels, but scope to media queries so that
   // labels on narrow viewports stack the same as a default form example.
   @media (min-width: $screen-sm-min) {
     .control-label {
-      padding-top: ($mdb-input-padding-base-vertical + 1); // Default padding plus a border
+      padding-top: (
+        $mdb-input-padding-base-vertical + 1
+      ); // Default padding plus a border
     }
   }
-
 
   // Form group sizes
   //
@@ -207,7 +232,9 @@ output {
   .form-group-lg {
     @media (min-width: $screen-sm-min) {
       .control-label {
-        padding-top: (($mdb-input-padding-large-vertical * $mdb-input-line-height-large) + 1);
+        padding-top: (
+          ($mdb-input-padding-large-vertical * $mdb-input-line-height-large) + 1
+        );
         font-size: $mdb-input-font-size-large;
       }
     }

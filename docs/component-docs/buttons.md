@@ -3,9 +3,7 @@
 To use the custom button you don't need to import the custom made component, you can easily use it like this:
 
 ```html
-<md-button>
-  Button
-</md-button>
+<md-button> Button </md-button>
 ```
 
 ### Colors
@@ -41,8 +39,10 @@ We has changed the predefined button styles from vuematerial.io, each serving it
 ```html
 <md-button class="md-primary">Default</md-button>
 <md-button class="md-primary md-round">Round</md-button>
-<md-button class="md-primary"><md-icon >favorite</md-icon> With Icon</md-button>
-<md-button class="md-primary md-just-icon"><md-icon >favorite</md-icon></md-button>
+<md-button class="md-primary"><md-icon>favorite</md-icon> With Icon</md-button>
+<md-button class="md-primary md-just-icon"
+  ><md-icon>favorite</md-icon></md-button
+>
 <md-button class="md-primary md-simple">Simple</md-button>
 ```
 

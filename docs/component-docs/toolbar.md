@@ -3,6 +3,7 @@
 We re-styled the default toolbar from vuematerial.io and you can easily use this like the example below:
 
 ::: demo
+
 ```html
 <md-toolbar class="md-primary">
   <div class="md-toolbar-row">
@@ -31,14 +32,15 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
       </div>
     </div>
   </div>
-
 </md-toolbar>
 ```
+
 :::
 
 ### Colors
 
 ::: demo
+
 ```html
 <md-toolbar class="md-primary">
   <div class="md-toolbar-row">
@@ -67,7 +69,6 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
       </div>
     </div>
   </div>
-
 </md-toolbar>
 <md-toolbar class="md-danger">
   <div class="md-toolbar-row">
@@ -96,7 +97,6 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
       </div>
     </div>
   </div>
-
 </md-toolbar>
 <md-toolbar class="md-warning">
   <div class="md-toolbar-row">
@@ -125,7 +125,6 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
       </div>
     </div>
   </div>
-
 </md-toolbar>
 <md-toolbar class="md-success">
   <div class="md-toolbar-row">
@@ -154,7 +153,6 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
       </div>
     </div>
   </div>
-
 </md-toolbar>
 <md-toolbar class="md-info">
   <div class="md-toolbar-row">
@@ -183,7 +181,6 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
       </div>
     </div>
   </div>
-
 </md-toolbar>
 <md-toolbar>
   <div class="md-toolbar-row">
@@ -212,9 +209,9 @@ We re-styled the default toolbar from vuematerial.io and you can easily use this
       </div>
     </div>
   </div>
-
 </md-toolbar>
 ```
+
 :::
 
 > Note: for more details about toolbar please see the **Toolbar** section from [vuematerial.io](https://vuematerial.io/components/toolbar)

@@ -1,6 +1,6 @@
 ## Checkboxes
 
-The checkboxes that are used in our Vue Material Dashboard are the standard checkboxes from [Vue Material](https://vuematerial.io/components/checkbox). We just re-styled them for a better visual effect.  
+The checkboxes that are used in our Vue Material Dashboard are the standard checkboxes from [Vue Material](https://vuematerial.io/components/checkbox). We just re-styled them for a better visual effect.
 
 <script>
 module.exports = {
@@ -72,8 +72,8 @@ module.exports = {
       boolean: false,
       string: null,
       novalue: null,
-      disabled: true
-    })
-  }
+      disabled: true,
+    }),
+  };
 </script>
 ```

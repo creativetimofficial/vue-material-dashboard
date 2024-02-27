@@ -1,49 +1,49 @@
-.md-checkbox{
-  .md-checkbox-container{
-    border: 1px solid rgba(0, 0, 0, .54);
+.md-checkbox {
+  .md-checkbox-container {
+    border: 1px solid rgba(0, 0, 0, 0.54);
     border-radius: 3px;
 
-    .md-ripple{
+    .md-ripple {
       overflow: hidden;
     }
   }
 
-  &.md-checked .md-checkbox-container{
-    &:after{
+  &.md-checked .md-checkbox-container {
+    &:after {
       border-color: $brand-primary !important;
       top: 1px;
       left: 6px;
     }
   }
 
-  .md-checkbox-label{
+  .md-checkbox-label {
     font-weight: 400;
     color: #aaa;
     padding-left: 10px;
   }
 
-  &.md-theme-default.md-checked .md-checkbox-container{
+  &.md-theme-default.md-checked .md-checkbox-container {
     background-color: transparent !important;
     border-color: inherit;
   }
 
-  &.md-theme-default.md-checked .md-ripple{
+  &.md-theme-default.md-checked .md-ripple {
     color: inherit;
   }
 
   &.md-disabled .md-checkbox-label,
-  &.md-disabled .md-checkbox-container{
-    opacity: .26;
-    border-color: rgba(0, 0, 0, .54) !important;
+  &.md-disabled .md-checkbox-container {
+    opacity: 0.26;
+    border-color: rgba(0, 0, 0, 0.54) !important;
   }
 
-  &.md-checked.md-disabled .md-checkbox-container{
+  &.md-checked.md-disabled .md-checkbox-container {
     background-color: transparent !important;
-    border-color: rgba(0, 0, 0, .54) !important;
-    opacity: .26;
+    border-color: rgba(0, 0, 0, 0.54) !important;
+    opacity: 0.26;
 
-    &:after{
-      border-color: rgba(0, 0, 0, .54) !important;
+    &:after {
+      border-color: rgba(0, 0, 0, 0.54) !important;
     }
   }
 }

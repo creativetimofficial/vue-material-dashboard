@@ -1,54 +1,54 @@
-footer{
-    padding: $padding-base 0;
+footer {
+  padding: $padding-base 0;
 
-    nav,
-    .copyright{
-      display: inline-block;
-    }
+  nav,
+  .copyright {
+    display: inline-block;
+  }
 
-    ul{
+  ul {
     padding: 0;
     margin: 0;
     list-style: none;
 
-        li{
-            display: inline-block;
+    li {
+      display: inline-block;
 
-            a{
-                color: inherit !important;
-                padding: $padding-base;
-                font-weight: $font-weight-bold;
-                font-size: $mdb-btn-font-size-base;
-                text-transform: uppercase;
-                border-radius: $border-radius-base;
-                text-decoration: none;
-                position: relative;
-                display: block;
+      a {
+        color: inherit !important;
+        padding: $padding-base;
+        font-weight: $font-weight-bold;
+        font-size: $mdb-btn-font-size-base;
+        text-transform: uppercase;
+        border-radius: $border-radius-base;
+        text-decoration: none;
+        position: relative;
+        display: block;
 
-                &:hover{
-                    text-decoration: none;
-                }
-            }
+        &:hover {
+          text-decoration: none;
         }
+      }
     }
+  }
 
-    .copyright{
-        padding: 15px 0;
-        margin: 0;
-        .material-icons{
-            font-size: 18px;
-            position: relative;
-            top: 3px;
-        }
+  .copyright {
+    padding: 15px 0;
+    margin: 0;
+    .material-icons {
+      font-size: 18px;
+      position: relative;
+      top: 3px;
     }
+  }
 
-    .btn{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+  .btn {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-.container{
+.container {
   padding-right: 30px;
   padding-left: 30px;
   display: flex;

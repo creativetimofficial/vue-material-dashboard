@@ -1,234 +1,237 @@
-.md-button{
-    border: none;
-    border-radius: $border-radius-base;
-    position: relative;
-    margin: 10px 1px;
-    height: auto;
-    line-height: 1.42857;
+.md-button {
+  border: none;
+  border-radius: $border-radius-base;
+  position: relative;
+  margin: 10px 1px;
+  height: auto;
+  line-height: 1.42857;
 
-    font-size: $mdb-btn-font-size-base;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0;
+  font-size: $mdb-btn-font-size-base;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
 
-    will-change: box-shadow, transform;
-    transition: box-shadow 0.2s $mdb-animation-curve-fast-out-linear-in,
+  will-change: box-shadow, transform;
+  transition: box-shadow 0.2s $mdb-animation-curve-fast-out-linear-in,
     background-color 0.2s $mdb-animation-curve-default;
 
-    &:not(.md-just-icon):not(.md-btn-fab):not(.md-icon-button):not(.md-toolbar-toggle) .md-ripple{
-      padding: 12px 30px;
-    }
+  &:not(.md-just-icon):not(.md-btn-fab):not(.md-icon-button):not(
+      .md-toolbar-toggle
+    )
+    .md-ripple {
+    padding: 12px 30px;
+  }
 
-    &:not(.md-just-icon) .md-button-content i{
-      font-size: 1.1rem !important;
-      height: 17px;
-    }
+  &:not(.md-just-icon) .md-button-content i {
+    font-size: 1.1rem !important;
+    height: 17px;
+  }
 
-    &.md-wd{
-      min-width: 140px;
-    }
+  &.md-wd {
+    min-width: 140px;
+  }
 
-    &.md-block{
-      width: 100%;
-    }
+  &.md-block {
+    width: 100%;
+  }
 
-    &:before{
-      display: none;
-    }
+  &:before {
+    display: none;
+  }
 
-    &.md-block{
-      width: 100%;
-    }
+  &.md-block {
+    width: 100%;
+  }
 
-    @include social-buttons();
+  @include social-buttons();
 
+  &,
+  &.md-default {
+    @include btn-styles($gray-light);
+  }
+
+  &.md-primary {
+    @include btn-styles($brand-primary);
+  }
+  &.md-info {
+    @include btn-styles($brand-info);
+  }
+  &.md-success {
+    @include btn-styles($brand-success);
+  }
+  &.md-warning {
+    @include btn-styles($brand-warning);
+  }
+  &.md-danger {
+    @include btn-styles($brand-danger);
+  }
+  &.md-white {
     &,
-    &.md-default{
-        @include btn-styles($gray-light);
-    }
-
-    &.md-primary{
-      @include btn-styles($brand-primary);
-    }
-    &.md-info{
-      @include btn-styles($brand-info);
-    }
-    &.md-success{
-      @include btn-styles($brand-success);
-    }
-    &.md-warning{
-      @include btn-styles($brand-warning);
-    }
-    &.md-danger{
-      @include btn-styles($brand-danger);
-    }
-    &.md-white{
-        &,
-        &:focus,
-        &:hover{
-            background-color: $white-color;
-            color: $gray-light;
-        }
-        &.btn-simple{
-            color: #FFFFFF;
-            background: transparent;
-            box-shadow: none;
-        }
-    }
-
     &:focus,
-    &:active,
-    &:active:focus{
-      outline: 0;
+    &:hover {
+      background-color: $white-color;
+      color: $gray-light;
     }
-
-    &.md-round{
-      border-radius: $border-radius-extreme;
+    &.btn-simple {
+      color: #ffffff;
+      background: transparent;
+      box-shadow: none;
     }
+  }
 
-    &:not(.btn-just-icon):not(.btn-fab){
-      .fa{
-          font-size: 18px;
-          margin-top: -2px;
-          position: relative;
-          top: 2px;
-      }
-    }
+  &:focus,
+  &:active,
+  &:active:focus {
+    outline: 0;
+  }
 
+  &.md-round {
+    border-radius: $border-radius-extreme;
+  }
 
-    &.btn-fab {
-        // see above for color variations
-        border-radius: 50%;
-        font-size: $mdb-btn-fab-font-size;
-        height: $mdb-btn-fab-size;
-        margin: auto;
-        min-width: $mdb-btn-fab-size;
-        width: $mdb-btn-fab-size;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-        line-height: normal;
-
-        .ripple-container {
-          border-radius: 50%;
-        }
-
-        &.btn-fab-mini,
-        .btn-group-sm & {
-            height: $mdb-btn-fab-size-mini;
-            min-width: $mdb-btn-fab-size-mini;
-            width: $mdb-btn-fab-size-mini;
-
-            &.material-icons {
-                top: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) * 0.5;
-                left: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) * 0.5;
-            }
-
-            .material-icons{
-                font-size: $mdb-btn-icon-size-mini;
-            }
-        }
-
-        i.material-icons {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-($mdb-btn-fab-font-size * 0.5), -($mdb-btn-fab-font-size * 0.5));
-          line-height: $mdb-btn-fab-font-size;
-          width: $mdb-btn-fab-font-size;
-          font-size: $mdb-btn-fab-font-size;
-        }
-    }
-
-    // Size variations
-    &.md-lg .md-ripple{
-        font-size: $mdb-btn-font-size-lg;
-        padding: 18px 36px !important;
-    }
-    &.md-sm .md-ripple{
-        padding: 0.40625rem 1.25rem !important;
-        font-size: $mdb-btn-font-size-sm;
-    }
-
-    &.btn-just-icon{
-        font-size: 20px;
-        padding: 12px 12px;
-        line-height: 1em;
-
-        i{
-            width: 20px;
-        }
-        &.btn-lg{
-            font-size: 22px;
-            padding: 13px 18px;
-        }
-    }
-
-    &.md-fab,
-    &.md-just-icon{
-      font-size: 24px;
-      height: 41px;
-      min-width: 41px;
-      width: 41px;
-      padding: 0;
-      overflow: hidden;
+  &:not(.btn-just-icon):not(.btn-fab) {
+    .fa {
+      font-size: 18px;
+      margin-top: -2px;
       position: relative;
-      line-height: 41px;
+      top: 2px;
+    }
+  }
+
+  &.btn-fab {
+    // see above for color variations
+    border-radius: 50%;
+    font-size: $mdb-btn-fab-font-size;
+    height: $mdb-btn-fab-size;
+    margin: auto;
+    min-width: $mdb-btn-fab-size;
+    width: $mdb-btn-fab-size;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+
+    .ripple-container {
       border-radius: 50%;
-      text-align: center;
+    }
 
-      .fab{
-        font-size: 20px;
+    &.btn-fab-mini,
+    .btn-group-sm & {
+      height: $mdb-btn-fab-size-mini;
+      min-width: $mdb-btn-fab-size-mini;
+      width: $mdb-btn-fab-size-mini;
 
+      &.material-icons {
+        top: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) * 0.5;
+        left: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) * 0.5;
+      }
+
+      .material-icons {
+        font-size: $mdb-btn-icon-size-mini;
       }
     }
 
-    .md-button-content{
-      display: flex;
-      align-items: center;
-      i{
-        font-size: 20px !important;
-      }
+    i.material-icons {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(
+        -($mdb-btn-fab-font-size * 0.5),
+        -($mdb-btn-fab-font-size * 0.5)
+      );
+      line-height: $mdb-btn-fab-font-size;
+      width: $mdb-btn-fab-font-size;
+      font-size: $mdb-btn-fab-font-size;
     }
+  }
+
+  // Size variations
+  &.md-lg .md-ripple {
+    font-size: $mdb-btn-font-size-lg;
+    padding: 18px 36px !important;
+  }
+  &.md-sm .md-ripple {
+    padding: 0.40625rem 1.25rem !important;
+    font-size: $mdb-btn-font-size-sm;
+  }
+
+  &.btn-just-icon {
+    font-size: 20px;
+    padding: 12px 12px;
+    line-height: 1em;
+
+    i {
+      width: 20px;
+    }
+    &.btn-lg {
+      font-size: 22px;
+      padding: 13px 18px;
+    }
+  }
+
+  &.md-fab,
+  &.md-just-icon {
+    font-size: 24px;
+    height: 41px;
+    min-width: 41px;
+    width: 41px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: 41px;
+    border-radius: 50%;
+    text-align: center;
+
+    .fab {
+      font-size: 20px;
+    }
+  }
+
+  .md-button-content {
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 20px !important;
+    }
+  }
 }
 
-.btn{
-    // Align icons inside buttons with text
-    .material-icons{
-        vertical-align: middle;
-        font-size: $mdb-btn-icon-size-mini;
-        top: -1px;
-        position: relative;
-    }
-
+.btn {
+  // Align icons inside buttons with text
+  .material-icons {
+    vertical-align: middle;
+    font-size: $mdb-btn-icon-size-mini;
+    top: -1px;
+    position: relative;
+  }
 }
 
 .navbar .navbar-nav > li > {
-    a.btn{
-        margin-top: 2px;
-        margin-bottom: 2px;
+  a.btn {
+    margin-top: 2px;
+    margin-bottom: 2px;
 
-        &.btn-fab{
-            margin: 5px 2px;
-        }
+    &.btn-fab {
+      margin: 5px 2px;
     }
-    a:not(.btn){
-        .material-icons{
-            margin-top: -3px;
-            top: 0px;
-            position: relative;
-            margin-right: 3px;
-        }
+  }
+  a:not(.btn) {
+    .material-icons {
+      margin-top: -3px;
+      top: 0px;
+      position: relative;
+      margin-right: 3px;
     }
-    .profile-photo{
-        margin: 5px 2px;
-    }
+  }
+  .profile-photo {
+    margin: 5px 2px;
+  }
 }
 
 .navbar-default:not(.navbar-transparent) .navbar-nav > li > {
-    a.btn{
-        &.btn-white.btn-simple{
-            color: $gray;
-        }
+  a.btn {
+    &.btn-white.btn-simple {
+      color: $gray;
     }
+  }
 }
