@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "dev": "npm run serve",
-    "build": "vue-cli-service build",
+    "build": "cross-env CI=false vue-cli-service build",
     "lint": "vue-cli-service lint",
     "prettify": "prettier --write ."
   },
@@ -34,6 +34,7 @@
     "prettier": "2.8.8",
     "sass": "1.71.1",
     "sass-loader": "13.3.2",
-    "vue-template-compiler": "2.7.16"
+    "vue-template-compiler": "2.7.16",
+    "cross-env": "^7.0.3"
   }
 }
