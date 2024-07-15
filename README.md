@@ -15,6 +15,7 @@ Let us know what you think and what we can improve below. And good luck with dev
 - [Versions](#versions)
 - [Demo](#demo)
 - [Quick Start](#quick-start)
+- [Deploy](#deploy)
 - [Documentation](#documentation)
 - [File Structure](#file-structure)
 - [Browser Support](#browser-support)
@@ -67,6 +68,12 @@ Let us know what you think and what we can improve below. And good luck with dev
 - Clone the repo: `git clone https://github.com/creativetimofficial/vue-material-dashboard.git`.
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/vue-material-dashboard&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Documentation
 
